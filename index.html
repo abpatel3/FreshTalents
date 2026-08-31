@@ -27,241 +27,7 @@
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <style>
-        .hero-slider,
-        .hero-slider .slick-list,
-        .hero-slider .slick-track,
-        .hero-slider .slick-slide,
-        .hero-slider .slick-slide>div,
-        .hero-slide-wrapper,
-        .hero-slide-content {
-            height: 640px !important;
-            min-height: 640px !important;
-        }
 
-        .hero-slider {
-            margin-bottom: 0px !important;
-        }
-
-        .hero-slider .slick-slide {
-            outline: none !important;
-        }
-
-        .hero-heading {
-            font-family: 'Plus Jakarta Sans', sans-serif !important;
-            font-size: clamp(30px, 4.2vw, 52px) !important;
-            font-weight: 700 !important;
-            line-height: 1.12 !important;
-            letter-spacing: -1px !important;
-        }
-
-        .gold-text {
-            font-weight: 600 !important;
-            color: #D9A520 !important;
-            letter-spacing: normal !important;
-        }
-
-        /* Solid-start gradient overlay to completely hide image left cut edge */
-        .premium-gradient-overlay {
-            background: linear-gradient(90deg,
-                    rgba(255, 255, 255, 1) 0%,
-                    rgba(255, 255, 255, 1) 38%,
-                    rgba(255, 255, 255, 0.85) 50%,
-                    rgba(255, 255, 255, 0.3) 72%,
-                    rgba(255, 255, 255, 0) 100%) !important;
-        }
-
-        /* Beautiful Side Circular Navigation Arrows */
-        .custom-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 25;
-            width: 48px;
-            height: 48px;
-            border-radius: 9999px;
-            background: #ffffff !important;
-            border: 1.5px solid #123b6d !important;
-            color: #123b6d !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(18, 59, 109, 0.1);
-            transition: all 0.2s ease;
-            cursor: pointer;
-            outline: none !important;
-        }
-
-        .custom-arrow:hover {
-            background: #123b6d !important;
-            color: #ffffff !important;
-            border-color: #123b6d !important;
-            box-shadow: 0 6px 18px rgba(18, 59, 109, 0.25);
-            transform: translateY(-50%) scale(1.08);
-        }
-
-        .custom-arrow:focus,
-        .custom-arrow:active {
-            outline: none !important;
-            background: #ffffff !important;
-            color: #123b6d !important;
-            border-color: #123b6d !important;
-            box-shadow: 0 4px 12px rgba(18, 59, 109, 0.1) !important;
-        }
-
-        .custom-arrow:focus:hover {
-            background: #123b6d !important;
-            color: #ffffff !important;
-            border-color: #123b6d !important;
-        }
-
-        .custom-arrow i {
-            font-size: 18px;
-            color: inherit !important;
-            display: inline-block;
-            line-height: 1;
-        }
-
-        /* Completely disable default Slick pseudo-elements */
-        .hero-slider .slick-prev::before,
-        .hero-slider .slick-next::before {
-            display: none !important;
-            content: "" !important;
-        }
-
-        .slick-prev {
-            left: 24px !important;
-            right: auto !important;
-        }
-
-        .slick-next {
-            right: 24px !important;
-            left: auto !important;
-        }
-
-        /* Premium Center-aligned Slide Dots */
-        .hero-slider .slick-dots {
-            position: absolute;
-            bottom: 24px;
-            left: 0;
-            right: 0;
-            z-index: 20;
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .hero-slider .slick-dots li {
-            margin: 0;
-            padding: 0;
-            width: auto;
-            height: auto;
-        }
-
-        .hero-slider .slick-dots li button {
-            width: 10px;
-            height: 10px;
-            padding: 0;
-            border-radius: 9999px;
-            background: #d7dee8;
-            border: none;
-            font-size: 0;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .hero-slider .slick-dots li button:before {
-            display: none;
-        }
-
-        .hero-slider .slick-dots li.slick-active button {
-            width: 32px;
-            background: #f4b942;
-            border-radius: 9999px;
-        }
-
-        .hero-badge-gap {
-            margin-bottom: 24px !important;
-        }
-
-        .hero-heading-gap {
-            margin-bottom: 20px !important;
-        }
-
-        .hero-desc-gap {
-            margin-bottom: 24px !important;
-        }
-
-        .hero-btn-gap {
-            margin-top: 32px !important;
-        }
-
-        /* Responsive Breakpoints & Overrides from 1920px down to 340px */
-        @media (max-width: 1023px) {
-            .premium-gradient-overlay {
-                background: linear-gradient(180deg,
-                        rgba(255, 255, 255, 0.96) 0%,
-                        rgba(255, 255, 255, 0.88) 60%,
-                        rgba(255, 255, 255, 0.96) 100%) !important;
-            }
-
-            .custom-arrow {
-                display: none !important;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .hero-badge-gap {
-                margin-bottom: 16px !important;
-            }
-
-            .hero-heading-gap {
-                margin-bottom: 12px !important;
-            }
-
-            .hero-desc-gap {
-                margin-bottom: 16px !important;
-            }
-
-            .hero-btn-gap {
-                margin-top: 24px !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-btn-gap {
-                flex-direction: column !important;
-                align-items: stretch !important;
-                gap: 3px !important;
-            }
-
-            .hero-btn-gap a {
-                width: 100% !important;
-                text-align: center !important;
-                justify-content: center !important;
-            }
-        }
-
-        /* Refined Editorial Font Pairing Styles */
-        .editorial-serif {
-            font-family: 'Cormorant Garamond', serif !important;
-            font-style: italic !important;
-            font-weight: 500 !important;
-        }
-
-        /* Blueprint Grid & Editorial Styles */
-        .blueprint-grid {
-            background-image:
-                linear-gradient(rgba(18, 59, 109, 0.022) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(18, 59, 109, 0.022) 1px, transparent 1px) !important;
-            background-size: 48px 48px !important;
-            background-position: center !important;
-        }
-    </style>
 
 </head>
 
@@ -1510,9 +1276,9 @@
             </svg>
         </div>
         <!-- Ambient glows -->
-        <div class="absolute -top-12 left-1/4 w-[400px] h-[400px] rounded-full pointer-events-none opacity-[0.06] blur-[80px]"
+        <div class="absolute -top-12 left-1/4 w-100 h-100 rounded-full pointer-events-none opacity-[0.06] blur-[80px]"
             style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
-        <div class="absolute bottom-12 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none opacity-[0.06] blur-[80px]"
+        <div class="absolute bottom-12 right-1/4 w-100 h-100 rounded-full pointer-events-none opacity-[0.06] blur-[80px]"
             style="background: radial-gradient(circle, #f4b942 0%, transparent 70%);"></div>
 
         <!-- Floating Decorative Engineering Icons -->
@@ -1539,18 +1305,18 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
                 <!-- LEFT COLUMN: Custom Isometric Illustration -->
-                <div class="lg:col-span-5 flex items-center justify-center relative min-h-[350px] isometric-container">
+                <div class="lg:col-span-5 flex items-center justify-center relative min-h-87.5 isometric-container">
                     <!-- Light background radial overlay behind illustration -->
                     <div
                         class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.06)_0%,transparent_70%)] pointer-events-none">
                     </div>
 
                     <!-- Isometric Wrapper -->
-                    <div class="isometric-view relative w-full max-w-[380px] h-[280px]">
+                    <div class="isometric-view relative w-full max-w-95 h-70">
 
                         <!-- Recruiter Dashboard Card (Bottom Right Layer) -->
                         <div
-                            class="absolute bottom-2 right-2 w-[210px] bg-white border border-border rounded-2xl p-4 shadow-[0_12px_24px_rgba(18,59,109,0.05)]">
+                            class="absolute bottom-2 right-2 w-52.5 bg-white border border-border rounded-2xl p-4 shadow-[0_12px_24px_rgba(18,59,109,0.05)]">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="w-2 h-2 rounded-full bg-success"></span>
                                 <span class="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Recruiter
@@ -1594,7 +1360,7 @@
 
                         <!-- Candidate Profile Card (Top Left Layer) -->
                         <div
-                            class="absolute top-2 left-2 w-[200px] bg-white border border-border rounded-2xl p-4 shadow-[0_16px_32px_rgba(18,59,109,0.06)]">
+                            class="absolute top-2 left-2 w-50 bg-white border border-border rounded-2xl p-4 shadow-[0_16px_32px_rgba(18,59,109,0.06)]">
                             <div class="flex items-center gap-2.5 mb-3">
                                 <!-- Profile Pic placeholder -->
                                 <div
@@ -1624,7 +1390,7 @@
                 <!-- RIGHT COLUMN: CTA Content -->
                 <div class="lg:col-span-7 space-y-6 text-left relative">
                     <!-- Gold ribbon glow accent behind title -->
-                    <div class="absolute top-0 left-0 w-[200px] h-[100px] rounded-full pointer-events-none opacity-[0.05] blur-[40px]"
+                    <div class="absolute top-0 left-0 w-50 h-25 rounded-full pointer-events-none opacity-[0.05] blur-2xl"
                         style="background: radial-gradient(circle, #f4b942 0%, transparent 75%);"></div>
 
                     <div class="relative z-10 space-y-5">
@@ -1640,8 +1406,8 @@
                         <h2
                             class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-navy tracking-tight leading-[1.15] font-display">
                             Ready to Connect with Top <span
-                            class="font-serif italic text-gold block sm:inline bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">Engineering
-                            Talent?</span>
+                                class="font-serif italic text-gold inline sm:inline bg-linear-to-r from-gold via-gold-light to-gold bg-clip-text">Engineering
+                                Talent</span>?
                         </h2>
 
                         <!-- Supporting Text -->
@@ -1758,7 +1524,8 @@
                         <li><a href="#" class="hover:text-gold transition-colors duration-200">Privacy Policy</a></li>
                         <li><a href="#" class="hover:text-gold transition-colors duration-200">Terms of Service</a></li>
                         <li><a href="#" class="hover:text-gold transition-colors duration-200">Cookie Settings</a></li>
-                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Security Overview</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Security Overview</a>
+                        </li>
                     </ul>
                 </div>
 

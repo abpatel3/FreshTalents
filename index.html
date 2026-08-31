@@ -277,8 +277,7 @@
                             FT
                         </div>
                         <span class="text-xl font-extrabold text-white">
-                            Fresh<span class="text-gold">Talents</span> <span
-                                class="text-xs px-2.5 py-0.5 rounded-full bg-gold/20 text-gold border border-gold/30 font-bold ml-1">Portal</span>
+                            Fresh<span class="text-gold">Talents</span>
                         </span>
                     </a>
                 </div>
@@ -1510,7 +1509,6 @@
                 <rect width="100%" height="100%" fill="url(#lt-grid)" />
             </svg>
         </div>
-
         <!-- Ambient glows -->
         <div class="absolute -top-12 left-1/4 w-[400px] h-[400px] rounded-full pointer-events-none opacity-[0.06] blur-[80px]"
             style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
@@ -1518,16 +1516,20 @@
             style="background: radial-gradient(circle, #f4b942 0%, transparent 70%);"></div>
 
         <!-- Floating Decorative Engineering Icons -->
-        <div class="absolute left-8 lg:left-16 top-1/4 text-navy opacity-[0.10] text-3xl pointer-events-none animate-float-1">
+        <div
+            class="absolute left-8 lg:left-16 top-1/4 text-navy opacity-[0.10] text-3xl pointer-events-none animate-float-1 hidden lg:block">
             <i class="fa-solid fa-file-invoice"></i>
         </div>
-        <div class="absolute right-8 lg:right-16 top-1/3 text-gold opacity-[0.10] text-3xl pointer-events-none animate-float-2">
+        <div
+            class="absolute right-8 lg:right-16 top-1/3 text-gold opacity-[0.10] text-3xl pointer-events-none animate-float-2 hidden lg:block">
             <i class="fa-solid fa-briefcase"></i>
         </div>
-        <div class="absolute left-12 lg:left-24 bottom-1/4 text-navy-light opacity-[0.10] text-3xl pointer-events-none animate-float-3">
+        <div
+            class="absolute left-12 lg:left-24 bottom-1/4 text-navy-light opacity-[0.10] text-3xl pointer-events-none animate-float-3 hidden lg:block">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
         </div>
-        <div class="absolute right-12 lg:right-24 bottom-1/3 text-gold opacity-[0.10] text-3xl pointer-events-none animate-float-4">
+        <div
+            class="absolute right-12 lg:right-24 bottom-1/3 text-gold opacity-[0.10] text-3xl pointer-events-none animate-float-4 hidden lg:block">
             <i class="fa-solid fa-shield-halved"></i>
         </div>
 
@@ -1535,20 +1537,24 @@
 
             <!-- Split Layout Wrapper -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-                
+
                 <!-- LEFT COLUMN: Custom Isometric Illustration -->
                 <div class="lg:col-span-5 flex items-center justify-center relative min-h-[350px] isometric-container">
                     <!-- Light background radial overlay behind illustration -->
-                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.06)_0%,transparent_70%)] pointer-events-none"></div>
-                    
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.06)_0%,transparent_70%)] pointer-events-none">
+                    </div>
+
                     <!-- Isometric Wrapper -->
                     <div class="isometric-view relative w-full max-w-[380px] h-[280px]">
-                        
+
                         <!-- Recruiter Dashboard Card (Bottom Right Layer) -->
-                        <div class="absolute bottom-2 right-2 w-[210px] bg-white border border-border rounded-2xl p-4 shadow-[0_12px_24px_rgba(18,59,109,0.05)]">
+                        <div
+                            class="absolute bottom-2 right-2 w-[210px] bg-white border border-border rounded-2xl p-4 shadow-[0_12px_24px_rgba(18,59,109,0.05)]">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="w-2 h-2 rounded-full bg-success"></span>
-                                <span class="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Recruiter Panel</span>
+                                <span class="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Recruiter
+                                    Panel</span>
                             </div>
                             <div class="space-y-1.5">
                                 <div class="h-1.5 w-2/3 bg-slate-100 rounded"></div>
@@ -1557,35 +1563,42 @@
                             <!-- Matches indicator inside dashboard -->
                             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[9px] text-navy font-semibold">Active Matching</span>
-                                <span class="px-1.5 py-0.5 text-[7px] font-bold text-success bg-success/8 rounded">Live</span>
+                                <span
+                                    class="px-1.5 py-0.5 text-[7px] font-bold text-success bg-success/8 rounded">Live</span>
                             </div>
                         </div>
 
                         <!-- Connecting AI Sparkle Line (Animated Path) -->
-                        <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 380 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 380 280"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <!-- Dotted curved connector from Candidate to Recruiter -->
-                            <path d="M100 100 C 160 160, 220 80, 280 180" stroke="#f4b942" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.5"/>
+                            <path d="M100 100 C 160 160, 220 80, 280 180" stroke="#f4b942" stroke-width="1.5"
+                                stroke-dasharray="4 4" fill="none" opacity="0.5" />
                             <!-- Solid signal gradient glow line overlapping -->
-                            <path d="M100 100 C 160 160, 220 80, 280 180" stroke="url(#ai-pulse-grad)" stroke-width="2" fill="none"/>
+                            <path d="M100 100 C 160 160, 220 80, 280 180" stroke="url(#ai-pulse-grad)" stroke-width="2"
+                                fill="none" />
                             <defs>
                                 <linearGradient id="ai-pulse-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#1b4c8a"/>
-                                    <stop offset="50%" stop-color="#f4b942"/>
-                                    <stop offset="100%" stop-color="#1b4c8a"/>
+                                    <stop offset="0%" stop-color="#1b4c8a" />
+                                    <stop offset="50%" stop-color="#f4b942" />
+                                    <stop offset="100%" stop-color="#1b4c8a" />
                                 </linearGradient>
                             </defs>
                         </svg>
 
                         <!-- Central AI Spark Core (Floating in 3D) -->
-                        <div class="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-gold/25 glow-spark-pulse flex items-center justify-center z-20">
+                        <div
+                            class="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-gold/25 glow-spark-pulse flex items-center justify-center z-20">
                             <i class="fa-solid fa-wand-magic-sparkles text-gold text-sm animate-pulse"></i>
                         </div>
 
                         <!-- Candidate Profile Card (Top Left Layer) -->
-                        <div class="absolute top-2 left-2 w-[200px] bg-white border border-border rounded-2xl p-4 shadow-[0_16px_32px_rgba(18,59,109,0.06)]">
+                        <div
+                            class="absolute top-2 left-2 w-[200px] bg-white border border-border rounded-2xl p-4 shadow-[0_16px_32px_rgba(18,59,109,0.06)]">
                             <div class="flex items-center gap-2.5 mb-3">
                                 <!-- Profile Pic placeholder -->
-                                <div class="w-8 h-8 rounded-full bg-navy-light/8 flex items-center justify-center text-navy-light text-xs font-bold">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-navy-light/8 flex items-center justify-center text-navy-light text-xs font-bold">
                                     <i class="fa-solid fa-user-astronaut"></i>
                                 </div>
                                 <div>
@@ -1595,9 +1608,13 @@
                             </div>
                             <!-- Attributes tags -->
                             <div class="flex flex-wrap gap-1">
-                                <span class="px-1.5 py-0.5 text-[7px] font-bold text-navy-light bg-navy-light/5 rounded">CPI 9.6</span>
-                                <span class="px-1.5 py-0.5 text-[7px] font-bold text-gold bg-gold/5 rounded">React</span>
-                                <span class="px-1.5 py-0.5 text-[7px] font-bold text-slate-500 bg-slate-100 rounded">AWS</span>
+                                <span
+                                    class="px-1.5 py-0.5 text-[7px] font-bold text-navy-light bg-navy-light/5 rounded">CPI
+                                    9.6</span>
+                                <span
+                                    class="px-1.5 py-0.5 text-[7px] font-bold text-gold bg-gold/5 rounded">React</span>
+                                <span
+                                    class="px-1.5 py-0.5 text-[7px] font-bold text-slate-500 bg-slate-100 rounded">AWS</span>
                             </div>
                         </div>
 
@@ -1612,31 +1629,38 @@
 
                     <div class="relative z-10 space-y-5">
                         <!-- Badge -->
-                        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em]"
+                        <span
+                            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em]"
                             style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
                             <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
                             Get Started Today
                         </span>
 
                         <!-- Headline -->
-                        <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-navy tracking-tight leading-[1.15] font-display">
-                            Ready to Connect with Top <span class="font-serif italic text-gold block sm:inline bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">Engineering Talent</span>?
+                        <h2
+                            class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-navy tracking-tight leading-[1.15] font-display">
+                            Ready to Connect with Top <span
+                                class="font-serif italic text-gold block sm:inline bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">Engineering
+                                Talent</span>?
                         </h2>
 
                         <!-- Supporting Text -->
                         <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-xl">
-                            Join thousands of candidates and verified employers building next-generation engineering teams.
+                            Join thousands of candidates and verified employers building next-generation engineering
+                            teams.
                         </p>
 
                         <!-- CTA Buttons -->
                         <div class="flex flex-col sm:flex-row items-center gap-4 pt-3">
                             <a href="https://freshtalents.thewebtual.com/register"
                                 class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 h-14 rounded-xl font-bold text-sm text-white bg-navy hover:bg-navy-light shadow-[0_4px_16px_rgba(18,59,109,0.18)] hover:-translate-y-0.5 transition-all duration-300 text-center whitespace-nowrap">
-                                Candidate Registration <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-200"></i>
+                                Candidate Registration <i
+                                    class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-200"></i>
                             </a>
                             <a href="https://freshtalents.thewebtual.com/register/company"
                                 class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 h-14 rounded-xl font-bold text-sm text-[#0d1b3d] bg-gold hover:bg-gold-hover shadow-[0_4px_16px_rgba(244,185,66,0.22)] hover:-translate-y-0.5 transition-all duration-300 text-center whitespace-nowrap">
-                                Recruiter Registration <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-200"></i>
+                                Recruiter Registration <i
+                                    class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-200"></i>
                             </a>
                         </div>
                     </div>
@@ -1662,35 +1686,40 @@
 
         <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
             <!-- Grid columns -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-16">
-                
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-10 mb-16">
+
                 <!-- Brand Column -->
-                <div class="lg:col-span-4 space-y-6">
+                <div class="col-span-2 md:col-span-4 lg:col-span-4 space-y-6">
                     <a href="#" class="inline-block text-2xl font-bold tracking-tight text-white">
                         Fresh<span class="text-gold italic font-serif">Talents</span>
                     </a>
                     <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
-                        Connecting top-tier academic engineering talent with verified enterprise teams automatically through intelligent profiling.
+                        Connecting top-tier academic engineering talent with verified enterprise teams automatically
+                        through intelligent profiling.
                     </p>
                     <!-- Social icons row -->
                     <div class="flex items-center gap-4">
-                        <a href="#" class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center animate-hover">
                             <i class="fa-brands fa-linkedin-in text-sm"></i>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center animate-hover">
                             <i class="fa-brands fa-twitter text-sm"></i>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center animate-hover">
                             <i class="fa-brands fa-github text-sm"></i>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-navy/40 border border-slate-800/60 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold/30 hover:bg-navy/80 transition-all duration-300 text-center animate-hover">
                             <i class="fa-brands fa-instagram text-sm"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Column 2: Candidates -->
-                <div class="lg:col-span-2 space-y-4">
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">Candidates</h4>
                     <ul class="space-y-2.5 text-sm">
                         <li><a href="#" class="hover:text-gold transition-colors duration-200">Build Profile</a></li>
@@ -1701,7 +1730,7 @@
                 </div>
 
                 <!-- Column 3: Recruiters -->
-                <div class="lg:col-span-2 space-y-4">
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">Recruiters</h4>
                     <ul class="space-y-2.5 text-sm">
                         <li><a href="#" class="hover:text-gold transition-colors duration-200">Search Dashboard</a></li>
@@ -1712,7 +1741,7 @@
                 </div>
 
                 <!-- Column 4: Company -->
-                <div class="lg:col-span-2 space-y-4">
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">Company</h4>
                     <ul class="space-y-2.5 text-sm">
                         <li><a href="#" class="hover:text-gold transition-colors duration-200">About Us</a></li>
@@ -1723,7 +1752,7 @@
                 </div>
 
                 <!-- Column 5: Legal -->
-                <div class="lg:col-span-2 space-y-4">
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">Legal</h4>
                     <ul class="space-y-2.5 text-sm">
                         <li><a href="#" class="hover:text-gold transition-colors duration-200">Privacy Policy</a></li>
@@ -1736,10 +1765,12 @@
             </div>
 
             <!-- Bottom Row -->
-            <div class="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+            <div
+                class="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
                 <p>&copy; 2026 FreshTalents. All rights reserved.</p>
                 <p class="flex items-center gap-1.5">
-                    Designed with <i class="fa-solid fa-heart text-gold text-[9px] animate-pulse"></i> for engineering excellence.
+                    Designed with <i class="fa-solid fa-heart text-gold text-[9px] animate-pulse"></i> for engineering
+                    excellence.
                 </p>
             </div>
 

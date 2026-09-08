@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="P7FprDnsYbVFzshye0F2rpbD30VfYrUdvYFIDkJQ">
-    <title>FreshTalents — Engineering Internships & Early Talent Acquisition Platform</title>
+    <title>FreshTalents for Recruiters — Hire Pre-Vetted Engineering Interns & Early Talent</title>
     <!-- Local Installed Tailwind CSS Output -->
     <link rel="stylesheet" href="output.css">
     <!-- Font Awesome Icons -->
@@ -27,11 +27,12 @@
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-
-
 </head>
 
 <body>
+    <!-- =========================================================================
+         NAVBAR (IDENTICAL TO INDEX.HTML)
+         ========================================================================= -->
     <nav x-data="{ open: false }" class="bg-navy border-b border-navy-dark shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -145,160 +146,168 @@
             </div>
         </div>
     </nav>
+
     <!-- =========================================================================
-         HERO SECTION: SLICK SLIDER (PROPER 100dvh - 64px & VERTICALLY CENTERED)
+         HERO SECTION: RECRUITER EXPERIENCE (PROPER 100dvh - 64px & VERTICALLY CENTERED)
          ========================================================================= -->
-    <section class="hero-slider w-full bg-white relative overflow-hidden" aria-label="Hero Carousel">
+    <section class="relative w-full bg-white hero-viewport overflow-hidden">
 
-        <!-- =====================================================================
-             Slide 1: Candidate Experience
-             ===================================================================== -->
-        <div class="outline-none hero-slide-wrapper">
-            <div class="relative h-full flex items-center w-full bg-white overflow-hidden hero-slide-content">
-                <!-- Background Image and Seamless Gradient Mask -->
-                <div class="absolute inset-0 w-full h-full pointer-events-none z-0 bg-white">
-                    <img src="assets/img/slider-1.jpg"
-                        class="w-full lg:w-[62%] ml-auto h-full object-cover object-center lg:object-right"
-                        alt="Software Engineer at Dual Monitor Workstation">
-                    <!-- Smooth White Gradient Overlay for Text Legibility -->
-                    <div class="absolute inset-0 premium-gradient-overlay"></div>
-                    <div class="absolute inset-0 bg-linear-to-t from-white/95 via-transparent to-transparent lg:hidden">
-                    </div>
-                </div>
+        <!-- Slider Track Container (Takes Full 100% Height) -->
+        <div class="hero-slider h-full w-full">
 
-                <!-- Left Content (Aligned to 7xl Container & Vertically Centered) -->
-                <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full">
-                    <div class="max-w-xl lg:max-w-2xl xl:max-w-3xl text-left">
+            <!-- =====================================================================
+                 Slide 1: Recruiter Hiring Platform
+                 ===================================================================== -->
+            <div class="outline-none hero-slide-wrapper">
+                <div class="relative h-full flex items-center w-full bg-white overflow-hidden hero-slide-content">
 
-                        <!-- Trust Badge (24px bottom gap) -->
+                    <!-- Background Image and Seamless Gradient Mask -->
+                    <div class="absolute inset-0 w-full h-full pointer-events-none z-0 bg-white">
+                        <img src="assets/img/recruiter-banner-1.jpg"
+                            class="w-full lg:w-[62%] ml-auto h-full object-cover object-center lg:object-right"
+                            alt="Recruiter Evaluating Talent">
+                        <!-- Smooth White Gradient Overlay for Text Legibility -->
+                        <div class="absolute inset-0 premium-gradient-overlay"></div>
                         <div
-                            class="hero-badge-gap inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/95 backdrop-blur-md border border-border shadow-soft text-navy text-xs sm:text-sm font-bold">
-                            <span class="text-base">🎓</span>
-                            <span>100% Free for Students · Verified Paid Internships</span>
+                            class="absolute inset-0 bg-linear-to-t from-white/95 via-transparent to-transparent lg:hidden">
                         </div>
-
-                        <!-- Main Heading: Desktop 2 Clean Lines (20px bottom gap) -->
-                        <h1 class="hero-heading hero-heading-gap text-navy font-display">
-                            <span class="inline">Land Your Dream</span>
-                            <span class="gold-text inline">Engineering Internship.</span>
-                        </h1>
-
-                        <!-- Subheading / Description (24px bottom gap) -->
-                        <div
-                            class="hero-desc-gap space-y-1.5 text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-xl">
-                            <p>Upload your resume, get AI-scored, and let top tech companies discover you directly.</p>
-                            <p class="text-slate-500 font-normal">Gain real-world experience, earn monthly stipends, and
-                                unlock PPO offers.</p>
-                        </div>
-
-                        <!-- CTA Buttons (32px top gap) -->
-                        <div class="hero-btn-gap flex flex-wrap items-center gap-4">
-                            <!-- Primary CTA: Arrow Slide Animation -->
-                            <a href="https://freshtalents.thewebtual.com/register"
-                                class="group inline-flex items-center justify-center gap-3 px-8 h-14 rounded-xl bg-gold hover:bg-gold-hover text-navy font-semibold text-sm sm:text-base shadow-soft transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
-                                <span>Apply for Internships</span>
-                                <svg class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-200"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </a>
-
-                            <!-- Secondary CTA: Play Icon Circle + Hover Elevation -->
-                            <a href="#how-it-works"
-                                class="group inline-flex items-center justify-center gap-3 px-7 h-14 rounded-xl bg-white hover:bg-slate-50 text-navy font-semibold text-sm sm:text-base border border-border shadow-soft transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
-                                <div
-                                    class="w-8 h-8 rounded-full bg-navy/10 text-navy flex items-center justify-center group-hover:bg-navy group-hover:text-white transition-colors duration-200">
-                                    <i class="fa-solid fa-arrow-down text-xs"></i>
-                                </div>
-                                <span>How It Works</span>
-                            </a>
-                        </div>
-
                     </div>
-                </div>
 
+                    <!-- Left Content (Aligned to 7xl Container & Vertically Centered) -->
+                    <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full">
+                        <div class="max-w-xl lg:max-w-2xl xl:max-w-3xl text-left">
+
+                            <!-- Trust Badge -->
+                            <div
+                                class="hero-badge-gap inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/95 backdrop-blur-md border border-border shadow-soft text-navy text-xs sm:text-sm font-bold">
+                                <span class="text-base">🏢</span>
+                                <span>Enterprise &amp; Startup Hiring · 5,000+ Verified Engineers</span>
+                            </div>
+
+                            <!-- Main Heading -->
+                            <h1 class="hero-heading hero-heading-gap text-navy font-display">
+                                <span class="inline">Hire Pre-Vetted</span>
+                                <span class="gold-text inline">Engineering Interns.</span>
+                            </h1>
+
+                            <!-- Subheading / Description -->
+                            <div
+                                class="hero-desc-gap space-y-1.5 text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-xl">
+                                <p>Access AI-scored engineering candidates with verified CPI, live code repositories,
+                                    and 60-second video elevator pitches.</p>
+                                <p class="text-slate-500 font-normal">Cut your hiring time by 75%. Zero recruitment
+                                    agency commission.</p>
+                            </div>
+
+                            <!-- CTA Buttons -->
+                            <div class="hero-btn-gap flex flex-wrap items-center gap-4">
+                                <!-- Primary CTA -->
+                                <a href="https://freshtalents.thewebtual.com/register/company"
+                                    class="group inline-flex items-center justify-center gap-3 px-8 h-14 rounded-xl bg-gold hover:bg-gold-hover text-navy font-semibold text-sm sm:text-base shadow-soft transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
+                                    <span>Start Hiring Talent</span>
+                                    <svg class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-200"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+
+                                <!-- Secondary CTA -->
+                                <a href="#disciplines"
+                                    class="group inline-flex items-center justify-center gap-3 px-7 h-14 rounded-xl bg-white hover:bg-slate-50 text-navy font-semibold text-sm sm:text-base border border-border shadow-soft transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-navy/10 text-navy flex items-center justify-center group-hover:bg-navy group-hover:text-white transition-colors duration-200">
+                                        <i class="fa-solid fa-layer-group text-xs"></i>
+                                    </div>
+                                    <span>Explore Talent Pools</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
 
-        <!-- =====================================================================
-             Slide 2: Recruiter Experience
-             ===================================================================== -->
-        <div class="outline-none hero-slide-wrapper">
-            <div class="relative h-full flex items-center w-full bg-white overflow-hidden hero-slide-content">
+            <!-- =====================================================================
+                 Slide 2: Fast 48-Hour Shortlisting
+                 ===================================================================== -->
+            <div class="outline-none hero-slide-wrapper">
+                <div class="relative h-full flex items-center w-full bg-white overflow-hidden hero-slide-content">
 
-                <!-- Background Image and Seamless Gradient Mask -->
-                <div class="absolute inset-0 w-full h-full pointer-events-none z-0 bg-white">
-                    <img src="assets/img/slider-2.jpg"
-                        class="w-full lg:w-[62%] ml-auto h-full object-cover object-center lg:object-right"
-                        alt="Recruiter Reviewing Candidates">
-                    <!-- Smooth White Gradient Overlay for Text Legibility -->
-                    <div class="absolute inset-0 premium-gradient-overlay"></div>
-                    <div class="absolute inset-0 bg-linear-to-t from-white/95 via-transparent to-transparent lg:hidden">
-                    </div>
-                </div>
-
-                <!-- Left Content (Aligned to 7xl Container & Vertically Centered) -->
-                <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full">
-                    <div class="max-w-xl lg:max-w-2xl xl:max-w-3xl text-left">
-
-                        <!-- Trust Badge (24px bottom gap) -->
+                    <!-- Background Image and Seamless Gradient Mask -->
+                    <div class="absolute inset-0 w-full h-full pointer-events-none z-0 bg-white">
+                        <img src="assets/img/recruiter-banner-2.jpg"
+                            class="w-full lg:w-[62%] ml-auto h-full object-cover object-center lg:object-right"
+                            alt="Engineering Team Collaboration">
+                        <!-- Smooth White Gradient Overlay for Text Legibility -->
+                        <div class="absolute inset-0 premium-gradient-overlay"></div>
                         <div
-                            class="hero-badge-gap inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-navy/5 backdrop-blur-md border border-navy/15 shadow-soft text-navy text-xs sm:text-sm font-bold">
-                            <span class="text-base">🚀</span>
-                            <span>100% Free for Students &amp; Freshers</span>
+                            class="absolute inset-0 bg-linear-to-t from-white/95 via-transparent to-transparent lg:hidden">
                         </div>
-
-                        <!-- Main Heading: Desktop 2 Clean Lines (20px bottom gap) -->
-                        <h1 class="hero-heading hero-heading-gap text-navy font-display">
-                            <span class="inline">Get Discovered by Top</span>
-                            <span class="gold-text inline">Tech Companies &amp; Startups.</span>
-                        </h1>
-
-                        <!-- Subheading / Description (24px bottom gap) -->
-                        <div
-                            class="hero-desc-gap space-y-1.5 text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-xl">
-                            <p>Skip endless job boards. Build a verified profile and let top tech teams discover you.
-                            </p>
-                            <p class="text-slate-500 font-normal">Fast-track interviews, earn competitive stipends, and
-                                land PPO offers.
-                            </p>
-                        </div>
-
-                        <!-- CTA Buttons (32px top gap) -->
-                        <div class="hero-btn-gap flex flex-wrap items-center gap-4">
-                            <!-- Primary CTA: Arrow Slide Animation -->
-                            <a href="https://freshtalents.thewebtual.com/register"
-                                class="group inline-flex items-center justify-center gap-3 px-8 h-14 rounded-xl bg-navy hover:bg-navy-dark text-white font-semibold text-sm sm:text-base shadow-soft transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
-                                <span>Create Free Profile</span>
-                                <svg class="w-4 h-4 text-gold transform group-hover:translate-x-1.5 transition-transform duration-200"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </a>
-
-                            <!-- Secondary CTA: Link to Disciplines -->
-                            <a href="#disciplines"
-                                class="group inline-flex items-center justify-center gap-3 px-7 h-14 rounded-xl bg-white hover:bg-slate-50 text-navy font-semibold text-sm sm:text-base border border-border shadow-soft transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
-                                <div
-                                    class="w-8 h-8 rounded-full bg-navy/10 text-navy flex items-center justify-center group-hover:bg-navy group-hover:text-white transition-colors duration-200">
-                                    <i class="fa-solid fa-layer-group text-xs"></i>
-                                </div>
-                                <span>Browse Disciplines</span>
-                            </a>
-                        </div>
-
                     </div>
-                </div>
 
+                    <!-- Left Content (Aligned to 7xl Container & Vertically Centered) -->
+                    <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full">
+                        <div class="max-w-xl lg:max-w-2xl xl:max-w-3xl text-left">
+
+                            <!-- Trust Badge -->
+                            <div
+                                class="hero-badge-gap inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-navy/5 backdrop-blur-md border border-navy/15 shadow-soft text-navy text-xs sm:text-sm font-bold">
+                                <span class="text-base">⚡</span>
+                                <span>48-Hour Shortlisting · 100% Pre-Screened Candidates</span>
+                            </div>
+
+                            <!-- Main Heading -->
+                            <h1 class="hero-heading hero-heading-gap text-navy font-display">
+                                <span class="inline">Build Your Engineering</span>
+                                <span class="gold-text inline">Pipeline on Demand.</span>
+                            </h1>
+
+                            <!-- Subheading / Description -->
+                            <div
+                                class="hero-desc-gap space-y-1.5 text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-xl">
+                                <p>Filter by branch, CPI, and tech stack in seconds. Watch 60-second video introductions
+                                    and evaluate candidate code before scheduling a single interview.</p>
+                                <p class="text-slate-500 font-normal">Transform high-performing interns into long-term
+                                    full-time engineering hires.
+                                </p>
+                            </div>
+
+                            <!-- CTA Buttons -->
+                            <div class="hero-btn-gap flex flex-wrap items-center gap-4">
+                                <a href="https://freshtalents.thewebtual.com/register/company"
+                                    class="group inline-flex items-center justify-center gap-3 px-8 h-14 rounded-xl bg-navy hover:bg-navy-dark text-white font-semibold text-sm sm:text-base shadow-soft transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
+                                    <span>Register Company Free</span>
+                                    <svg class="w-4 h-4 text-gold transform group-hover:translate-x-1.5 transition-transform duration-200"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+
+                                <a href="#how-it-works"
+                                    class="group inline-flex items-center justify-center gap-3 px-7 h-14 rounded-xl bg-white hover:bg-slate-50 text-navy font-semibold text-sm sm:text-base border border-border shadow-soft transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-navy/10 text-navy flex items-center justify-center group-hover:bg-navy group-hover:text-white transition-colors duration-200">
+                                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                                    </div>
+                                    <span>How Hiring Works</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
 
     </section>
 
     <!-- =========================================================================
-         SECTION: SUPPORTED ENGINEERING DISCIPLINES
+         SECTION: SUPPORTED ENGINEERING TALENT POOLS (DISCIPLINES)
          ========================================================================= -->
     <section class="py-24 bg-white border-t border-border relative overflow-hidden blueprint-grid" id="disciplines">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
@@ -306,7 +315,6 @@
             <!-- Section Header (Premium Centered Editorial Style) -->
             <div class="text-center mb-16 relative">
 
-                <!-- Floating Technical Crosshair / Geometric Accent -->
                 <div class="absolute -top-12 left-10 w-16 h-16 pointer-events-none opacity-[0.12] hidden md:block">
                     <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
                         stroke-width="1">
@@ -317,7 +325,6 @@
                     </svg>
                 </div>
 
-                <!-- Floating Tech Cross Accent 2 (Right side) -->
                 <div class="absolute top-10 right-10 w-8 h-8 pointer-events-none opacity-[0.08] hidden lg:block">
                     <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
                         stroke-width="1.5">
@@ -330,15 +337,15 @@
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
                     style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
                     <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Academic Streams
+                    Talent Pools
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    Engineering Internship <span class="font-serif italic text-gold">Disciplines</span>
+                    Pre-Vetted Engineering <span class="font-serif italic text-gold">Talent Pools</span>
                 </h2>
                 <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
                     style="font-family: 'Cormorant Garamond', serif;">
-                    Explore verified, high-impact internship opportunities across core engineering and advanced tech
-                    fields. Built for students ready to accelerate their careers.
+                    Source top-tier student engineers across core and emerging disciplines with verified coursework,
+                    academic transcripts, and live project repos.
                 </p>
             </div>
 
@@ -360,8 +367,8 @@
                     </div>
                     <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Focuses on design of computer systems, software architecture, algorithm analysis, and advanced
-                        computing paradigms.
+                        Students trained in scalable software architecture, algorithm design, full-stack web
+                        applications, and backend systems.
                     </p>
                     <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
@@ -395,19 +402,19 @@
                     </div>
                     <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Specializes in enterprise systems, network administration, DevOps pipeline optimization, and
-                        secure data infrastructure.
+                        Engineers focused on enterprise application systems, CI/CD automation, cloud deployment, and
+                        secure database infrastructure.
                     </p>
                     <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-indigo-500/80"></i> DevOps & CI/CD Pipelines
+                            <i class="fa-solid fa-circle-check text-indigo-500/80"></i> DevOps &amp; CI/CD Pipelines
                         </li>
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-indigo-500/80"></i> Enterprise Data Management
                         </li>
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-indigo-500/80"></i> Network & IT Administration
+                            <i class="fa-solid fa-circle-check text-indigo-500/80"></i> Network &amp; IT Administration
                         </li>
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-indigo-500/80"></i> More +
@@ -426,20 +433,21 @@
                             class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center transition-colors group-hover:bg-amber-600 group-hover:text-white duration-300">
                             <i class="fa-solid fa-brain text-lg"></i>
                         </div>
-                        <h3 class="text-base font-bold text-navy font-display">AI & Data Science</h3>
+                        <h3 class="text-base font-bold text-navy font-display">AI &amp; Data Science</h3>
                     </div>
                     <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Covers machine learning models, predictive data pipelines, neural network development, and large
-                        language model workflows.
+                        Skilled candidates building predictive models, deep neural networks, computer vision tools, and
+                        LLM orchestration workflows.
                     </p>
                     <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-amber-500/80"></i> Machine Learning & Deep Learning
+                            <i class="fa-solid fa-circle-check text-amber-500/80"></i> Machine Learning &amp; Deep
+                            Learning
                         </li>
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-amber-500/80"></i> Big Data & Analytics
+                            <i class="fa-solid fa-circle-check text-amber-500/80"></i> Big Data &amp; Analytics
                         </li>
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-amber-500/80"></i> Natural Language Processing
@@ -461,23 +469,23 @@
                             class="w-11 h-11 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center transition-colors group-hover:bg-rose-600 group-hover:text-white duration-300">
                             <i class="fa-solid fa-shield-halved text-lg"></i>
                         </div>
-                        <h3 class="text-base font-bold text-navy font-display">Cyber Security & Cloud</h3>
+                        <h3 class="text-base font-bold text-navy font-display">Cyber Security &amp; Cloud</h3>
                     </div>
                     <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Focuses on ethical hacking, threat mitigation, cloud architecture design across AWS/Azure, and
-                        secure server virtualization.
+                        Early talent prepared for vulnerability assessments, AWS/Azure cloud security architecture, and
+                        DevSecOps compliance.
                     </p>
                     <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-rose-500/80"></i> Ethical Hacking & Defense
+                            <i class="fa-solid fa-circle-check text-rose-500/80"></i> Ethical Hacking &amp; Defense
                         </li>
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-rose-500/80"></i> Cloud Architecture (AWS / Azure)
                         </li>
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-rose-500/80"></i> Threat Analysis & Mitigation
+                            <i class="fa-solid fa-circle-check text-rose-500/80"></i> Threat Analysis &amp; Mitigation
                         </li>
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-rose-500/80"></i> More +
@@ -500,16 +508,16 @@
                     </div>
                     <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Encompasses detailed CAD modeling, fluid dynamics simulation, thermodynamics analysis, and
-                        robotic manufacturing systems.
+                        Engineers with practical skills in SolidWorks, CAD/FEA simulation, robotics automation, and
+                        thermal design systems.
                     </p>
                     <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-emerald-500/80"></i> CAD & FEA Simulation
+                            <i class="fa-solid fa-circle-check text-emerald-500/80"></i> CAD &amp; FEA Simulation
                         </li>
                         <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-emerald-500/80"></i> Robotics & Automation
+                            <i class="fa-solid fa-circle-check text-emerald-500/80"></i> Robotics &amp; Automation
                         </li>
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-emerald-500/80"></i> Thermal Systems
@@ -535,8 +543,8 @@
                     </div>
                     <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Focuses on structural design, transportation infrastructure, geotechnical analysis, and
-                        sustainable urban construction.
+                        Talent trained in AutoCAD, structural analysis, BIM workflows, geotechnical testing, and modern
+                        infrastructure modeling.
                     </p>
                     <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
@@ -561,10 +569,11 @@
     </section>
 
     <!-- =========================================================================
-         SECTION: INTERN BENEFITS (ADVANTAGES FOR STUDENTS & CANDIDATES)
+         SECTION: RECRUITER BENEFITS (VALUE FOR EMPLOYERS & HIRING MANAGERS)
          ========================================================================= -->
-    <section id="intern-benefits"
+    <section id="employer-benefits"
         class="py-24 bg-surface-light border-t border-border relative overflow-hidden blueprint-grid">
+        <div id="intern-benefits" class="relative -top-24"></div>
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
 
             <!-- Section Header -->
@@ -573,22 +582,55 @@
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
                     style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
                     <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Intern Advantages
+                    Recruiter Advantages
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    Why Students Choose <span class="font-serif italic text-gold">FreshTalents</span>
+                    Benefits for <span class="font-serif italic text-gold">Companies &amp; Recruiters</span>
                 </h2>
                 <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
                     style="font-family: 'Cormorant Garamond', serif;">
-                    Built specifically for engineering students to land verified, paid internships at top tech companies
-                    with zero fees and direct company matching.
+                    Built to cut hiring cycles, eliminate resume clutter, and connect tech leaders directly with
+                    pre-screened engineering talent.
                 </p>
             </div>
 
             <!-- Benefits Grid (3x2 on desktop, 2x3 on tablet, 1x6 on mobile) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
-                <!-- Benefit 1: AI-Powered Profile & Resume Enhancement -->
+                <!-- Benefit 1: Dramatically Reduced Time-to-Hire -->
+                <div
+                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-amber-500"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center transition-colors group-hover:bg-amber-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-bolt text-lg"></i>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-500/20">
+                                Lightning Fast
+                            </span>
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-amber-600 transition-colors">
+                            Cut Time-to-Hire in Half
+                        </h3>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                            Stop wasting hours on endless 30-minute intro calls just to check communication. Watch
+                            candidates' 60-second video elevator pitches to evaluate spoken English, energy, and
+                            personality upfront. No unorganized email threads—just verified candidates ready to
+                            interview.
+                        </p>
+                    </div>
+                    <div
+                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                        <i class="fa-solid fa-circle-check text-amber-500"></i> 60s video screenings · Zero inbox
+                        clutter · Rapid decisions
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Precision Multi-Criteria Talent Search -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-blue-500"></div>
@@ -596,63 +638,31 @@
                         <div class="flex items-center justify-between mb-5">
                             <div
                                 class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center transition-colors group-hover:bg-blue-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
                             </div>
                             <span
                                 class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-500/20">
-                                AI Powered
+                                Smart Filters
                             </span>
                         </div>
                         <h3
                             class="text-lg font-bold text-navy font-display mb-2 group-hover:text-blue-600 transition-colors">
-                            AI-Powered Profile &amp; Resume
+                            Precision Multi-Criteria Search
                         </h3>
                         <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Drop your resume once—our AI parser pulls your CPI, degree, skills, and projects into a
-                            clean digital profile. Use GPT-4o to refine your bio and track your real-time 0–100%
-                            readiness score to rank higher in recruiter searches.
+                            Find the exact intern your engineering team needs in seconds without guessing keywords.
+                            Filter candidates by specific technical skills, degree, engineering branch, graduation year,
+                            and verified college GPA cutoffs for 100% accurate results.
                         </p>
                     </div>
                     <div
                         class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-blue-500"></i> Smart CV parsing · GPT-4o bio refinement
-                        · 0–100% score
+                        <i class="fa-solid fa-circle-check text-blue-500"></i> Deep filtering matrix · Branch taxonomies
+                        · 0–100% scores
                     </div>
                 </div>
 
-                <!-- Benefit 2: Standout 60-Second Video Introductions -->
-                <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-rose-500"></div>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center transition-colors group-hover:bg-rose-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-video text-lg"></i>
-                            </div>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-500/20">
-                                Stand Out
-                            </span>
-                        </div>
-                        <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-rose-600 transition-colors">
-                            60-Second Video Introductions
-                        </h3>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Show recruiters the real engineer behind the paper. Record or upload a quick 60-second
-                            elevator pitch to prove your communication and technical enthusiasm, and earn a verified
-                            highlight badge for 5x more interview callbacks.
-                        </p>
-                    </div>
-                    <div
-                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-rose-500"></i> Verified video badge · Humanized first
-                        impression
-                    </div>
-                </div>
-
-                <!-- Benefit 3: CV Studio & Shareable Online Portfolio -->
+                <!-- Benefit 3: Flexible, Pay-As-You-Hire Credit Model -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
@@ -660,32 +670,31 @@
                         <div class="flex items-center justify-between mb-5">
                             <div
                                 class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center transition-colors group-hover:bg-emerald-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-file-invoice text-lg"></i>
+                                <i class="fa-solid fa-coins text-lg"></i>
                             </div>
                             <span
                                 class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-500/20">
-                                Portfolio
+                                Zero Risk
                             </span>
                         </div>
                         <h3
                             class="text-lg font-bold text-navy font-display mb-2 group-hover:text-emerald-600 transition-colors">
-                            CV Studio &amp; Shareable Portfolio
+                            Pay Only When You Connect
                         </h3>
                         <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Choose between sleek resume templates (Modern, Tech, Minimalist) and export print-ready,
-                            ATS-friendly PDFs in one click. Plus, get your own permanent live link (<code
-                                class="text-xs text-navy font-semibold bg-slate-100 px-1.5 py-0.5 rounded">/cv/{your-name}</code>)
-                            to share on LinkedIn or GitHub.
+                            Forget expensive monthly lock-in contracts or agency placement commissions. Browse talent
+                            pools, review GitHub code, read project summaries, and watch video pitches completely free.
+                            You only spend credits when you actually unlock contact details.
                         </p>
                     </div>
                     <div
                         class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-500"></i> Designer ATS templates · One-click PDF
-                        · Live URL
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 100% free browsing · Pay-as-you-go
+                        credits · No agency fees
                     </div>
                 </div>
 
-                <!-- Benefit 4: Strict Privacy & Anti-Spam Protection -->
+                <!-- Benefit 4: Verified, High-Fidelity Talent Pool -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-purple-500"></div>
@@ -697,112 +706,112 @@
                             </div>
                             <span
                                 class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-500/20">
-                                Anti-Spam
+                                Authentic Proof
                             </span>
                         </div>
                         <h3
                             class="text-lg font-bold text-navy font-display mb-2 group-hover:text-purple-600 transition-colors">
-                            Guarded Privacy &amp; Anti-Spam
+                            100% Verified Talent Pool
                         </h3>
                         <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Your phone number and email are never exposed to scrapers or cold callers. Only
-                            authenticated, KYC-vetted companies who submit formal access requests can view your private
-                            contact details with your consent.
+                            No more exaggerated claims or inflated resumes. Every student profile passes our dedicated
+                            admin moderation pipeline. See proof of real engineering ability through live code
+                            repositories, hosted demo links, and validated technical skill tags.
                         </p>
                     </div>
                     <div
                         class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-purple-500"></i> Protected contact info · Zero
-                        cold-calling spam · Safe
+                        <i class="fa-solid fa-circle-check text-purple-500"></i> Moderated resumes · Live GitHub
+                        repositories · Proven skills
                     </div>
                 </div>
 
-                <!-- Benefit 5: Direct Access to Verified Employers -->
+                <!-- Benefit 5: Integrated Pipeline & Shortlisting Management -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-amber-500"></div>
+                    <div class="absolute top-0 inset-x-0 h-1 bg-rose-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
                             <div
-                                class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center transition-colors group-hover:bg-amber-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-building-circle-check text-lg"></i>
+                                class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center transition-colors group-hover:bg-rose-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-bookmark text-lg"></i>
                             </div>
                             <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-500/20">
-                                100% Verified
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-500/20">
+                                Team Workflow
                             </span>
                         </div>
                         <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-amber-600 transition-colors">
-                            Direct Access to Verified Employers
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-rose-600 transition-colors">
+                            Shortlists &amp; Team Collaboration
                         </h3>
                         <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Skip scam postings and sketchy consultancies. Every recruiter undergoes rigorous KYC
-                            business verification. Your profile is put straight in front of tech leads and founders
-                            actively hiring interns.
+                            Keep your recruitment pipeline tidy without juggling messy spreadsheets. Bookmark top
+                            prospects into custom lists with one click, write private internal notes for your
+                            engineering managers, and enjoy a full 30-day window to download unredacted resumes.
                         </p>
                     </div>
                     <div
                         class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-amber-500"></i> KYC-verified companies · Direct
-                        decision-maker access
+                        <i class="fa-solid fa-circle-check text-rose-500"></i> 1-click bookmarks · Private team notes ·
+                        30-day access
                     </div>
                 </div>
 
-                <!-- Benefit 6: Affordable, Democratized Career Tools -->
+                <!-- Benefit 6: Bias-Free, Skills-First Initial Evaluation -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-indigo-500"></div>
+                    <div class="absolute top-0 inset-x-0 h-1 bg-teal-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
                             <div
-                                class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-rocket text-lg"></i>
+                                class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center transition-colors group-hover:bg-teal-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-scale-balanced text-lg"></i>
                             </div>
                             <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-500/20">
-                                Accessible
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-500/20">
+                                Merit First
                             </span>
                         </div>
                         <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-indigo-600 transition-colors">
-                            Affordable, Fair Career Tools
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-teal-600 transition-colors">
+                            Bias-Free, Skills-First Hiring
                         </h3>
                         <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            High-end hiring tech shouldn't require pricey recurring subscriptions. Get enterprise-grade
-                            tools—AI bio optimization, video verification badges, and ATS-ready templates—built
-                            affordably for student budgets.
+                            Hire strictly based on talent, practical problem solving, and genuine code quality. Initial
+                            profile views anonymize personal identifiers so your technical leads can objectively
+                            evaluate GitHub projects, architecture choices, and real skill depth first.
                         </p>
                     </div>
                     <div
                         class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-indigo-500"></i> Student-friendly pricing · No costly
-                        subscriptions
+                        <i class="fa-solid fa-circle-check text-teal-500"></i> Anonymized initial view · Pure merit
+                        evaluation · Objective hiring
                     </div>
                 </div>
 
             </div>
 
-            <!-- Bottom Intern CTA Strip -->
+            <!-- Bottom Employer CTA Strip -->
             <div
                 class="mt-14 rounded-3xl bg-navy p-8 lg:p-10 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 border border-white/10">
                 <div class="relative z-10 max-w-xl text-center md:text-left">
-                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-gold mb-2">🎓 Launch Your
-                        Career</span>
-                    <h3 class="text-xl sm:text-2xl font-bold text-white font-display">Ready to land your dream
-                        engineering internship?</h3>
-                    <p class="text-sm text-slate-300 mt-1.5">Create your free verified profile in 2 minutes and start
-                        getting discovered by top tech employers.</p>
+                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-gold mb-2">⚡ Accelerate
+                        Your Hiring</span>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white font-display">Ready to find your next
+                        engineering superstar?</h3>
+                    <p class="text-sm text-slate-300 mt-1.5">Register your company in 2 minutes and start browsing
+                        pre-screened engineering candidates today.</p>
                 </div>
                 <div class="relative z-10 flex flex-wrap items-center justify-center gap-4 shrink-0">
-                    <a href="https://freshtalents.thewebtual.com/register"
+                    <a href="https://freshtalents.thewebtual.com/register/company"
                         class="px-6 py-3.5 rounded-xl bg-gold hover:bg-gold-hover text-navy font-bold text-sm shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <span>Create Free Profile</span>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Register Company</span>
                     </a>
                     <a href="#disciplines"
                         class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/20 transition-all duration-200 flex items-center gap-2">
-                        <span>Browse Disciplines</span>
+                        <span>Browse Talent Pools</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                 </div>
@@ -812,244 +821,26 @@
     </section>
 
     <!-- =========================================================================
-         SECTION: DARK PREMIUM METRICS (HIDDEN AS REQUESTED)
-         ========================================================================= -->
-    <section id="stats" class="dark-stats-section relative overflow-hidden hidden" style="display: none;"
-        aria-hidden="true">
-
-        <!-- Background layers -->
-        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <!-- Blueprint grid -->
-            <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <pattern id="dk-dots" width="36" height="36" patternUnits="userSpaceOnUse">
-                        <circle cx="1" cy="1" r="1" fill="#4a7fd4" opacity="0.045" />
-                    </pattern>
-                    <pattern id="dk-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#3a6abf" stroke-width="0.4" opacity="0.04" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#dk-dots)" />
-                <rect width="100%" height="100%" fill="url(#dk-grid)" />
-            </svg>
-            <!-- Top ambient bloom -->
-            <div class="absolute -top-48 left-1/2 -translate-x-1/2 pointer-events-none"
-                style="width: 860px; height: 400px; background: radial-gradient(ellipse, rgba(29,67,144,0.50) 0%, transparent 68%); filter: blur(2px);">
-            </div>
-            <!-- Left navy orb -->
-            <div class="num-glow absolute pointer-events-none"
-                style="top: 20%; left: -160px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(18,50,125,0.35) 0%, transparent 70%); filter: blur(10px);">
-            </div>
-            <!-- Right gold orb -->
-            <div class="num-glow absolute pointer-events-none"
-                style="bottom: -40px; right: -112px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(212,160,23,0.18) 0%, transparent 68%); filter: blur(8px); animation-delay: 2s;">
-            </div>
-            <!-- Gold ribbons -->
-            <div class="gold-ribbon-dark absolute pointer-events-none"
-                style="top: -60px; left: 50%; margin-left: -700px; width: 1400px; height: 280px; background: linear-gradient(90deg, transparent, rgba(212,160,23,0.07) 25%, rgba(212,160,23,0.16) 50%, rgba(212,160,23,0.07) 75%, transparent); border-radius: 50%; transform: rotate(-16deg); filter: blur(3px);">
-            </div>
-            <div class="gold-ribbon-dark absolute pointer-events-none"
-                style="top: 30px; left: 50%; margin-left: -520px; width: 1040px; height: 160px; background: linear-gradient(90deg, transparent, rgba(212,160,23,0.04) 30%, rgba(212,160,23,0.10) 50%, rgba(212,160,23,0.04) 70%, transparent); border-radius: 50%; transform: rotate(-16deg); filter: blur(1px); animation-delay: 5s;">
-            </div>
-        </div>
-
-        <!-- Content wrapper -->
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
-
-            <!-- Eyebrow + Subtitle -->
-            <div class="text-center mb-10">
-                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase"
-                    style="background: rgba(212,160,23,0.10); color: #D4A017; border: 1px solid rgba(212,160,23,0.30); letter-spacing: 0.18em;">
-                    <span
-                        class="inline-block w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Platform Metrics
-                </span>
-                <p class="mt-3 text-white italic text-2xl"
-                    style="font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">
-                    Enterprise-grade performance, independently verified.
-                </p>
-            </div>
-
-            <!-- Glass Panel -->
-            <div class="dark-glass-panel relative overflow-hidden" style="border-radius: 24px;">
-
-                <!-- Gold top line -->
-                <div class="absolute top-0 inset-x-0 h-px"
-                    style="background: linear-gradient(90deg, transparent 5%, rgba(212,160,23,0.20) 25%, rgba(212,160,23,0.65) 50%, rgba(212,160,23,0.20) 75%, transparent 95%);">
-                </div>
-
-                <!-- Inner top ambient -->
-                <div class="absolute top-0 inset-x-0 pointer-events-none"
-                    style="height: 100px; background: linear-gradient(to bottom, rgba(255,255,255,0.04) 0%, transparent 100%);">
-                </div>
-
-                <!-- Stats grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-
-                    <!-- STAT 1: CV Parsing Accuracy -->
-                    <div
-                        class="dark-stat-item group relative flex flex-col items-center text-center cursor-default py-10 px-6">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(99,149,255,0.06) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-bullseye text-[18px]" style="color: #93b8ff;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(212,160,23,0.12) 0%, transparent 65%); filter: blur(8px);">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="98"
-                                data-suffix="%">0%</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            CV Parsing<br>Accuracy</p>
-                        <div class="dark-glow-sep absolute right-0 hidden lg:block"
-                            style="top: 32px; bottom: 32px; width: 1px; opacity: 0.7;"></div>
-                    </div>
-
-                    <!-- STAT 2: Active Candidates -->
-                    <div class="dark-stat-item group relative flex flex-col items-center text-center cursor-default border-t sm:border-t-0 sm:border-l py-10 px-6"
-                        style="border-color: rgba(255,255,255,0.06);">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(212,160,23,0.05) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-users text-[18px]" style="color: #f5c842;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(212,160,23,0.14) 0%, transparent 65%); filter: blur(8px); animation-delay: 1.2s;">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="5000"
-                                data-suffix="+" data-format="compact">0+</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            Active<br>Candidates</p>
-                        <div class="dark-glow-sep absolute right-0 hidden lg:block"
-                            style="top: 32px; bottom: 32px; width: 1px; opacity: 0.7;"></div>
-                    </div>
-
-                    <!-- STAT 3: Signup Credits -->
-                    <div class="dark-stat-item group relative flex flex-col items-center text-center cursor-default border-t lg:border-t-0 lg:border-l py-10 px-6"
-                        style="border-color: rgba(255,255,255,0.06);">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(52,211,153,0.05) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-gift text-[18px]" style="color: #6ee7b7;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(52,211,153,0.11) 0%, transparent 65%); filter: blur(8px); animation-delay: 2.1s;">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="5"
-                                data-suffix=" Free">0 Free</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            Signup<br>Credits</p>
-                        <div class="dark-glow-sep absolute right-0 hidden lg:block"
-                            style="top: 32px; bottom: 32px; width: 1px; opacity: 0.7;"></div>
-                    </div>
-
-                    <!-- STAT 4: PII Privacy Protected -->
-                    <div class="dark-stat-item group relative flex flex-col items-center text-center cursor-default border-t lg:border-t-0 lg:border-l py-10 px-6"
-                        style="border-color: rgba(255,255,255,0.06);">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(251,113,133,0.05) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-shield-halved text-[18px]" style="color: #fda4af;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(212,160,23,0.11) 0%, transparent 65%); filter: blur(8px); animation-delay: 3s;">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="100"
-                                data-suffix="%">0%</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            PII Privacy<br>Protected</p>
-                    </div>
-
-                </div>
-
-                <!-- Trust Strip -->
-                <div class="relative flex flex-wrap items-center justify-center gap-x-8 gap-y-2 px-8 py-4"
-                    style="border-top: 1px solid rgba(255,255,255,0.065); background: rgba(0,0,0,0.18);">
-                    <div class="absolute top-0 inset-x-0 h-px"
-                        style="background: linear-gradient(90deg, transparent, rgba(212,160,23,0.25) 35%, rgba(120,170,255,0.15) 65%, transparent);">
-                    </div>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> GDPR Compliant
-                    </span>
-                    <span class="hidden sm:block h-3 w-px" style="background: rgba(255,255,255,0.10);"></span>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> ISO 27001 Ready
-                    </span>
-                    <span class="hidden sm:block h-3 w-px" style="background: rgba(255,255,255,0.10);"></span>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> SOC 2 Aligned
-                    </span>
-                    <span class="hidden sm:block h-3 w-px" style="background: rgba(255,255,255,0.10);"></span>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> 256-bit Encryption
-                    </span>
-                </div>
-
-                <!-- Gold bottom line -->
-                <div class="absolute bottom-0 inset-x-0 h-px"
-                    style="background: linear-gradient(90deg, transparent 10%, rgba(212,160,23,0.12) 40%, rgba(212,160,23,0.28) 50%, rgba(212,160,23,0.12) 60%, transparent 90%);">
-                </div>
-
-            </div><!-- end glass panel -->
-
-        </div><!-- end content wrapper -->
-    </section>
-
-    <!-- =========================================================================
-         SECTION: INTERNSHIP LAUNCHPAD
+         SECTION: RECRUITER CAREER LAUNCHPAD / TWO-STEP WORKFLOW
          ========================================================================= -->
     <section id="intern-launchpad"
         class="dual-platform-section-light relative overflow-hidden py-24 border-t border-slate-100">
 
-        <!-- Blueprint Grid and Glows background -->
-        <div class="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
+        <!-- Background blueprint grid -->
+        <div class="absolute inset-0 pointer-events-none opacity-[0.035]" aria-hidden="true">
             <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <pattern id="lt-dots" width="36" height="36" patternUnits="userSpaceOnUse">
-                        <circle cx="1" cy="1" r="1" fill="#0d1b3d" opacity="0.055" />
+                    <pattern id="lt-dots-rec" width="36" height="36" patternUnits="userSpaceOnUse">
+                        <circle cx="1" cy="1" r="1" fill="#0d1b3d" opacity="0.05" />
                     </pattern>
-                    <pattern id="lt-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <pattern id="lt-grid-rec" width="80" height="80" patternUnits="userSpaceOnUse">
                         <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#0d1b3d" stroke-width="0.4" opacity="0.045" />
                     </pattern>
                 </defs>
-                <rect width="100%" height="100%" fill="url(#lt-dots)" />
-                <rect width="100%" height="100%" fill="url(#lt-grid)" />
+                <rect width="100%" height="100%" fill="url(#lt-dots-rec)" />
+                <rect width="100%" height="100%" fill="url(#lt-grid-rec)" />
             </svg>
         </div>
-
-        <!-- Ambient glows -->
-        <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-87.5 h-87.5 rounded-full pointer-events-none opacity-[0.09] blur-[80px]"
-            style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
-        <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-87.5 h-87.5 rounded-full pointer-events-none opacity-[0.07] blur-[80px]"
-            style="background: radial-gradient(circle, #d4a017 0%, transparent 70%);"></div>
 
         <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
             <!-- Header -->
@@ -1058,15 +849,15 @@
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
                     style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
                     <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Student Career Launchpad
+                    Modern Hiring Stack
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    Built to Accelerate Your <span class="font-serif italic text-gold">Internship Journey</span>
+                    Built to Simplify Your <span class="font-serif italic text-gold">Recruitment Funnel</span>
                 </h2>
                 <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
                     style="font-family: 'Cormorant Garamond', serif;">
-                    Everything you need to showcase verified engineering skills, skip application queues, and get hired
-                    by top tech teams.
+                    Everything technical leaders need to find verified engineering candidates, review live video
+                    pitches, and extend offers without friction.
                 </p>
             </div>
 
@@ -1078,43 +869,39 @@
                     style="background: linear-gradient(to bottom, transparent, rgba(18,59,109,0.05) 20%, #d4a017bf 50%, #d4a017bf 50%, rgba(18,59,109,0.05) 80%, transparent 100%);">
                 </div>
 
-                <!-- LEFT PANEL: Smart Profile Building -->
+                <!-- LEFT PANEL: Filter & Shortlist -->
                 <div class="group relative rounded-3xl p-8 lg:p-10 flex flex-col justify-between glass-card-hover-light overflow-hidden"
                     style="background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.45) 100%); border: 1px solid rgba(59,130,246,0.18); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
-
-                    <!-- Decorative corner glow -->
-                    <div class="absolute top-0 right-0 w-32 h-32 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl"
-                        style="background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, transparent 70%);"></div>
 
                     <div>
                         <!-- Header Accent -->
                         <div class="flex items-center justify-between mb-8">
                             <span
                                 class="text-xs font-semibold uppercase tracking-wider text-navy bg-blue-500/8 px-3 py-1 rounded-full border border-blue-500/15">
-                                Step 1: Smart Profile
+                                Step 1: Precision Filter
                             </span>
                             <div class="flex gap-2.5">
                                 <span
                                     class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-file-invoice text-xs"></i>
+                                    <i class="fa-solid fa-sliders text-xs"></i>
                                 </span>
                                 <span
                                     class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-wand-magic-sparkles text-xs"></i>
+                                    <i class="fa-solid fa-graduation-cap text-xs"></i>
                                 </span>
                                 <span
                                     class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-video text-xs"></i>
+                                    <i class="fa-solid fa-code text-xs"></i>
                                 </span>
                             </div>
                         </div>
 
                         <!-- Titles -->
-                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Build Profile &amp; Get
-                            Scored</h3>
+                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Define Role &amp; Filter Talent
+                        </h3>
                         <p class="text-sm text-slate-600 leading-relaxed mb-8">
-                            Upload your resume to extract CPI, degree, skills, and projects automatically. Showcase your
-                            video pitch and unlock your AI readiness score.
+                            Set your CPI cutoff, target branches, graduation year, and required programming frameworks.
+                            Our AI surfaces matching verified students instantly.
                         </p>
 
                         <!-- Divider line -->
@@ -1128,8 +915,8 @@
                                     <i class="fa-solid fa-check"></i>
                                 </span>
                                 <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Automated Resume CPI &amp; Skill
-                                        Parsing</strong> via GPT-4o
+                                    <strong class="text-slate-800 font-medium">Verified Academic CPI</strong> backed by
+                                    student college credentials
                                 </span>
                             </li>
                             <li class="flex items-start gap-3">
@@ -1138,8 +925,8 @@
                                     <i class="fa-solid fa-check"></i>
                                 </span>
                                 <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">AI Readiness Score (0–100)</strong> &amp;
-                                    summary rewrite
+                                    <strong class="text-slate-800 font-medium">AI Readiness Score (0-100%)</strong>
+                                    calculating technical and project proficiency
                                 </span>
                             </li>
                             <li class="flex items-start gap-3">
@@ -1148,18 +935,8 @@
                                     <i class="fa-solid fa-check"></i>
                                 </span>
                                 <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">60-second Browser Video
-                                        Introductions</strong> to impress recruiters
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Student Contact Privacy</strong>
-                                    protected until interview requests
+                                    <strong class="text-slate-800 font-medium">GitHub Repository &amp; Live
+                                        Demos</strong> attached to every profile
                                 </span>
                             </li>
                         </ul>
@@ -1167,36 +944,33 @@
 
                     <!-- CTA -->
                     <div>
-                        <a href="https://freshtalents.thewebtual.com/register"
-                            class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 text-white bg-navy hover:bg-navy-light text-center shadow-md">
-                            Create Intern Profile <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        <a href="https://freshtalents.thewebtual.com/register/company"
+                            class="inline-flex items-center justify-between w-full px-6 py-4 rounded-xl bg-navy text-white font-medium text-sm shadow-soft hover:bg-navy-light transition-all duration-200 group-hover:shadow-md">
+                            <span>Browse Pre-Vetted Candidates</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-gold"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- RIGHT PANEL: Getting Hired by Top Companies -->
+                <!-- RIGHT PANEL: Direct Outreach & Interview -->
                 <div class="group relative rounded-3xl p-8 lg:p-10 flex flex-col justify-between glass-card-hover-light overflow-hidden"
-                    style="background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.45) 100%); border: 1px solid rgba(212,160,23,0.18); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
-
-                    <!-- Decorative corner glow -->
-                    <div class="absolute top-0 right-0 w-32 h-32 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl"
-                        style="background: radial-gradient(circle, rgba(212,160,23,0.12) 0%, transparent 70%);"></div>
+                    style="background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.45) 100%); border: 1px solid rgba(212,160,23,0.22); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
 
                     <div>
                         <!-- Header Accent -->
                         <div class="flex items-center justify-between mb-8">
                             <span
                                 class="text-xs font-semibold uppercase tracking-wider text-amber-700 bg-amber-500/8 px-3 py-1 rounded-full border border-amber-500/15">
-                                Step 2: Get Hired
+                                Step 2: Evaluate &amp; Hire
                             </span>
                             <div class="flex gap-2.5">
                                 <span
                                     class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                                    <i class="fa-solid fa-video text-xs"></i>
                                 </span>
                                 <span
                                     class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-shield-halved text-xs"></i>
+                                    <i class="fa-solid fa-paper-plane text-xs"></i>
                                 </span>
                                 <span
                                     class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
@@ -1206,11 +980,11 @@
                         </div>
 
                         <!-- Titles -->
-                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Get Discovered &amp; Hired
+                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Watch Videos &amp; Send Offers
                         </h3>
                         <p class="text-sm text-slate-600 leading-relaxed mb-8">
-                            Top tech startups and enterprises actively browse verified candidate pools to shortlist and
-                            hire interns directly for stipend-backed roles.
+                            Review 60-second video introductions to test communication skills, send interview invites
+                            with one click, and issue verified internship offers.
                         </p>
 
                         <!-- Divider line -->
@@ -1224,8 +998,8 @@
                                     <i class="fa-solid fa-check"></i>
                                 </span>
                                 <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Direct Company Outreach</strong>
-                                    without third-party recruiter middlemen
+                                    <strong class="text-slate-800 font-medium">60-Second Video Pitch</strong> evaluating
+                                    confidence and verbal English
                                 </span>
                             </li>
                             <li class="flex items-start gap-3">
@@ -1234,8 +1008,8 @@
                                     <i class="fa-solid fa-check"></i>
                                 </span>
                                 <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Guaranteed Monthly Stipends</strong> on
-                                    all verified partner internships
+                                    <strong class="text-slate-800 font-medium">Direct Interview Invites</strong>
+                                    delivered straight to candidate emails
                                 </span>
                             </li>
                             <li class="flex items-start gap-3">
@@ -1244,18 +1018,8 @@
                                     <i class="fa-solid fa-check"></i>
                                 </span>
                                 <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Direct PPO Pathways</strong> to convert
-                                    internships into full-time roles
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">100% Free for Students</strong> with zero
-                                    fees or commissions ever
+                                    <strong class="text-slate-800 font-medium">High PPO Conversion</strong> ensuring
+                                    dependable full-time engineering retention
                                 </span>
                             </li>
                         </ul>
@@ -1263,87 +1027,51 @@
 
                     <!-- CTA -->
                     <div>
-                        <a href="https://freshtalents.thewebtual.com/register"
-                            class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 text-[#0d1b3d] bg-gold hover:bg-gold-hover text-center shadow-md">
-                            Apply for Internships <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        <a href="https://freshtalents.thewebtual.com/register/company"
+                            class="inline-flex items-center justify-between w-full px-6 py-4 rounded-xl bg-gold text-[#0d1b3d] font-semibold text-sm shadow-soft hover:bg-gold-hover transition-all duration-200 group-hover:shadow-md">
+                            <span>Register Company to Hire</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
                 </div>
 
             </div>
+
         </div>
     </section>
 
     <!-- =========================================================================
-         SECTION: HOW FRESHTALENTS WORKS
+         SECTION: HOW IT WORKS (FOUR-STEP RECRUITER JOURNEY)
          ========================================================================= -->
     <section id="how-it-works" class="how-it-works-section relative overflow-hidden py-24 border-t border-slate-100">
-
-        <!-- Blueprint dot grid and background lines -->
-        <div class="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
-            <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100%" height="100%" fill="url(#lt-dots)" />
-                <rect width="100%" height="100%" fill="url(#lt-grid)" />
-            </svg>
-        </div>
-
         <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
-            <!-- Section Header (Premium Centered Editorial Style) -->
+
+            <!-- Section Header -->
             <div class="text-center mb-20 relative">
-
-                <!-- Floating Technical Crosshair / Geometric Accent -->
-                <div class="absolute -top-12 left-10 w-16 h-16 pointer-events-none opacity-[0.12] hidden md:block">
-                    <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
-                        stroke-width="1">
-                        <circle cx="50" cy="50" r="40" stroke-dasharray="3 3" />
-                        <line x1="50" y1="0" x2="50" y2="100" />
-                        <line x1="0" y1="50" x2="100" y2="50" />
-                        <rect x="45" y="45" width="10" height="10" stroke-width="0.75" />
-                    </svg>
-                </div>
-
-                <!-- Floating Tech Cross Accent 2 (Right side) -->
-                <div class="absolute top-10 right-10 w-8 h-8 pointer-events-none opacity-[0.08] hidden lg:block">
-                    <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
-                        stroke-width="1.5">
-                        <line x1="50" y1="20" x2="50" y2="80" />
-                        <line x1="20" y1="50" x2="80" y2="50" />
-                    </svg>
-                </div>
-
                 <span
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
                     style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
                     <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Simple Process
+                    Hiring Process
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    How <span class="font-serif italic text-gold">FreshTalents</span> Works
+                    How Companies Hire on <span class="font-serif italic text-gold">FreshTalents</span>
                 </h2>
                 <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
                     style="font-family: 'Cormorant Garamond', serif;">
-                    From resume upload to verified hiring—all in four simple steps.
+                    From requirements definition to verified offer letters—all in four simple steps.
                 </p>
             </div>
 
-            <!-- Steps Timeline Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative items-stretch">
 
-                <!-- Connector lines (Hidden on mobile/tablet) -->
-                <div class="hidden lg:block absolute inset-x-12 top-1/3 -translate-y-1/2 h-px pointer-events-none"
-                    style="z-index: 1;">
-                    <div class="w-full h-full"
-                        style="background-image: linear-gradient(to right, rgba(244,185,66,0.3) 33%, transparent 0%); background-size: 8px 1px; background-repeat: repeat-x;">
-                    </div>
-                </div>
-
-                <!-- STEP 1: Upload Resume -->
+                <!-- STEP 1: Define Role -->
                 <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
                     style="z-index: 2;">
 
-                    <!-- Circular badge overlap -->
                     <div
-                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-navy-light text-white shadow-[0_4px_12px_rgba(27,76,138,0.35)]">
+                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-navy text-white shadow-[0_4px_12px_rgba(18,59,109,0.35)]">
                         1
                     </div>
 
@@ -1351,43 +1079,37 @@
                         <!-- Custom CSS Illustration -->
                         <div
                             class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
-                            <!-- Background blue radial glow -->
                             <div class="absolute inset-0 opacity-20 pointer-events-none"
                                 style="background: radial-gradient(circle at center, #1b4c8a 0%, transparent 60%);">
                             </div>
 
-                            <!-- Resume Sheet visual mockup -->
                             <div
                                 class="relative w-16 h-20 bg-white border border-slate-200/80 rounded-lg p-2.5 shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex flex-col justify-between transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Resume lines -->
                                 <div class="space-y-1">
                                     <div class="w-8 h-1.5 bg-navy-light/20 rounded"></div>
                                     <div class="w-11 h-1 bg-slate-200 rounded"></div>
                                     <div class="w-10 h-1 bg-slate-100 rounded"></div>
                                 </div>
-                                <!-- Tech pills -->
                                 <div class="flex gap-1">
                                     <div class="w-4 h-2 bg-slate-200 rounded-sm"></div>
                                     <div class="w-4 h-2 bg-slate-200 rounded-sm"></div>
                                 </div>
-                                <!-- Floating Upload Arrow -->
                                 <div
                                     class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-navy text-white flex items-center justify-center shadow-[0_2px_6px_rgba(18,59,109,0.4)]">
-                                    <i class="fa-solid fa-arrow-up text-[10px]"></i>
+                                    <i class="fa-solid fa-briefcase text-[10px]"></i>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Card text content -->
-                        <h3 class="text-lg font-bold text-navy mb-3">Upload Resume</h3>
+                        <h3 class="text-lg font-bold text-navy mb-3">Define Role Criteria</h3>
                         <p class="text-sm text-slate-700 leading-relaxed">
-                            Upload your PDF/DOCX resume. Smart parser extracts your CPI, degree, skills, and projects
-                            automatically.
+                            Specify branch requirements, CPI thresholds, target tech stack, and monthly internship
+                            stipend budget.
                         </p>
                     </div>
                 </div>
 
-                <!-- STEP 2: AI Build Resume -->
+                <!-- STEP 2: AI Smart Match -->
                 <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
                     style="z-index: 2;">
 
@@ -1404,23 +1126,19 @@
                                 style="background: radial-gradient(circle at center, #f4b942 0%, transparent 60%);">
                             </div>
 
-                            <!-- Gauge mockup -->
                             <div
                                 class="relative w-18 h-18 bg-white border border-slate-200/80 rounded-full shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex items-center justify-center transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Outer Gauge arc -->
                                 <svg class="w-14 h-14 transform -rotate-90">
                                     <circle cx="28" cy="28" r="24" stroke="#f1f5f9" stroke-width="3"
                                         fill="transparent" />
                                     <circle cx="28" cy="28" r="24" stroke="#f4b942" stroke-width="3" fill="transparent"
                                         stroke-dasharray="150" stroke-dashoffset="35" />
                                 </svg>
-                                <!-- AI score label in center -->
                                 <div class="absolute flex flex-col items-center">
-                                    <span class="text-xs font-bold text-navy leading-none">96%</span>
+                                    <span class="text-xs font-bold text-navy leading-none">98%</span>
                                     <span
-                                        class="text-[7px] text-gold uppercase tracking-wider font-bold mt-0.5">Ready</span>
+                                        class="text-[7px] text-gold uppercase tracking-wider font-bold mt-0.5">Match</span>
                                 </div>
-                                <!-- Spark overlay -->
                                 <div
                                     class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-gold/10 border border-gold/25 text-gold flex items-center justify-center shadow-[0_0_8px_rgba(244,185,66,0.2)]">
                                     <i class="fa-solid fa-wand-magic-sparkles text-[9px]"></i>
@@ -1428,15 +1146,15 @@
                             </div>
                         </div>
 
-                        <h3 class="text-lg font-bold text-navy mb-3">AI Build Resume</h3>
+                        <h3 class="text-lg font-bold text-navy mb-3">AI Smart Matching</h3>
                         <p class="text-sm text-slate-700 leading-relaxed">
-                            AI structures and optimizes your profile with high-impact summaries, verified skills, and
-                            readiness scoring.
+                            Our algorithm ranks verified students matching your exact criteria with transparent 0-100%
+                            readiness scores.
                         </p>
                     </div>
                 </div>
 
-                <!-- STEP 3: Recruiters Find You -->
+                <!-- STEP 3: Review Video Pitches & Code -->
                 <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
                     style="z-index: 2;">
 
@@ -1453,40 +1171,36 @@
                                 style="background: radial-gradient(circle at center, #1b4c8a 0%, transparent 60%);">
                             </div>
 
-                            <!-- Search Dashboard Grid mockup -->
                             <div
                                 class="relative w-20 h-14 bg-white border border-slate-200/80 rounded-md p-1.5 shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex flex-col justify-between transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Filter bar row -->
                                 <div
                                     class="flex items-center gap-1 bg-slate-50 border border-slate-100 rounded-sm p-0.5">
-                                    <i class="fa-solid fa-magnifying-glass text-[7px] text-slate-400"></i>
+                                    <i class="fa-solid fa-video text-[7px] text-rose-500"></i>
                                     <div class="w-10 h-1 bg-slate-200 rounded-sm"></div>
                                 </div>
-                                <!-- Floating pill tags -->
                                 <div class="flex flex-wrap gap-0.5">
                                     <span
-                                        class="px-1 py-0.5 text-[6px] font-bold text-navy-light bg-navy-light/8 rounded-sm">CPI
-                                        &gt; 9.0</span>
+                                        class="px-1 py-0.5 text-[6px] font-bold text-navy-light bg-navy-light/8 rounded-sm">60s
+                                        Pitch</span>
                                     <span
-                                        class="px-1 py-0.5 text-[6px] font-bold text-success bg-success/8 rounded-sm">CSE</span>
+                                        class="px-1 py-0.5 text-[6px] font-bold text-success bg-success/8 rounded-sm">Verified</span>
                                 </div>
-                                <!-- Safe Lock tag overlay -->
                                 <div
                                     class="absolute -bottom-1.5 -right-1.5 w-5 h-5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 flex items-center justify-center shadow-[0_2px_5px_rgba(0,0,0,0.25)]">
-                                    <i class="fa-solid fa-lock text-[8px]"></i>
+                                    <i class="fa-solid fa-play text-[7px] text-gold"></i>
                                 </div>
                             </div>
                         </div>
 
-                        <h3 class="text-lg font-bold text-navy mb-3">Recruiters Find You</h3>
+                        <h3 class="text-lg font-bold text-navy mb-3">Watch 60s Video Pitches</h3>
                         <p class="text-sm text-slate-700 leading-relaxed">
-                            Top engineering teams search verified talent pools by branch, CPI, and project skills to
-                            shortlist you.
+                            Evaluate spoken communication, GitHub repositories, and live project demos in minutes before
+                            live interviews.
                         </p>
                     </div>
                 </div>
 
-                <!-- STEP 4: Interview & Hire -->
+                <!-- STEP 4: Direct Interview & Hire -->
                 <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
                     style="z-index: 2;">
 
@@ -1503,15 +1217,12 @@
                                 style="background: radial-gradient(circle at center, #f4b942 0%, transparent 60%);">
                             </div>
 
-                            <!-- Shield Approval verified state mockup -->
                             <div
                                 class="relative w-14 h-16 bg-white border border-slate-200/80 rounded-md shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex items-center justify-center transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Shield Outline -->
                                 <div
                                     class="w-9 h-11 border border-gold/30 bg-gold/5 rounded-t-lg rounded-b-md flex items-center justify-center">
-                                    <i class="fa-solid fa-shield text-gold text-lg"></i>
+                                    <i class="fa-solid fa-handshake text-gold text-lg"></i>
                                 </div>
-                                <!-- Checked verification badge -->
                                 <div
                                     class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-success text-white flex items-center justify-center shadow-[0_2px_6px_rgba(34,197,94,0.4)]">
                                     <i class="fa-solid fa-check text-[10px]"></i>
@@ -1519,17 +1230,15 @@
                             </div>
                         </div>
 
-                        <h3 class="text-lg font-bold text-navy mb-3">Interview &amp; Hire</h3>
+                        <h3 class="text-lg font-bold text-navy mb-3">Direct Interview &amp; Hire</h3>
                         <p class="text-sm text-slate-700 leading-relaxed">
-                            Receive direct interview invites from companies, land your paid internship, and unlock
-                            high-growth PPO pathways.
+                            Send direct interview invitations, conduct technical rounds, and hire exceptional
+                            engineering interns directly.
                         </p>
                     </div>
                 </div>
 
             </div>
-
-
 
         </div>
     </section>
@@ -1542,8 +1251,8 @@
         <!-- Blueprint Grid background -->
         <div class="absolute inset-0 pointer-events-none opacity-30" aria-hidden="true">
             <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100%" height="100%" fill="url(#lt-dots)" />
-                <rect width="100%" height="100%" fill="url(#lt-grid)" />
+                <rect width="100%" height="100%" fill="url(#lt-dots-rec)" />
+                <rect width="100%" height="100%" fill="url(#lt-grid-rec)" />
             </svg>
         </div>
         <!-- Ambient glows -->
@@ -1552,32 +1261,12 @@
         <div class="absolute bottom-12 right-1/4 w-100 h-100 rounded-full pointer-events-none opacity-[0.06] blur-[80px]"
             style="background: radial-gradient(circle, #f4b942 0%, transparent 70%);"></div>
 
-        <!-- Floating Decorative Engineering Icons -->
-        <div
-            class="absolute left-8 lg:left-16 top-1/4 text-navy opacity-[0.10] text-3xl pointer-events-none animate-float-1 hidden lg:block">
-            <i class="fa-solid fa-file-invoice"></i>
-        </div>
-        <div
-            class="absolute right-8 lg:right-16 top-1/3 text-gold opacity-[0.10] text-3xl pointer-events-none animate-float-2 hidden lg:block">
-            <i class="fa-solid fa-briefcase"></i>
-        </div>
-        <div
-            class="absolute left-12 lg:left-24 bottom-1/4 text-navy-light opacity-[0.10] text-3xl pointer-events-none animate-float-3 hidden lg:block">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-        </div>
-        <div
-            class="absolute right-12 lg:right-24 bottom-1/3 text-gold opacity-[0.10] text-3xl pointer-events-none animate-float-4 hidden lg:block">
-            <i class="fa-solid fa-shield-halved"></i>
-        </div>
-
         <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
 
-            <!-- Split Layout Wrapper -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
                 <!-- LEFT COLUMN: Custom Isometric Illustration -->
                 <div class="lg:col-span-5 flex items-center justify-center relative min-h-87.5 isometric-container">
-                    <!-- Light background radial overlay behind illustration -->
                     <div
                         class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.06)_0%,transparent_70%)] pointer-events-none">
                     </div>
@@ -1585,66 +1274,49 @@
                     <!-- Isometric Wrapper -->
                     <div class="isometric-view relative w-full max-w-95 h-70">
 
-                        <!-- Recruiter Dashboard Card (Bottom Right Layer) -->
+                        <!-- Recruiter Dashboard Card -->
                         <div
                             class="absolute bottom-2 right-2 w-52.5 bg-white border border-border rounded-2xl p-4 shadow-[0_12px_24px_rgba(18,59,109,0.05)]">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="w-2 h-2 rounded-full bg-success"></span>
-                                <span class="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Company
-                                    Shortlist</span>
+                                <span class="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Recruiter
+                                    Dashboard</span>
                             </div>
-                            <div class="space-y-1.5">
-                                <div class="h-1.5 w-2/3 bg-slate-100 rounded"></div>
-                                <div class="h-1.5 w-1/2 bg-slate-100 rounded"></div>
+                            <div class="space-y-2">
+                                <div class="h-2 bg-slate-100 rounded w-3/4"></div>
+                                <div class="h-2 bg-slate-100 rounded w-1/2"></div>
                             </div>
-                            <!-- Matches indicator inside dashboard -->
-                            <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[9px] text-navy font-semibold">Interview Match</span>
+                            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[9px] text-navy font-semibold">Shortlist Active</span>
                                 <span
-                                    class="px-1.5 py-0.5 text-[7px] font-bold text-success bg-success/8 rounded">Selected</span>
+                                    class="px-1.5 py-0.5 text-[7px] font-bold text-navy-light bg-navy-light/5 rounded">48h
+                                    SLA</span>
                             </div>
-                        </div>
-
-                        <!-- Connecting AI Sparkle Line (Animated Path) -->
-                        <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 380 280"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Dotted curved connector from Candidate to Recruiter -->
-                            <path d="M100 100 C 160 160, 220 80, 280 180" stroke="#f4b942" stroke-width="1.5"
-                                stroke-dasharray="4 4" fill="none" opacity="0.5" />
-                            <!-- Solid signal gradient glow line overlapping -->
-                            <path d="M100 100 C 160 160, 220 80, 280 180" stroke="url(#ai-pulse-grad)" stroke-width="2"
-                                fill="none" />
-                            <defs>
-                                <linearGradient id="ai-pulse-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#1b4c8a" />
-                                    <stop offset="50%" stop-color="#f4b942" />
-                                    <stop offset="100%" stop-color="#1b4c8a" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-
-                        <!-- Central AI Spark Core (Floating in 3D) -->
-                        <div
-                            class="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-gold/25 glow-spark-pulse flex items-center justify-center z-20">
-                            <i class="fa-solid fa-wand-magic-sparkles text-gold text-sm animate-pulse"></i>
                         </div>
 
                         <!-- Candidate Profile Card (Top Left Layer) -->
                         <div
                             class="absolute top-2 left-2 w-50 bg-white border border-border rounded-2xl p-4 shadow-[0_16px_32px_rgba(18,59,109,0.06)]">
                             <div class="flex items-center gap-2.5 mb-3">
-                                <!-- Profile Pic placeholder -->
                                 <div
-                                    class="w-8 h-8 rounded-full bg-navy-light/8 flex items-center justify-center text-navy-light text-xs font-bold">
-                                    <i class="fa-solid fa-user-astronaut"></i>
+                                    class="w-8 h-8 rounded-full bg-navy/10 flex items-center justify-center text-navy font-bold text-xs">
+                                    EP
                                 </div>
                                 <div>
-                                    <div class="h-2 w-16 bg-navy/80 rounded"></div>
-                                    <div class="h-1 w-10 bg-slate-300 rounded mt-1"></div>
+                                    <div class="text-[10px] font-bold text-navy">Engineering Candidate</div>
+                                    <div class="text-[8px] text-slate-400">AI &amp; Data Science</div>
                                 </div>
                             </div>
-                            <!-- Attributes tags -->
-                            <div class="flex flex-wrap gap-1">
+                            <div class="space-y-1.5 mb-3">
+                                <div class="flex justify-between text-[8px] font-semibold text-slate-500">
+                                    <span>AI Readiness Score</span>
+                                    <span class="text-gold font-bold">98%</span>
+                                </div>
+                                <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                                    <div class="bg-gold h-full rounded-full" style="width: 98%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between pt-2 border-t border-slate-100">
                                 <span
                                     class="px-1.5 py-0.5 text-[7px] font-bold text-navy-light bg-navy-light/5 rounded">CPI
                                     9.6</span>
@@ -1660,7 +1332,6 @@
 
                 <!-- RIGHT COLUMN: CTA Content -->
                 <div class="lg:col-span-7 space-y-6 text-left relative">
-                    <!-- Gold ribbon glow accent behind title -->
                     <div class="absolute top-0 left-0 w-50 h-25 rounded-full pointer-events-none opacity-[0.05] blur-2xl"
                         style="background: radial-gradient(circle, #f4b942 0%, transparent 75%);"></div>
 
@@ -1670,34 +1341,34 @@
                             class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em]"
                             style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
                             <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                            Get Started Today
+                            Start Hiring Today
                         </span>
 
                         <!-- Headline -->
                         <h2
                             class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-navy tracking-tight leading-[1.15] font-display">
-                            Ready to Launch Your <span
+                            Ready to Connect with Top <span
                                 class="font-serif italic text-gold inline sm:inline bg-linear-to-r from-gold via-gold-light to-gold bg-clip-text">Engineering
-                                Career</span>?
+                                Talent</span>?
                         </h2>
 
                         <!-- Supporting Text -->
                         <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-xl">
-                            Join 5,000+ engineering students landing premier paid internships at top tech startups and
-                            MNCs. 100% free for students.
+                            Join 500+ tech companies and high-growth engineering teams discovering and hiring top
+                            engineering interns on FreshTalents.
                         </p>
 
                         <!-- CTA Buttons -->
                         <div class="flex flex-col sm:flex-row items-center gap-4 pt-3">
-                            <a href="https://freshtalents.thewebtual.com/register"
+                            <a href="https://freshtalents.thewebtual.com/register/company"
                                 class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 h-14 rounded-xl font-bold text-sm text-navy bg-gold hover:bg-gold-hover shadow-[0_4px_16px_rgba(244,185,66,0.25)] hover:-translate-y-0.5 transition-all duration-300 text-center whitespace-nowrap">
-                                <span>Create Free Intern Profile</span>
+                                <span>Register Company &amp; Start Hiring</span>
                                 <i
                                     class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-200"></i>
                             </a>
                             <a href="#disciplines"
                                 class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 h-14 rounded-xl font-bold text-sm text-navy bg-white hover:bg-slate-50 border border-border shadow-soft hover:-translate-y-0.5 transition-all duration-300 text-center whitespace-nowrap">
-                                <span>Explore Disciplines</span>
+                                <span>Explore Talent Pools</span>
                                 <i class="fa-solid fa-layer-group text-xs text-navy/70"></i>
                             </a>
                         </div>
@@ -1706,19 +1377,17 @@
 
             </div>
 
-
-
         </div>
     </section>
 
     <!-- =========================================================================
-         SECTION: FOOTER
+         SECTION: FOOTER (IDENTICAL TO INDEX.HTML)
          ========================================================================= -->
     <footer class="bg-navy-dark text-slate-400 pt-20 pb-10 border-t border-slate-800/60 relative overflow-hidden">
         <!-- Subtle blueprint curve detail inside footer background -->
         <div class="absolute inset-0 pointer-events-none opacity-[0.03]" aria-hidden="true">
             <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100%" height="100%" fill="url(#lt-dots)" />
+                <rect width="100%" height="100%" fill="url(#lt-dots-rec)" />
             </svg>
         </div>
 
@@ -1728,12 +1397,12 @@
 
                 <!-- Brand Column -->
                 <div class="col-span-2 md:col-span-4 lg:col-span-4 space-y-6">
-                    <a href="index.html" class="inline-block text-2xl font-bold tracking-tight text-white">
+                    <a href="recruiter.html" class="inline-block text-2xl font-bold tracking-tight text-white">
                         Fresh<span class="text-gold italic font-serif">Talents</span>
                     </a>
                     <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
-                        Connecting aspiring engineering students with top tech companies and startups through
-                        intelligent AI-scored profiling. 100% free for students.
+                        Connecting high-growth tech enterprises, companies, and startups with pre-screened, AI-evaluated
+                        engineering interns.
                     </p>
                     <!-- Social icons row -->
                     <div class="flex items-center gap-4">
@@ -1756,35 +1425,38 @@
                     </div>
                 </div>
 
-                <!-- Column 2: Students & Interns -->
-                <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
-                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">For Interns</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="https://freshtalents.thewebtual.com/register"
-                                class="hover:text-gold transition-colors duration-200">Create Profile</a></li>
-                        <li><a href="#disciplines" class="hover:text-gold transition-colors duration-200">Explore
-                                Streams</a></li>
-                        <li><a href="#intern-benefits" class="hover:text-gold transition-colors duration-200">Student
-                                Benefits</a></li>
-                        <li><a href="#how-it-works" class="hover:text-gold transition-colors duration-200">AI
-                                Scoring</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: For Employers & Recruiters -->
+                <!-- Column 2: Employers & Recruiters -->
                 <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">For Employers</h4>
                     <ul class="space-y-2.5 text-sm">
-                        <li><a href="recruiter.html"
-                                class="text-gold font-medium hover:text-amber-300 transition-colors duration-200 inline-flex items-center gap-1.5">
-                                Recruiter Portal <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                            </a></li>
-                        <li><a href="recruiter.html#disciplines" class="hover:text-gold transition-colors duration-200">Hire
-                                Interns</a></li>
-                        <li><a href="recruiter.html#employer-benefits" class="hover:text-gold transition-colors duration-200">Employer
+                        <li><a href="https://freshtalents.thewebtual.com/register/company"
+                                class="hover:text-gold transition-colors duration-200">Post Internship</a></li>
+                        <li><a href="#disciplines" class="hover:text-gold transition-colors duration-200">Talent
+                                Disciplines</a></li>
+                        <li><a href="#employer-benefits" class="hover:text-gold transition-colors duration-200">Employer
                                 Features</a></li>
-                        <li><a href="https://freshtalents.thewebtual.com/register/company" class="hover:text-gold transition-colors duration-200">Post
-                                Internship</a></li>
+                        <li><a href="#how-it-works" class="hover:text-gold transition-colors duration-200">Hiring
+                                Workflow</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Students & Interns -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">For Interns</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="index.html"
+                                class="text-gold font-medium hover:text-amber-300 transition-colors duration-200 inline-flex items-center gap-1.5">
+                                Intern Portal <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a></li>
+                        <li><a href="index.html#disciplines"
+                                class="hover:text-gold transition-colors duration-200">Explore
+                                Streams</a></li>
+                        <li><a href="index.html#intern-benefits"
+                                class="hover:text-gold transition-colors duration-200">Student
+                                Benefits</a></li>
+                        <li><a href="https://freshtalents.thewebtual.com/register"
+                                class="hover:text-gold transition-colors duration-200">Create
+                                Profile</a></li>
                     </ul>
                 </div>
 
@@ -1792,10 +1464,14 @@
                 <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">Company</h4>
                     <ul class="space-y-2.5 text-sm">
-                        <li><a href="index.html" class="hover:text-gold transition-colors duration-200">About Us</a></li>
-                        <li><a href="recruiter.html" class="hover:text-gold transition-colors duration-200">For Recruiters</a></li>
-                        <li><a href="#intern-benefits" class="hover:text-gold transition-colors duration-200">Verified Badge</a></li>
-                        <li><a href="https://freshtalents.thewebtual.com/login" class="hover:text-gold transition-colors duration-200">Log In</a></li>
+                        <li><a href="recruiter.html" class="hover:text-gold transition-colors duration-200">About Us</a>
+                        </li>
+                        <li><a href="index.html" class="hover:text-gold transition-colors duration-200">For Students</a>
+                        </li>
+                        <li><a href="#employer-benefits" class="hover:text-gold transition-colors duration-200">Verified
+                                Badges</a></li>
+                        <li><a href="https://freshtalents.thewebtual.com/login"
+                                class="hover:text-gold transition-colors duration-200">Log In</a></li>
                     </ul>
                 </div>
 
@@ -1818,9 +1494,11 @@
                 class="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
                 <p>&copy; 2026 FreshTalents. All rights reserved.</p>
                 <div class="flex items-center gap-4 text-slate-400 font-medium">
-                    <a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-gold text-xs"></i> Intern Portal</a>
+                    <a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i
+                            class="fa-solid fa-graduation-cap text-gold text-xs"></i> Intern Portal</a>
                     <span class="text-slate-700">|</span>
-                    <a href="recruiter.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i class="fa-solid fa-building text-gold text-xs"></i> Recruiter Portal</a>
+                    <a href="recruiter.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i
+                            class="fa-solid fa-building text-gold text-xs"></i> Recruiter Portal</a>
                 </div>
                 <p class="flex items-center gap-1.5">
                     Designed with <i class="fa-solid fa-heart text-gold text-[9px] animate-pulse"></i> for engineering
@@ -1841,63 +1519,12 @@
                 autoplaySpeed: 5000,
                 speed: 900,
                 fade: true,
-                cssEase: 'ease-in-out',
-                prevArrow: '<button class="slick-prev custom-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
-                nextArrow: '<button class="slick-next custom-arrow"><i class="fa-solid fa-chevron-right"></i></button>'
+                cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+                pauseOnHover: false,
+                prevArrow: '<button type="button" class="slick-prev custom-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next custom-arrow"><i class="fa-solid fa-chevron-right"></i></button>'
             });
         });
-
-        // ── Count-Up Animation ──────────────────────────────────────────────────
-        function animateCountUp(el) {
-            const target = parseInt(el.dataset.target, 10);
-            const suffix = el.dataset.suffix || '';
-            const isCompact = el.dataset.format === 'compact';
-            const duration = 1800;
-            const steps = 60;
-            const stepTime = duration / steps;
-            let current = 0;
-
-            const easeOut = (t) => 1 - Math.pow(1 - t, 3);
-
-            let step = 0;
-            const timer = setInterval(() => {
-                step++;
-                const progress = easeOut(step / steps);
-                current = Math.round(target * progress);
-
-                let display = current;
-                if (isCompact && current >= 1000) {
-                    display = (current / 1000).toFixed(current % 1000 === 0 ? 0 : 1) + 'K';
-                }
-                el.textContent = display + suffix;
-
-                if (step >= steps) {
-                    clearInterval(timer);
-                    // Final exact value
-                    let final = isCompact && target >= 1000
-                        ? (target / 1000).toFixed(target % 1000 === 0 ? 0 : 1) + 'K'
-                        : target;
-                    el.textContent = final + suffix;
-                }
-            }, stepTime);
-        }
-
-        // Trigger on scroll into view using IntersectionObserver
-        const statEls = document.querySelectorAll('.stat-number');
-        if ('IntersectionObserver' in window) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCountUp(entry.target);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.4 });
-            statEls.forEach(el => observer.observe(el));
-        } else {
-            // Fallback: run immediately
-            statEls.forEach(el => animateCountUp(el));
-        }
     </script>
 </body>
 

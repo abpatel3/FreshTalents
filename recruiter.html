@@ -40,10 +40,10 @@
                 <div class="flex items-center space-x-3">
                     <a href="https://freshtalents.thewebtual.com" class="flex items-center space-x-2.5">
                         <div
-                            class="w-10 h-10 rounded-xl bg-gold flex items-center justify-center font-extrabold text-navy text-lg shadow-md">
+                            class="w-10 h-10 rounded-xl bg-gold flex items-center justify-center font-bold text-navy text-lg shadow-md">
                             FT
                         </div>
-                        <span class="text-xl font-extrabold text-white">
+                        <span class="text-xl font-bold text-white">
                             Fresh<span class="text-gold">Talents</span>
                         </span>
                     </a>
@@ -51,19 +51,24 @@
 
                 <!-- Desktop Navigation Links & Actions (lg and up) -->
                 <div class="hidden lg:flex items-center space-x-3 lg:space-x-4">
+                    <a href="index.html"
+                        class="px-2 py-2 text-sm font-semibold text-white hover:text-gold transition">For
+                        Interns</a>
+                    <a href="recruiter.html"
+                        class="px-2 py-2 text-sm font-semibold text-white hover:text-gold transition">For Employers</a>
                     <a href="https://freshtalents.thewebtual.com/login"
-                        class="px-4 py-2 text-sm font-semibold text-white hover:text-gold transition">Log In</a>
+                        class="px-2 py-2 text-sm font-semibold text-white hover:text-gold transition">Sign In</a>
 
                     <!-- Primary Button: Gold #F4B942 with Navy text -->
                     <a href="https://freshtalents.thewebtual.com/register"
-                        class="px-4 py-2 text-sm font-bold text-navy bg-gold hover:bg-gold-hover rounded-xl shadow-md transition">
-                        Apply Now
+                        class="px-4 py-2 text-sm font-bold text-navy bg-gold hover:bg-gold-hover rounded-xl shadow-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap"></i> Apply Now
                     </a>
 
-                    <!-- Secondary Button: Navy #123B6D with White text -->
-                    <a href="https://freshtalents.thewebtual.com/register/company"
-                        class="px-4 py-2 text-sm font-bold text-white bg-navy-dark hover:bg-navy-light border border-white/20 rounded-xl shadow-md transition">
-                        Hire Talent
+                    <!-- Secondary Button: Link to recruiter page -->
+                    <a href="recruiter.html"
+                        class="px-4 py-2 text-sm font-semibold text-white bg-navy-dark hover:bg-navy-light border border-white/20 rounded-xl shadow-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-gold"></i> Hire Talent
                     </a>
                 </div>
 
@@ -117,8 +122,21 @@
                             </button>
                         </div>
 
+                        <!-- Role Switcher in Mobile Drawer -->
+                        <div
+                            class="mt-6 p-1 bg-navy-dark/90 rounded-xl border border-white/10 flex items-center text-xs">
+                            <a href="index.html"
+                                class="flex-1 py-2 text-center rounded-lg font-bold bg-gold text-navy shadow-sm">
+                                🎓 For Interns
+                            </a>
+                            <a href="recruiter.html"
+                                class="flex-1 py-2 text-center rounded-lg font-semibold text-slate-300 hover:text-white">
+                                🏢 For Employers
+                            </a>
+                        </div>
+
                         <!-- Sidebar Links -->
-                        <div class="mt-8 flex flex-col gap-4">
+                        <div class="mt-6 flex flex-col gap-4">
                             <a href="https://freshtalents.thewebtual.com/login"
                                 class="py-3 px-4 rounded-xl text-white hover:text-gold hover:bg-white/5 font-semibold transition text-base flex items-center">
                                 <i class="fa-solid fa-right-to-bracket mr-3 text-gold"></i>Log In
@@ -126,12 +144,12 @@
 
                             <a href="https://freshtalents.thewebtual.com/register"
                                 class="w-full py-3 px-4 rounded-xl bg-gold hover:bg-gold-hover text-navy font-bold text-center shadow-md transition text-base flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-user-plus"></i>Apply Now
+                                <i class="fa-solid fa-graduation-cap"></i>Apply for Internships
                             </a>
 
-                            <a href="https://freshtalents.thewebtual.com/register/company"
+                            <a href="recruiter.html"
                                 class="w-full py-3 px-4 rounded-xl bg-navy-dark hover:bg-navy-light text-white font-bold text-center border border-white/10 shadow-md transition text-base flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-briefcase"></i>Hire Talent
+                                <i class="fa-solid fa-building text-gold"></i>Recruiter Portal
                             </a>
                         </div>
                     </div>
@@ -307,14 +325,13 @@
     </section>
 
     <!-- =========================================================================
-         SECTION: SUPPORTED ENGINEERING TALENT POOLS (DISCIPLINES)
+         SECTION 1: SUPPORTED ENGINEERING TALENT POOLS (DISCIPLINES)
          ========================================================================= -->
-    <section class="py-24 bg-white border-t border-border relative overflow-hidden blueprint-grid" id="disciplines">
+    <section class="py-24 bg-slate-50 border-b border-border relative overflow-hidden blueprint-grid" id="disciplines">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
 
-            <!-- Section Header (Premium Centered Editorial Style) -->
+            <!-- Section Header -->
             <div class="text-center mb-16 relative">
-
                 <div class="absolute -top-12 left-10 w-16 h-16 pointer-events-none opacity-[0.12] hidden md:block">
                     <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
                         stroke-width="1">
@@ -352,12 +369,10 @@
             <!-- Disciplines Grid (3x2 on desktop, 2x3 on tablet, 1x6 on mobile) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Card 1: Computer Engineering (Tech 1) -->
+                <!-- Card 1: Computer Engineering -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                    <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-blue-500"></div>
-                    <!-- Icon & Title -->
                     <div class="flex items-center gap-4 mb-4">
                         <div
                             class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center transition-colors group-hover:bg-blue-600 group-hover:text-white duration-300">
@@ -365,12 +380,10 @@
                         </div>
                         <h3 class="text-base font-bold text-navy font-display">Computer Engineering</h3>
                     </div>
-                    <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Students trained in scalable software architecture, algorithm design, full-stack web
                         applications, and backend systems.
                     </p>
-                    <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-blue-500/80"></i> Software Architecture
@@ -387,12 +400,10 @@
                     </ul>
                 </div>
 
-                <!-- Card 2: Information Technology (Tech 2) -->
+                <!-- Card 2: Information Technology -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                    <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-indigo-500"></div>
-                    <!-- Icon & Title -->
                     <div class="flex items-center gap-4 mb-4">
                         <div
                             class="w-11 h-11 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white duration-300">
@@ -400,12 +411,10 @@
                         </div>
                         <h3 class="text-base font-bold text-navy font-display">Information Technology</h3>
                     </div>
-                    <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Engineers focused on enterprise application systems, CI/CD automation, cloud deployment, and
                         secure database infrastructure.
                     </p>
-                    <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-indigo-500/80"></i> DevOps &amp; CI/CD Pipelines
@@ -422,12 +431,10 @@
                     </ul>
                 </div>
 
-                <!-- Card 3: AI & Data Science (Tech 3) -->
+                <!-- Card 3: AI & Data Science -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                    <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-amber-500"></div>
-                    <!-- Icon & Title -->
                     <div class="flex items-center gap-4 mb-4">
                         <div
                             class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center transition-colors group-hover:bg-amber-600 group-hover:text-white duration-300">
@@ -435,12 +442,10 @@
                         </div>
                         <h3 class="text-base font-bold text-navy font-display">AI &amp; Data Science</h3>
                     </div>
-                    <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Skilled candidates building predictive models, deep neural networks, computer vision tools, and
                         LLM orchestration workflows.
                     </p>
-                    <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-amber-500/80"></i> Machine Learning &amp; Deep
@@ -458,12 +463,10 @@
                     </ul>
                 </div>
 
-                <!-- Card 4: Cyber Security & Cloud (Tech 4) -->
+                <!-- Card 4: Cyber Security & Cloud -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                    <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-rose-500"></div>
-                    <!-- Icon & Title -->
                     <div class="flex items-center gap-4 mb-4">
                         <div
                             class="w-11 h-11 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center transition-colors group-hover:bg-rose-600 group-hover:text-white duration-300">
@@ -471,12 +474,10 @@
                         </div>
                         <h3 class="text-base font-bold text-navy font-display">Cyber Security &amp; Cloud</h3>
                     </div>
-                    <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Early talent prepared for vulnerability assessments, AWS/Azure cloud security architecture, and
                         DevSecOps compliance.
                     </p>
-                    <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-rose-500/80"></i> Ethical Hacking &amp; Defense
@@ -493,12 +494,10 @@
                     </ul>
                 </div>
 
-                <!-- Card 5: Mechanical Engineering (Non-Tech 1) -->
+                <!-- Card 5: Mechanical Engineering -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                    <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
-                    <!-- Icon & Title -->
                     <div class="flex items-center gap-4 mb-4">
                         <div
                             class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center transition-colors group-hover:bg-emerald-600 group-hover:text-white duration-300">
@@ -506,12 +505,10 @@
                         </div>
                         <h3 class="text-base font-bold text-navy font-display">Mechanical Engineering</h3>
                     </div>
-                    <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Engineers with practical skills in SolidWorks, CAD/FEA simulation, robotics automation, and
                         thermal design systems.
                     </p>
-                    <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-emerald-500/80"></i> CAD &amp; FEA Simulation
@@ -528,12 +525,10 @@
                     </ul>
                 </div>
 
-                <!-- Card 6: Civil Engineering (Non-Tech 2) -->
+                <!-- Card 6: Civil Engineering -->
                 <div
                     class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                    <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-orange-500"></div>
-                    <!-- Icon & Title -->
                     <div class="flex items-center gap-4 mb-4">
                         <div
                             class="w-11 h-11 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center transition-colors group-hover:bg-orange-600 group-hover:text-white duration-300">
@@ -541,12 +536,10 @@
                         </div>
                         <h3 class="text-base font-bold text-navy font-display">Civil Engineering</h3>
                     </div>
-                    <!-- Description -->
                     <p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Talent trained in AutoCAD, structural analysis, BIM workflows, geotechnical testing, and modern
                         infrastructure modeling.
                     </p>
-                    <!-- Bullet list -->
                     <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-4">
                         <li class="flex items-center gap-2">
                             <i class="fa-solid fa-circle-check text-orange-500/80"></i> Structural Analysis
@@ -569,469 +562,90 @@
     </section>
 
     <!-- =========================================================================
-         SECTION: RECRUITER BENEFITS (VALUE FOR EMPLOYERS & HIRING MANAGERS)
+         SECTION 2: INTERACTIVE CANDIDATE SCREENING EXPERIENCE (RECRUITER DOSSIER)
          ========================================================================= -->
-    <section id="employer-benefits"
-        class="py-24 bg-surface-light border-t border-border relative overflow-hidden blueprint-grid">
-        <div id="intern-benefits" class="relative -top-24"></div>
+    <section id="candidate-dossier" class="py-24 bg-white border-b border-border relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
 
-            <!-- Section Header -->
-            <div class="text-center mb-16 relative">
-                <span
-                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
-                    style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
-                    <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Recruiter Advantages
-                </span>
-                <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    Benefits for <span class="font-serif italic text-gold">Companies &amp; Recruiters</span>
-                </h2>
-                <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
-                    style="font-family: 'Cormorant Garamond', serif;">
-                    Built to cut hiring cycles, eliminate resume clutter, and connect tech leaders directly with
-                    pre-screened engineering talent.
-                </p>
-            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-            <!-- Benefits Grid (3x2 on desktop, 2x3 on tablet, 1x6 on mobile) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Left Column: Recruiter Advantages -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em]"
+                        style="background: rgba(212,160,23,0.10); color: #B3860F; border: 1px solid rgba(212,160,23,0.25);">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
+                        High-Signal Candidate Profiles
+                    </span>
 
-                <!-- Benefit 1: Dramatically Reduced Time-to-Hire -->
-                <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-amber-500"></div>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
+                    <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight leading-tight">
+                        Screen Candidates in <span class="font-serif italic text-gold">Seconds</span>, Not Hours.
+                    </h2>
+
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Traditional resumes tell you where candidates studied. FreshTalents shows you what they can
+                        actually build. Every profile is backed by proof-of-work.
+                    </p>
+
+                    <!-- Feature List -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                             <div
-                                class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center transition-colors group-hover:bg-amber-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-bolt text-lg"></i>
+                                class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-sm font-bold">
+                                <i class="fa-solid fa-graduation-cap"></i>
                             </div>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-500/20">
-                                Lightning Fast
-                            </span>
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Verified CPI &amp; Academic Transcripts</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Eliminate resume fraud. Cumulative grade point
+                                    average verified directly with partner college registers.</p>
+                            </div>
                         </div>
-                        <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-amber-600 transition-colors">
-                            Cut Time-to-Hire in Half
-                        </h3>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Stop wasting hours on endless 30-minute intro calls just to check communication. Watch
-                            candidates' 60-second video elevator pitches to evaluate spoken English, energy, and
-                            personality upfront. No unorganized email threads—just verified candidates ready to
-                            interview.
-                        </p>
-                    </div>
-                    <div
-                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-amber-500"></i> 60s video screenings · Zero inbox
-                        clutter · Rapid decisions
-                    </div>
-                </div>
 
-                <!-- Benefit 2: Precision Multi-Criteria Talent Search -->
-                <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-blue-500"></div>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                             <div
-                                class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center transition-colors group-hover:bg-blue-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                                class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-sm font-bold">
+                                <i class="fa-solid fa-video"></i>
                             </div>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-500/20">
-                                Smart Filters
-                            </span>
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">60-Second Video Elevator Pitch</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Evaluate technical communication, presentation,
+                                    and clarity before scheduling a 45-minute live interview.</p>
+                            </div>
                         </div>
-                        <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-blue-600 transition-colors">
-                            Precision Multi-Criteria Search
-                        </h3>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Find the exact intern your engineering team needs in seconds without guessing keywords.
-                            Filter candidates by specific technical skills, degree, engineering branch, graduation year,
-                            and verified college GPA cutoffs for 100% accurate results.
-                        </p>
-                    </div>
-                    <div
-                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-blue-500"></i> Deep filtering matrix · Branch taxonomies
-                        · 0–100% scores
-                    </div>
-                </div>
 
-                <!-- Benefit 3: Flexible, Pay-As-You-Hire Credit Model -->
-                <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                             <div
-                                class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center transition-colors group-hover:bg-emerald-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-coins text-lg"></i>
+                                class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-sm font-bold">
+                                <i class="fa-solid fa-laptop-code"></i>
                             </div>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-500/20">
-                                Zero Risk
-                            </span>
-                        </div>
-                        <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-emerald-600 transition-colors">
-                            Pay Only When You Connect
-                        </h3>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Forget expensive monthly lock-in contracts or agency placement commissions. Browse talent
-                            pools, review GitHub code, read project summaries, and watch video pitches completely free.
-                            You only spend credits when you actually unlock contact details.
-                        </p>
-                    </div>
-                    <div
-                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 100% free browsing · Pay-as-you-go
-                        credits · No agency fees
-                    </div>
-                </div>
-
-                <!-- Benefit 4: Verified, High-Fidelity Talent Pool -->
-                <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-purple-500"></div>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center transition-colors group-hover:bg-purple-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-shield-halved text-lg"></i>
-                            </div>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-500/20">
-                                Authentic Proof
-                            </span>
-                        </div>
-                        <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-purple-600 transition-colors">
-                            100% Verified Talent Pool
-                        </h3>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            No more exaggerated claims or inflated resumes. Every student profile passes our dedicated
-                            admin moderation pipeline. See proof of real engineering ability through live code
-                            repositories, hosted demo links, and validated technical skill tags.
-                        </p>
-                    </div>
-                    <div
-                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-purple-500"></i> Moderated resumes · Live GitHub
-                        repositories · Proven skills
-                    </div>
-                </div>
-
-                <!-- Benefit 5: Integrated Pipeline & Shortlisting Management -->
-                <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-rose-500"></div>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center transition-colors group-hover:bg-rose-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-bookmark text-lg"></i>
-                            </div>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-500/20">
-                                Team Workflow
-                            </span>
-                        </div>
-                        <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-rose-600 transition-colors">
-                            Shortlists &amp; Team Collaboration
-                        </h3>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Keep your recruitment pipeline tidy without juggling messy spreadsheets. Bookmark top
-                            prospects into custom lists with one click, write private internal notes for your
-                            engineering managers, and enjoy a full 30-day window to download unredacted resumes.
-                        </p>
-                    </div>
-                    <div
-                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-rose-500"></i> 1-click bookmarks · Private team notes ·
-                        30-day access
-                    </div>
-                </div>
-
-                <!-- Benefit 6: Bias-Free, Skills-First Initial Evaluation -->
-                <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 inset-x-0 h-1 bg-teal-500"></div>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center transition-colors group-hover:bg-teal-600 group-hover:text-white duration-300 shadow-sm">
-                                <i class="fa-solid fa-scale-balanced text-lg"></i>
-                            </div>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-500/20">
-                                Merit First
-                            </span>
-                        </div>
-                        <h3
-                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-teal-600 transition-colors">
-                            Bias-Free, Skills-First Hiring
-                        </h3>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                            Hire strictly based on talent, practical problem solving, and genuine code quality. Initial
-                            profile views anonymize personal identifiers so your technical leads can objectively
-                            evaluate GitHub projects, architecture choices, and real skill depth first.
-                        </p>
-                    </div>
-                    <div
-                        class="border-t border-slate-100 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <i class="fa-solid fa-circle-check text-teal-500"></i> Anonymized initial view · Pure merit
-                        evaluation · Objective hiring
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Bottom Employer CTA Strip -->
-            <div
-                class="mt-14 rounded-3xl bg-navy p-8 lg:p-10 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 border border-white/10">
-                <div class="relative z-10 max-w-xl text-center md:text-left">
-                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-gold mb-2">⚡ Accelerate
-                        Your Hiring</span>
-                    <h3 class="text-xl sm:text-2xl font-bold text-white font-display">Ready to find your next
-                        engineering superstar?</h3>
-                    <p class="text-sm text-slate-300 mt-1.5">Register your company in 2 minutes and start browsing
-                        pre-screened engineering candidates today.</p>
-                </div>
-                <div class="relative z-10 flex flex-wrap items-center justify-center gap-4 shrink-0">
-                    <a href="https://freshtalents.thewebtual.com/register/company"
-                        class="px-6 py-3.5 rounded-xl bg-gold hover:bg-gold-hover text-navy font-bold text-sm shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <span>Register Company</span>
-                    </a>
-                    <a href="#disciplines"
-                        class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/20 transition-all duration-200 flex items-center gap-2">
-                        <span>Browse Talent Pools</span>
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION: RECRUITER CAREER LAUNCHPAD / TWO-STEP WORKFLOW
-         ========================================================================= -->
-    <section id="intern-launchpad"
-        class="dual-platform-section-light relative overflow-hidden py-24 border-t border-slate-100">
-
-        <!-- Background blueprint grid -->
-        <div class="absolute inset-0 pointer-events-none opacity-[0.035]" aria-hidden="true">
-            <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <pattern id="lt-dots-rec" width="36" height="36" patternUnits="userSpaceOnUse">
-                        <circle cx="1" cy="1" r="1" fill="#0d1b3d" opacity="0.05" />
-                    </pattern>
-                    <pattern id="lt-grid-rec" width="80" height="80" patternUnits="userSpaceOnUse">
-                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#0d1b3d" stroke-width="0.4" opacity="0.045" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#lt-dots-rec)" />
-                <rect width="100%" height="100%" fill="url(#lt-grid-rec)" />
-            </svg>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
-            <!-- Header -->
-            <div class="text-center mb-16">
-                <span
-                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
-                    style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
-                    <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Modern Hiring Stack
-                </span>
-                <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    Built to Simplify Your <span class="font-serif italic text-gold">Recruitment Funnel</span>
-                </h2>
-                <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
-                    style="font-family: 'Cormorant Garamond', serif;">
-                    Everything technical leaders need to find verified engineering candidates, review live video
-                    pitches, and extend offers without friction.
-                </p>
-            </div>
-
-            <!-- Panels Wrapper -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch relative">
-
-                <!-- Center glowing vertical divider (hidden on mobile) -->
-                <div class="hidden lg:block absolute left-1/2 top-12 bottom-12 w-px -translate-x-1/2 pointer-events-none"
-                    style="background: linear-gradient(to bottom, transparent, rgba(18,59,109,0.05) 20%, #d4a017bf 50%, #d4a017bf 50%, rgba(18,59,109,0.05) 80%, transparent 100%);">
-                </div>
-
-                <!-- LEFT PANEL: Filter & Shortlist -->
-                <div class="group relative rounded-3xl p-8 lg:p-10 flex flex-col justify-between glass-card-hover-light overflow-hidden"
-                    style="background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.45) 100%); border: 1px solid rgba(59,130,246,0.18); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
-
-                    <div>
-                        <!-- Header Accent -->
-                        <div class="flex items-center justify-between mb-8">
-                            <span
-                                class="text-xs font-semibold uppercase tracking-wider text-navy bg-blue-500/8 px-3 py-1 rounded-full border border-blue-500/15">
-                                Step 1: Precision Filter
-                            </span>
-                            <div class="flex gap-2.5">
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-sliders text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-graduation-cap text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-code text-xs"></i>
-                                </span>
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Live Repositories &amp; Engineering Artifacts
+                                </h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Direct links to verified GitHub commits, CAD
+                                    SolidWorks models, MATLAB simulations, and live demos.</p>
                             </div>
                         </div>
-
-                        <!-- Titles -->
-                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Define Role &amp; Filter Talent
-                        </h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-8">
-                            Set your CPI cutoff, target branches, graduation year, and required programming frameworks.
-                            Our AI surfaces matching verified students instantly.
-                        </p>
-
-                        <!-- Divider line -->
-                        <div class="h-px bg-linear-to-r from-blue-500/15 to-transparent mb-8"></div>
-
-                        <!-- Features list -->
-                        <ul class="space-y-4 mb-10">
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Verified Academic CPI</strong> backed by
-                                    student college credentials
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">AI Readiness Score (0-100%)</strong>
-                                    calculating technical and project proficiency
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">GitHub Repository &amp; Live
-                                        Demos</strong> attached to every profile
-                                </span>
-                            </li>
-                        </ul>
                     </div>
 
-                    <!-- CTA -->
-                    <div>
+                    <div class="pt-4">
                         <a href="https://freshtalents.thewebtual.com/register/company"
-                            class="inline-flex items-center justify-between w-full px-6 py-4 rounded-xl bg-navy text-white font-medium text-sm shadow-soft hover:bg-navy-light transition-all duration-200 group-hover:shadow-md">
-                            <span>Browse Pre-Vetted Candidates</span>
-                            <i class="fa-solid fa-arrow-right text-xs text-gold"></i>
+                            class="inline-flex items-center gap-3 px-8 h-14 rounded-xl bg-navy hover:bg-navy-light text-white font-bold text-sm shadow-soft transition-all duration-200 hover:shadow-lg">
+                            <span>Start Reviewing Candidates</span>
+                            <i class="fa-solid fa-arrow-right text-gold text-xs"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- RIGHT PANEL: Direct Outreach & Interview -->
-                <div class="group relative rounded-3xl p-8 lg:p-10 flex flex-col justify-between glass-card-hover-light overflow-hidden"
-                    style="background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.45) 100%); border: 1px solid rgba(212,160,23,0.22); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
-
-                    <div>
-                        <!-- Header Accent -->
-                        <div class="flex items-center justify-between mb-8">
-                            <span
-                                class="text-xs font-semibold uppercase tracking-wider text-amber-700 bg-amber-500/8 px-3 py-1 rounded-full border border-amber-500/15">
-                                Step 2: Evaluate &amp; Hire
-                            </span>
-                            <div class="flex gap-2.5">
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-video text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-paper-plane text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-briefcase text-xs"></i>
-                                </span>
-                            </div>
+                <!-- Right Column: Candidate Profile Image -->
+                <div class="lg:col-span-6 flex items-center justify-center relative">
+                    <div class="relative w-full max-w-lg lg:max-w-xl group">
+                        <!-- Subtle decorative ambient glow -->
+                        <div
+                            class="absolute -inset-4 bg-linear-to-tr from-gold/15 via-blue-500/10 to-gold/10 rounded-3xl blur-2xl opacity-70 pointer-events-none">
                         </div>
-
-                        <!-- Titles -->
-                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Watch Videos &amp; Send Offers
-                        </h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-8">
-                            Review 60-second video introductions to test communication skills, send interview invites
-                            with one click, and issue verified internship offers.
-                        </p>
-
-                        <!-- Divider line -->
-                        <div class="h-px bg-linear-to-r from-amber-500/15 to-transparent mb-8"></div>
-
-                        <!-- Features list -->
-                        <ul class="space-y-4 mb-10">
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">60-Second Video Pitch</strong> evaluating
-                                    confidence and verbal English
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Direct Interview Invites</strong>
-                                    delivered straight to candidate emails
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">High PPO Conversion</strong> ensuring
-                                    dependable full-time engineering retention
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- CTA -->
-                    <div>
-                        <a href="https://freshtalents.thewebtual.com/register/company"
-                            class="inline-flex items-center justify-between w-full px-6 py-4 rounded-xl bg-gold text-[#0d1b3d] font-semibold text-sm shadow-soft hover:bg-gold-hover transition-all duration-200 group-hover:shadow-md">
-                            <span>Register Company to Hire</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
+                        <img src="assets/img/candidate-profile.png"
+                            alt="FreshTalents Candidate Profile &amp; Verification Dossier"
+                            class="relative z-10 w-full h-auto drop-shadow-xl hover:scale-[1.02] transition-transform duration-500">
                     </div>
                 </div>
 
@@ -1041,9 +655,9 @@
     </section>
 
     <!-- =========================================================================
-         SECTION: HOW IT WORKS (FOUR-STEP RECRUITER JOURNEY)
+         SECTION 3: HOW IT WORKS (FOUR-STEP RECRUITER JOURNEY)
          ========================================================================= -->
-    <section id="how-it-works" class="how-it-works-section relative overflow-hidden py-24 border-t border-slate-100">
+    <section id="how-it-works" class="blueprint-grid relative overflow-hidden py-24 bg-slate-50 border-b border-border">
         <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
 
             <!-- Section Header -->
@@ -1235,6 +849,575 @@
                             Send direct interview invitations, conduct technical rounds, and hire exceptional
                             engineering interns directly.
                         </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: RECRUITER BENEFITS (VALUE FOR EMPLOYERS & HIRING MANAGERS)
+         ========================================================================= -->
+    <section id="employer-benefits"
+        class="py-24 bg-white border-b border-border relative overflow-hidden blueprint-grid">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center mb-16 relative">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
+                    style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
+                    Recruiter Advantages
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
+                    Benefits for <span class="font-serif italic text-gold">Companies &amp; Recruiters</span>
+                </h2>
+                <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
+                    style="font-family: 'Cormorant Garamond', serif;">
+                    Built to cut hiring cycles, eliminate resume clutter, and connect tech leaders directly with
+                    pre-screened engineering talent.
+                </p>
+            </div>
+
+            <!-- Benefits Grid (3x2 on desktop, 2x3 on tablet, 1x6 on mobile) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                <!-- Benefit 1: Dramatically Reduced Time-to-Hire -->
+                <div
+                    class="group relative bg-slate-50/70 border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 hover:bg-white transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-amber-500"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center transition-colors group-hover:bg-amber-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-bolt text-lg"></i>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-500/20">
+                                Lightning Fast
+                            </span>
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-amber-600 transition-colors">
+                            Cut Time-to-Hire in Half
+                        </h3>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                            Stop wasting hours on endless 30-minute intro calls just to check communication. Watch
+                            candidates' 60-second video elevator pitches to evaluate spoken English, energy, and
+                            personality upfront. No unorganized email threads—just verified candidates ready to
+                            interview.
+                        </p>
+                    </div>
+                    <div
+                        class="border-t border-slate-200/80 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                        <i class="fa-solid fa-circle-check text-amber-500"></i> 60s video screenings · Zero inbox
+                        clutter · Rapid decisions
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Precision Multi-Criteria Talent Search -->
+                <div
+                    class="group relative bg-slate-50/70 border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 hover:bg-white transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-blue-500"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center transition-colors group-hover:bg-blue-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-500/20">
+                                Smart Filters
+                            </span>
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-blue-600 transition-colors">
+                            Precision Multi-Criteria Search
+                        </h3>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                            Find the exact intern your engineering team needs in seconds without guessing keywords.
+                            Filter candidates by specific technical skills, degree, engineering branch, graduation year,
+                            and verified college GPA cutoffs for 100% accurate results.
+                        </p>
+                    </div>
+                    <div
+                        class="border-t border-slate-200/80 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                        <i class="fa-solid fa-circle-check text-blue-500"></i> Deep filtering matrix · Branch taxonomies
+                        · 0–100% scores
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Flexible, Pay-As-You-Hire Credit Model -->
+                <div
+                    class="group relative bg-slate-50/70 border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 hover:bg-white transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center transition-colors group-hover:bg-emerald-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-coins text-lg"></i>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-500/20">
+                                Zero Risk
+                            </span>
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-emerald-600 transition-colors">
+                            Pay Only When You Connect
+                        </h3>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                            Forget expensive monthly lock-in contracts or agency placement commissions. Browse talent
+                            pools, review GitHub code, read project summaries, and watch video pitches completely free.
+                            You only spend credits when you actually unlock contact details.
+                        </p>
+                    </div>
+                    <div
+                        class="border-t border-slate-200/80 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 100% free browsing · Pay-as-you-go
+                        credits · No agency fees
+                    </div>
+                </div>
+
+                <!-- Benefit 4: Verified, High-Fidelity Talent Pool -->
+                <div
+                    class="group relative bg-slate-50/70 border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 hover:bg-white transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-purple-500"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center transition-colors group-hover:bg-purple-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-shield-halved text-lg"></i>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-500/20">
+                                Authentic Proof
+                            </span>
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-purple-600 transition-colors">
+                            100% Verified Talent Pool
+                        </h3>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                            No more exaggerated claims or inflated resumes. Every student profile passes our dedicated
+                            admin moderation pipeline. See proof of real engineering ability through live code
+                            repositories, hosted demo links, and validated technical skill tags.
+                        </p>
+                    </div>
+                    <div
+                        class="border-t border-slate-200/80 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                        <i class="fa-solid fa-circle-check text-purple-500"></i> Moderated resumes · Live GitHub
+                        repositories · Proven skills
+                    </div>
+                </div>
+
+                <!-- Benefit 5: Integrated Pipeline & Shortlisting Management -->
+                <div
+                    class="group relative bg-slate-50/70 border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 hover:bg-white transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-rose-500"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center transition-colors group-hover:bg-rose-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-bookmark text-lg"></i>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-500/20">
+                                Team Workflow
+                            </span>
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-rose-600 transition-colors">
+                            Shortlists &amp; Team Collaboration
+                        </h3>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                            Keep your recruitment pipeline tidy without juggling messy spreadsheets. Bookmark top
+                            prospects into custom lists with one click, write private internal notes for your
+                            engineering managers, and enjoy a full 30-day window to download unredacted resumes.
+                        </p>
+                    </div>
+                    <div
+                        class="border-t border-slate-200/80 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                        <i class="fa-solid fa-circle-check text-rose-500"></i> 1-click bookmarks · Private team notes ·
+                        30-day access
+                    </div>
+                </div>
+
+                <!-- Benefit 6: Bias-Free, Skills-First Initial Evaluation -->
+                <div
+                    class="group relative bg-slate-50/70 border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 hover:bg-white transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-teal-500"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center transition-colors group-hover:bg-teal-600 group-hover:text-white duration-300 shadow-sm">
+                                <i class="fa-solid fa-scale-balanced text-lg"></i>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-500/20">
+                                Merit First
+                            </span>
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-navy font-display mb-2 group-hover:text-teal-600 transition-colors">
+                            Bias-Free, Skills-First Hiring
+                        </h3>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                            Hire strictly based on talent, practical problem solving, and genuine code quality. Initial
+                            profile views anonymize personal identifiers so your technical leads can objectively
+                            evaluate GitHub projects, architecture choices, and real skill depth first.
+                        </p>
+                    </div>
+                    <div
+                        class="border-t border-slate-200/80 pt-4 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                        <i class="fa-solid fa-circle-check text-teal-500"></i> Anonymized initial view · Pure merit
+                        evaluation · Objective hiring
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Employer CTA Strip -->
+            <div
+                class="mt-14 rounded-3xl bg-navy p-8 lg:p-10 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 border border-white/10">
+                <div class="relative z-10 max-w-xl text-center md:text-left">
+                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-gold mb-2">⚡ Accelerate
+                        Your Hiring</span>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white font-display">Ready to find your next
+                        engineering superstar?</h3>
+                    <p class="text-sm text-slate-300 mt-1.5">Register your company in 2 minutes and start browsing
+                        pre-screened engineering candidates today.</p>
+                </div>
+                <div class="relative z-10 flex flex-wrap items-center justify-center gap-4 shrink-0">
+                    <a href="https://freshtalents.thewebtual.com/register/company"
+                        class="px-6 py-3.5 rounded-xl bg-gold hover:bg-gold-hover text-navy font-bold text-sm shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Register Company</span>
+                    </a>
+                    <a href="#disciplines"
+                        class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/20 transition-all duration-200 flex items-center gap-2">
+                        <span>Browse Talent Pools</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: COMPARISON MATRIX (TRADITIONAL CAMPUS VS FRESHTALENTS)
+         ========================================================================= -->
+    <section id="comparison" class="py-24 bg-slate-50 border-b border-border relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
+                    style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
+                    Hiring Modernization
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
+                    Traditional College Drives vs <span class="font-serif italic text-gold">FreshTalents</span>
+                </h2>
+                <p class="mt-3 text-slate-500 text-base sm:text-lg leading-relaxed">
+                    Compare why forward-thinking engineering companies are replacing outdated campus hiring with
+                    on-demand talent pipelines.
+                </p>
+            </div>
+
+            <!-- Comparison Table Card -->
+            <div class="bg-white rounded-3xl border border-border shadow-soft overflow-hidden">
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-100 bg-slate-50/70">
+                                <th
+                                    class="py-5 px-6 sm:px-8 text-xs font-bold uppercase tracking-wider text-slate-400 w-1/3">
+                                    Hiring Parameter
+                                </th>
+                                <th
+                                    class="py-5 px-6 sm:px-8 text-xs font-bold uppercase tracking-wider text-slate-400 w-1/3">
+                                    Traditional College Placement
+                                </th>
+                                <th
+                                    class="py-5 px-6 sm:px-8 text-xs font-bold uppercase tracking-wider text-navy bg-gold/10 w-1/3 border-l border-gold/20">
+                                    <span class="flex items-center gap-1.5 text-navy font-bold">
+                                        <i class="fa-solid fa-sparkles text-gold"></i> FreshTalents Platform
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm">
+                            <!-- Row 1: Time to Shortlist -->
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-5 px-6 sm:px-8 font-bold text-navy">Time to Shortlist</td>
+                                <td class="py-5 px-6 sm:px-8 text-slate-500">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-xmark text-rose-400"></i> 4 to 8 weeks (travel,
+                                        written paper tests)
+                                    </span>
+                                </td>
+                                <td
+                                    class="py-5 px-6 sm:px-8 font-semibold text-emerald-700 bg-gold/5 border-l border-gold/20">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-emerald-500"></i> Under 48 hours
+                                        (instant digital shortlist)
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2: Cost per Hire -->
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-5 px-6 sm:px-8 font-bold text-navy">Placement Fees</td>
+                                <td class="py-5 px-6 sm:px-8 text-slate-500">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-xmark text-rose-400"></i> ₹25,000 – ₹50,000 agency
+                                        markups
+                                    </span>
+                                </td>
+                                <td
+                                    class="py-5 px-6 sm:px-8 font-semibold text-emerald-700 bg-gold/5 border-l border-gold/20">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-emerald-500"></i> ₹0 Commission (Free
+                                        candidate discovery)
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3: Resume Verification -->
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-5 px-6 sm:px-8 font-bold text-navy">Quality &amp; Proof of Work</td>
+                                <td class="py-5 px-6 sm:px-8 text-slate-500">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-xmark text-rose-400"></i> Unverified claims &amp;
+                                        formatted paper resumes
+                                    </span>
+                                </td>
+                                <td
+                                    class="py-5 px-6 sm:px-8 font-semibold text-emerald-700 bg-gold/5 border-l border-gold/20">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-emerald-500"></i> AI-evaluated code, CPI
+                                        &amp; 60s video pitch
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4: Talent Reach -->
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-5 px-6 sm:px-8 font-bold text-navy">Geographic Reach</td>
+                                <td class="py-5 px-6 sm:px-8 text-slate-500">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-xmark text-rose-400"></i> Limited to 2–3 colleges
+                                        visited physically
+                                    </span>
+                                </td>
+                                <td
+                                    class="py-5 px-6 sm:px-8 font-semibold text-emerald-700 bg-gold/5 border-l border-gold/20">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 180+ Engineering
+                                        Campuses nationwide
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5: Drop-off Rate -->
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-5 px-6 sm:px-8 font-bold text-navy">Candidate Commitment</td>
+                                <td class="py-5 px-6 sm:px-8 text-slate-500">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-xmark text-rose-400"></i> High ghosting rate on
+                                        multi-offer campuses
+                                    </span>
+                                </td>
+                                <td
+                                    class="py-5 px-6 sm:px-8 font-semibold text-emerald-700 bg-gold/5 border-l border-gold/20">
+                                    <span class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 94% Conversion with
+                                        locked stipends
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: RECRUITER & EMPLOYER TESTIMONIALS (PARTNER VOICES)
+         ========================================================================= -->
+    <section id="recruiter-testimonials" class="py-24 bg-white border-b border-slate-200/70 relative overflow-hidden">
+        <!-- Subtle ambient radial glow -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,247,250,0.8)_0%,transparent_70%)] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
+                    style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
+                    Verified Hiring Partners · Employer Reviews
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
+                    Trusted by Leading Engineering Teams: <span class="font-serif italic text-gold">Recruiter Voices</span>
+                </h2>
+                <p class="mt-3 text-slate-500 text-base sm:text-lg leading-relaxed">
+                    See how tech startups, EV innovators, and core engineering enterprises hire verified talent in days, not months.
+                </p>
+            </div>
+
+            <!-- Recruiter Testimonial Cards Carousel Slider (Dots Only, No Arrows) -->
+            <div class="recruiter-testimonials-slider">
+
+                <!-- Slide 1: Vikram Mehta -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-bl-full pointer-events-none"></div>
+                        <div>
+                            <!-- Star Rating & Verified Badge -->
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                                    <i class="fa-solid fa-check-circle text-emerald-500"></i> Verified Partner
+                                </span>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "We used to spend 6 weeks traveling for campus drives, yet faced high interview dropouts. With FreshTalents, our tech leads evaluated 60-second video pitches and shortlisted 4 pre-vetted Mechatronics interns in 48 hours. Three have already accepted full-time PPOs."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/recruiter-vikram.jpg" alt="Vikram Mehta"
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-slate-100 shadow-sm">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Vikram Mehta</h4>
+                                <p class="text-xs text-slate-400 font-medium">VP of Engineering @ Ather Dynamics</p>
+                                <span class="text-[10px] font-bold text-emerald-600">4 Hired · 48h Hiring Cycle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Meera Iyer -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-gold/35 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.08),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(212,160,23,0.2)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-gold/10 rounded-bl-full pointer-events-none"></div>
+                        <div>
+                            <!-- Star Rating & Verified Badge -->
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-gold bg-gold/10 px-2 py-0.5 rounded-full border border-gold/30">
+                                    <i class="fa-solid fa-crown text-gold"></i> Enterprise Recruiter
+                                </span>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "The quality of student profiles is completely unmatched. Instead of generic keyword-stuffed resumes, we review actual verified GitHub repos and live project demos. FreshTalents completely eliminated our placement agency expenses."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/recruiter-meera.jpg" alt="Meera Iyer"
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-gold/40 shadow-sm">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Meera Iyer</h4>
+                                <p class="text-xs text-slate-400 font-medium">Head of Talent Acquisition @ CloudSphere Labs</p>
+                                <span class="text-[10px] font-bold text-emerald-600">12 Interns Placed · ₹0 Fees</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Siddharth Patel -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/5 rounded-bl-full pointer-events-none"></div>
+                        <div>
+                            <!-- Star Rating & Verified Badge -->
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                                    <i class="fa-solid fa-check-circle text-emerald-500"></i> Verified Partner
+                                </span>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "Finding specialized Robotics and CAD interns who can contribute on day one used to be a nightmare. FreshTalents' branch-specific filters and verified CPI scoring saved our team over 120 screening hours this quarter alone."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/recruiter-siddharth.jpg" alt="Siddharth Patel"
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-slate-100 shadow-sm">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Siddharth Patel</h4>
+                                <p class="text-xs text-slate-400 font-medium">Director of Engineering @ Solarium Automation</p>
+                                <span class="text-[10px] font-bold text-emerald-600">120+ Screening Hours Saved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Pooja Deshmukh -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/5 rounded-bl-full pointer-events-none"></div>
+                        <div>
+                            <!-- Star Rating & Verified Badge -->
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                                    <i class="fa-solid fa-check-circle text-emerald-500"></i> Verified Partner
+                                </span>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "FreshTalents' skill-verified talent pools are a breath of fresh air. Every candidate had solved practical engineering problems and communicated clearly in their video intro. We converted 100% of our summer interns to permanent offers."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/recruiter-pooja.jpg" alt="Pooja Deshmukh"
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-slate-100 shadow-sm">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Pooja Deshmukh</h4>
+                                <p class="text-xs text-slate-400 font-medium">Tech Lead &amp; Hiring Mgr @ QuantEdge FinTech</p>
+                                <span class="text-[10px] font-bold text-emerald-600">100% PPO Conversion Rate</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1493,13 +1676,6 @@
             <div
                 class="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
                 <p>&copy; 2026 FreshTalents. All rights reserved.</p>
-                <div class="flex items-center gap-4 text-slate-400 font-medium">
-                    <a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i
-                            class="fa-solid fa-graduation-cap text-gold text-xs"></i> Intern Portal</a>
-                    <span class="text-slate-700">|</span>
-                    <a href="recruiter.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i
-                            class="fa-solid fa-building text-gold text-xs"></i> Recruiter Portal</a>
-                </div>
                 <p class="flex items-center gap-1.5">
                     Designed with <i class="fa-solid fa-heart text-gold text-[9px] animate-pulse"></i> for engineering
                     excellence.
@@ -1524,7 +1700,89 @@
                 prevArrow: '<button type="button" class="slick-prev custom-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next custom-arrow"><i class="fa-solid fa-chevron-right"></i></button>'
             });
+
+            // Recruiter Testimonials Slider (Only Dots, No Arrows)
+            $('.recruiter-testimonials-slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4500,
+                speed: 600,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                pauseOnHover: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
         });
+
+        // ── Count-Up Animation ──────────────────────────────────────────────────
+        function animateCountUp(el) {
+            const target = parseInt(el.dataset.target, 10);
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const isCompact = el.dataset.format === 'compact';
+            const duration = 1800;
+            const steps = 60;
+            const stepTime = duration / steps;
+            let current = 0;
+
+            const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+
+            let step = 0;
+            const timer = setInterval(() => {
+                step++;
+                const progress = easeOut(step / steps);
+                current = Math.round(target * progress);
+
+                let display = current;
+                if (isCompact && current >= 1000) {
+                    display = (current / 1000).toFixed(current % 1000 === 0 ? 0 : 1) + 'K';
+                } else if (current >= 1000 && !isCompact) {
+                    display = current.toLocaleString('en-IN');
+                }
+                el.textContent = prefix + display + suffix;
+
+                if (step >= steps) {
+                    clearInterval(timer);
+                    let final = isCompact && target >= 1000
+                        ? (target / 1000).toFixed(target % 1000 === 0 ? 0 : 1) + 'K'
+                        : (target >= 1000 && !isCompact ? target.toLocaleString('en-IN') : target);
+                    el.textContent = prefix + final + suffix;
+                }
+            }, stepTime);
+        }
+
+        // Trigger on scroll into view using IntersectionObserver
+        const statEls = document.querySelectorAll('.stat-number');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCountUp(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            statEls.forEach(el => observer.observe(el));
+        } else {
+            statEls.forEach(el => animateCountUp(el));
+        }
     </script>
 </body>
 

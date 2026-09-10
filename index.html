@@ -39,10 +39,10 @@
                 <div class="flex items-center space-x-3">
                     <a href="https://freshtalents.thewebtual.com" class="flex items-center space-x-2.5">
                         <div
-                            class="w-10 h-10 rounded-xl bg-gold flex items-center justify-center font-extrabold text-navy text-lg shadow-md">
+                            class="w-10 h-10 rounded-xl bg-gold flex items-center justify-center font-bold text-navy text-lg shadow-md">
                             FT
                         </div>
-                        <span class="text-xl font-extrabold text-white">
+                        <span class="text-xl font-bold text-white">
                             Fresh<span class="text-gold">Talents</span>
                         </span>
                     </a>
@@ -50,19 +50,24 @@
 
                 <!-- Desktop Navigation Links & Actions (lg and up) -->
                 <div class="hidden lg:flex items-center space-x-3 lg:space-x-4">
+                    <a href="index.html"
+                        class="px-2 py-2 text-sm font-semibold text-white hover:text-gold transition">For
+                        Interns</a>
+                    <a href="recruiter.html"
+                        class="px-2 py-2 text-sm font-semibold text-white hover:text-gold transition">For Employers</a>
                     <a href="https://freshtalents.thewebtual.com/login"
-                        class="px-4 py-2 text-sm font-semibold text-white hover:text-gold transition">Log In</a>
+                        class="px-2 py-2 text-sm font-semibold text-white hover:text-gold transition">Sign In</a>
 
                     <!-- Primary Button: Gold #F4B942 with Navy text -->
                     <a href="https://freshtalents.thewebtual.com/register"
-                        class="px-4 py-2 text-sm font-bold text-navy bg-gold hover:bg-gold-hover rounded-xl shadow-md transition">
-                        Apply Now
+                        class="px-4 py-2 text-sm font-bold text-navy bg-gold hover:bg-gold-hover rounded-xl shadow-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap"></i> Apply Now
                     </a>
 
-                    <!-- Secondary Button: Navy #123B6D with White text -->
-                    <a href="https://freshtalents.thewebtual.com/register/company"
-                        class="px-4 py-2 text-sm font-bold text-white bg-navy-dark hover:bg-navy-light border border-white/20 rounded-xl shadow-md transition">
-                        Hire Talent
+                    <!-- Secondary Button: Link to recruiter page -->
+                    <a href="recruiter.html"
+                        class="px-4 py-2 text-sm font-semibold text-white bg-navy-dark hover:bg-navy-light border border-white/20 rounded-xl shadow-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-gold"></i> Hire Talent
                     </a>
                 </div>
 
@@ -116,8 +121,21 @@
                             </button>
                         </div>
 
+                        <!-- Role Switcher in Mobile Drawer -->
+                        <div
+                            class="mt-6 p-1 bg-navy-dark/90 rounded-xl border border-white/10 flex items-center text-xs">
+                            <a href="index.html"
+                                class="flex-1 py-2 text-center rounded-lg font-bold bg-gold text-navy shadow-sm">
+                                🎓 For Interns
+                            </a>
+                            <a href="recruiter.html"
+                                class="flex-1 py-2 text-center rounded-lg font-semibold text-slate-300 hover:text-white">
+                                🏢 For Employers
+                            </a>
+                        </div>
+
                         <!-- Sidebar Links -->
-                        <div class="mt-8 flex flex-col gap-4">
+                        <div class="mt-6 flex flex-col gap-4">
                             <a href="https://freshtalents.thewebtual.com/login"
                                 class="py-3 px-4 rounded-xl text-white hover:text-gold hover:bg-white/5 font-semibold transition text-base flex items-center">
                                 <i class="fa-solid fa-right-to-bracket mr-3 text-gold"></i>Log In
@@ -125,12 +143,12 @@
 
                             <a href="https://freshtalents.thewebtual.com/register"
                                 class="w-full py-3 px-4 rounded-xl bg-gold hover:bg-gold-hover text-navy font-bold text-center shadow-md transition text-base flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-user-plus"></i>Apply Now
+                                <i class="fa-solid fa-graduation-cap"></i>Apply for Internships
                             </a>
 
-                            <a href="https://freshtalents.thewebtual.com/register/company"
+                            <a href="recruiter.html"
                                 class="w-full py-3 px-4 rounded-xl bg-navy-dark hover:bg-navy-light text-white font-bold text-center border border-white/10 shadow-md transition text-base flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-briefcase"></i>Hire Talent
+                                <i class="fa-solid fa-building text-gold"></i>Recruiter Portal
                             </a>
                         </div>
                     </div>
@@ -298,9 +316,192 @@
     </section>
 
     <!-- =========================================================================
+         SECTION: PLATFORM IMPACT & VERIFIED PLACEMENTS (INTERN HIGHLIGHTS)
+         ========================================================================= -->
+    <section id="placement-impact" class="py-20 bg-[#F5F7FA] border-y border-slate-200/70 relative overflow-hidden">
+        <!-- Subtle ambient radial glow -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.7)_0%,transparent_70%)] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.16em] mb-4 bg-gold/10 text-amber-800 border border-gold/25">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
+                    </span>
+                    Verified Hiring Network · Placement Impact
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-navy tracking-tight">
+                    Where Ambition Meets Industry: <span class="font-serif italic text-gold">Placement Power</span>
+                </h2>
+                <p class="mt-3.5 text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
+                    Connecting pre-screened engineering students with vetted employers offering real industrial
+                    projects,
+                    competitive monthly stipends, and direct full-time PPO conversion.
+                </p>
+            </div>
+            <!-- Clean Horizontal Impact Metric Strip (No Card Boxes!) -->
+            <div class="py-10 border-y border-slate-200/80 mb-16">
+                <div
+                    class="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-slate-200/70">
+                    <div class="text-center lg:text-left lg:px-6 pt-4 lg:pt-0">
+                        <div class="stat-number font-display text-4xl sm:text-5xl font-bold text-navy tracking-tight mb-1"
+                            data-target="60" data-suffix="+">0+</div>
+                        <div class="text-sm font-semibold text-slate-800 font-display">Registered Companies</div>
+                        <p class="text-xs text-slate-500 font-normal mt-0.5">Core industries &amp; tech startups</p>
+                    </div>
+                    <div class="text-center lg:text-left lg:px-6 pt-4 lg:pt-0">
+                        <div class="stat-number font-display text-4xl sm:text-5xl font-bold text-navy tracking-tight mb-1"
+                            data-target="250" data-suffix="+">0+</div>
+                        <div class="text-sm font-semibold text-slate-800 font-display">Interns Placed</div>
+                        <p class="text-xs text-slate-500 font-normal mt-0.5">Core &amp; multidisciplinary engineering
+                        </p>
+                    </div>
+                    <div class="text-center lg:text-left lg:px-6 pt-4 lg:pt-0">
+                        <div class="stat-number font-display text-4xl sm:text-5xl font-bold text-navy tracking-tight mb-1"
+                            data-target="25" data-suffix="+">0+</div>
+                        <div class="text-sm font-semibold text-slate-800 font-display">Partner Colleges</div>
+                        <p class="text-xs text-slate-500 font-normal mt-0.5">Accredited engineering institutions</p>
+                    </div>
+                    <div class="text-center lg:text-left lg:px-6 pt-4 lg:pt-0">
+                        <div class="stat-number font-display text-4xl sm:text-5xl font-bold text-navy tracking-tight mb-1"
+                            data-target="92" data-suffix="%">0%</div>
+                        <div class="text-sm font-semibold text-slate-800 font-display">Offer Conversion</div>
+                        <p class="text-xs text-slate-500 font-normal mt-0.5">Turned into direct full-time PPOs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Enterprise Partner Logos (No Box Borders!) -->
+            <div class="text-center pt-2">
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 mb-8">
+                    Trusted by Engineering Leaders, Core Industries &amp; Fast-Growing Startups
+                </p>
+
+                <!-- 10 Floating Clean Logos Without Box Cards -->
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-8 gap-x-6 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity">
+
+                    <!-- Logo 1: TATA Technologies -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 160 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="11" stroke="#005088" stroke-width="2" fill="none" />
+                            <path d="M10 12H20M15 12V21" stroke="#005088" stroke-width="2.5" stroke-linecap="round" />
+                            <text x="32" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="13" fill="#0d1b3d" letter-spacing="1">TATA</text>
+                            <text x="73" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500"
+                                font-size="9" fill="#64748b" letter-spacing="0.5">TECH</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 2: Infosys -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 110 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="9" cy="13" r="5" fill="#007CC3" />
+                            <text x="18" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="16" fill="#007CC3" letter-spacing="-0.5">Infosys</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 3: Larsen & Toubro (L&T) -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 130 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="20" rx="4" fill="#003366" />
+                            <text x="4" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="10" fill="#ffffff">L&amp;T</text>
+                            <text x="27" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="10" fill="#003366" letter-spacing="0.5">LARSEN &amp; TOUBRO</text>
+                            <text x="27" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500"
+                                font-size="7" fill="#64748b" letter-spacing="0.5">ENGINEERING</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 4: Siemens -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 110 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <text x="2" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="17" fill="#00646E" letter-spacing="2">SIEMENS</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 5: Reliance Industries -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="14" r="10" fill="#004080" />
+                            <path d="M8 17L12 9L16 17H8Z" fill="#E31837" />
+                            <text x="28" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="14" fill="#0d1b3d">Reliance</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 6: Ather Energy -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 100 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 21L13 4L20 21H15.5L13 15L10.5 21H6Z" fill="#10B981" />
+                            <text x="25" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="14" fill="#0f172a" letter-spacing="1.5">ATHER</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 7: Bosch -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 105 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="13" r="9" stroke="#E20015" stroke-width="2" fill="none" />
+                            <rect x="7" y="9.5" width="8" height="7" rx="1" fill="#E20015" />
+                            <text x="26" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="15" fill="#E20015" letter-spacing="1">BOSCH</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 8: ABB -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 80 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <text x="2" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="20" fill="#FF000F" letter-spacing="1.5">ABB</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 9: Schneider Electric -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 135 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="13" r="9" fill="#3DCD58" />
+                            <path d="M7 13L10 16L15 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <text x="25" y="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="10" fill="#0d1b3d">Schneider</text>
+                            <text x="25" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500"
+                                font-size="8" fill="#64748b">Electric</text>
+                        </svg>
+                    </div>
+
+                    <!-- Logo 10: Tech Mahindra -->
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-200">
+                        <svg class="h-6 w-auto" viewBox="0 0 130 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="5" width="16" height="16" rx="3" fill="#E31837" />
+                            <path d="M6 13H14M10 9V17" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+                            <text x="23" y="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700"
+                                font-size="10" fill="#0d1b3d">Tech</text>
+                            <text x="23" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500"
+                                font-size="9" fill="#E31837">Mahindra</text>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
          SECTION: SUPPORTED ENGINEERING DISCIPLINES
          ========================================================================= -->
-    <section class="py-24 bg-white border-t border-border relative overflow-hidden blueprint-grid" id="disciplines">
+    <section class="py-24 bg-white border-b border-slate-200/70 relative overflow-hidden" id="disciplines">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
 
             <!-- Section Header (Premium Centered Editorial Style) -->
@@ -347,7 +548,7 @@
 
                 <!-- Card 1: Computer Engineering (Tech 1) -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
                     <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-blue-500"></div>
                     <!-- Icon & Title -->
@@ -382,7 +583,7 @@
 
                 <!-- Card 2: Information Technology (Tech 2) -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
                     <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-indigo-500"></div>
                     <!-- Icon & Title -->
@@ -417,7 +618,7 @@
 
                 <!-- Card 3: AI & Data Science (Tech 3) -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
                     <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-amber-500"></div>
                     <!-- Icon & Title -->
@@ -452,7 +653,7 @@
 
                 <!-- Card 4: Cyber Security & Cloud (Tech 4) -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
                     <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-rose-500"></div>
                     <!-- Icon & Title -->
@@ -487,7 +688,7 @@
 
                 <!-- Card 5: Mechanical Engineering (Non-Tech 1) -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
                     <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
                     <!-- Icon & Title -->
@@ -522,7 +723,7 @@
 
                 <!-- Card 6: Civil Engineering (Non-Tech 2) -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-6 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
                     <!-- Accent Line -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-orange-500"></div>
                     <!-- Icon & Title -->
@@ -561,10 +762,264 @@
     </section>
 
     <!-- =========================================================================
+         SECTION: HOW FRESHTALENTS WORKS
+         ========================================================================= -->
+    <section id="how-it-works" class=" relative overflow-hidden py-24 bg-[#F5F7FA] border-t border-slate-200/70">
+
+        <!-- Subtle ambient radial glow -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.8)_0%,transparent_70%)] pointer-events-none">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
+            <!-- Section Header (Premium Centered Editorial Style) -->
+            <div class="text-center mb-20 relative">
+
+                <!-- Floating Technical Crosshair / Geometric Accent -->
+                <div class="absolute -top-12 left-10 w-16 h-16 pointer-events-none opacity-[0.12] hidden md:block">
+                    <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
+                        stroke-width="1">
+                        <circle cx="50" cy="50" r="40" stroke-dasharray="3 3" />
+                        <line x1="50" y1="0" x2="50" y2="100" />
+                        <line x1="0" y1="50" x2="100" y2="50" />
+                        <rect x="45" y="45" width="10" height="10" stroke-width="0.75" />
+                    </svg>
+                </div>
+
+                <!-- Floating Tech Cross Accent 2 (Right side) -->
+                <div class="absolute top-10 right-10 w-8 h-8 pointer-events-none opacity-[0.08] hidden lg:block">
+                    <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <line x1="50" y1="20" x2="50" y2="80" />
+                        <line x1="20" y1="50" x2="80" y2="50" />
+                    </svg>
+                </div>
+
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
+                    style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
+                    Simple Process
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
+                    How <span class="font-serif italic text-gold">FreshTalents</span> Works
+                </h2>
+                <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
+                    style="font-family: 'Cormorant Garamond', serif;">
+                    From resume upload to verified hiring—all in four simple steps.
+                </p>
+            </div>
+
+            <!-- Steps Timeline Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
+
+                <!-- Connector lines (Hidden on mobile/tablet) -->
+                <div class="hidden lg:block absolute inset-x-12 top-1/3 -translate-y-1/2 h-px pointer-events-none"
+                    style="z-index: 1;">
+                    <div class="w-full h-full"
+                        style="background-image: linear-gradient(to right, rgba(244,185,66,0.3) 33%, transparent 0%); background-size: 8px 1px; background-repeat: repeat-x;">
+                    </div>
+                </div>
+
+                <!-- STEP 1: Upload Resume -->
+                <div class="step-card group relative bg-white border border-border rounded-3xl p-5 pt-7 flex flex-col justify-between shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300"
+                    style="z-index: 2;">
+
+                    <!-- Circular badge overlap -->
+                    <div
+                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-navy-light text-white shadow-[0_4px_12px_rgba(27,76,138,0.35)]">
+                        1
+                    </div>
+
+                    <div>
+                        <!-- Custom CSS Illustration -->
+                        <div
+                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
+                            <!-- Background blue radial glow -->
+                            <div class="absolute inset-0 opacity-20 pointer-events-none"
+                                style="background: radial-gradient(circle at center, #1b4c8a 0%, transparent 60%);">
+                            </div>
+
+                            <!-- Resume Sheet visual mockup -->
+                            <div
+                                class="relative w-16 h-20 bg-white border border-slate-200/80 rounded-lg p-2.5 shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex flex-col justify-between transition-transform duration-300 group-hover:scale-[1.04]">
+                                <!-- Resume lines -->
+                                <div class="space-y-1">
+                                    <div class="w-8 h-1.5 bg-navy-light/20 rounded"></div>
+                                    <div class="w-11 h-1 bg-slate-200 rounded"></div>
+                                    <div class="w-10 h-1 bg-slate-100 rounded"></div>
+                                </div>
+                                <!-- Tech pills -->
+                                <div class="flex gap-1">
+                                    <div class="w-4 h-2 bg-slate-200 rounded-sm"></div>
+                                    <div class="w-4 h-2 bg-slate-200 rounded-sm"></div>
+                                </div>
+                                <!-- Floating Upload Arrow -->
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-navy text-white flex items-center justify-center shadow-[0_2px_6px_rgba(18,59,109,0.4)]">
+                                    <i class="fa-solid fa-arrow-up text-[10px]"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card text content -->
+                        <h3 class="text-lg font-bold text-navy mb-3">Upload Resume</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Upload your PDF/DOCX resume. Smart parser extracts your CPI, degree, skills, and projects
+                            automatically.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 2: AI Build Resume -->
+                <div class="step-card group relative bg-white border border-border rounded-3xl p-5 pt-7 flex flex-col justify-between shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300"
+                    style="z-index: 2;">
+
+                    <div
+                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-gold text-[#0d1b3d] shadow-[0_4px_12px_rgba(244,185,66,0.3)]">
+                        2
+                    </div>
+
+                    <div>
+                        <!-- Custom CSS Illustration -->
+                        <div
+                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
+                            <div class="absolute inset-0 opacity-20 pointer-events-none"
+                                style="background: radial-gradient(circle at center, #f4b942 0%, transparent 60%);">
+                            </div>
+
+                            <!-- Gauge mockup -->
+                            <div
+                                class="relative w-18 h-18 bg-white border border-slate-200/80 rounded-full shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex items-center justify-center transition-transform duration-300 group-hover:scale-[1.04]">
+                                <!-- Outer Gauge arc -->
+                                <svg class="w-14 h-14 transform -rotate-90">
+                                    <circle cx="28" cy="28" r="24" stroke="#f1f5f9" stroke-width="3"
+                                        fill="transparent" />
+                                    <circle cx="28" cy="28" r="24" stroke="#f4b942" stroke-width="3" fill="transparent"
+                                        stroke-dasharray="150" stroke-dashoffset="35" />
+                                </svg>
+                                <!-- AI score label in center -->
+                                <div class="absolute flex flex-col items-center">
+                                    <span class="text-xs font-bold text-navy leading-none">96%</span>
+                                    <span
+                                        class="text-[7px] text-gold uppercase tracking-wider font-bold mt-0.5">Ready</span>
+                                </div>
+                                <!-- Spark overlay -->
+                                <div
+                                    class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-gold/10 border border-gold/25 text-gold flex items-center justify-center shadow-[0_0_8px_rgba(244,185,66,0.2)]">
+                                    <i class="fa-solid fa-wand-magic-sparkles text-[9px]"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-navy mb-3">AI Build Resume</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            AI structures and optimizes your profile with high-impact summaries, verified skills, and
+                            readiness scoring.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 3: Recruiters Find You -->
+                <div class="step-card group relative bg-white border border-border rounded-3xl p-5 pt-7 flex flex-col justify-between shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300"
+                    style="z-index: 2;">
+
+                    <div
+                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-navy-light text-white shadow-[0_4px_12px_rgba(27,76,138,0.35)]">
+                        3
+                    </div>
+
+                    <div>
+                        <!-- Custom CSS Illustration -->
+                        <div
+                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
+                            <div class="absolute inset-0 opacity-20 pointer-events-none"
+                                style="background: radial-gradient(circle at center, #1b4c8a 0%, transparent 60%);">
+                            </div>
+
+                            <!-- Search Dashboard Grid mockup -->
+                            <div
+                                class="relative w-20 h-14 bg-white border border-slate-200/80 rounded-md p-1.5 shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex flex-col justify-between transition-transform duration-300 group-hover:scale-[1.04]">
+                                <!-- Filter bar row -->
+                                <div
+                                    class="flex items-center gap-1 bg-slate-50 border border-slate-100 rounded-sm p-0.5">
+                                    <i class="fa-solid fa-magnifying-glass text-[7px] text-slate-400"></i>
+                                    <div class="w-10 h-1 bg-slate-200 rounded-sm"></div>
+                                </div>
+                                <!-- Floating pill tags -->
+                                <div class="flex flex-wrap gap-0.5">
+                                    <span
+                                        class="px-1 py-0.5 text-[6px] font-bold text-navy-light bg-navy-light/8 rounded-sm">CPI
+                                        &gt; 9.0</span>
+                                    <span
+                                        class="px-1 py-0.5 text-[6px] font-bold text-success bg-success/8 rounded-sm">CSE</span>
+                                </div>
+                                <!-- Safe Lock tag overlay -->
+                                <div
+                                    class="absolute -bottom-1.5 -right-1.5 w-5 h-5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 flex items-center justify-center shadow-[0_2px_5px_rgba(0,0,0,0.25)]">
+                                    <i class="fa-solid fa-lock text-[8px]"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-navy mb-3">Recruiters Find You</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Top engineering teams search verified talent pools by branch, CPI, and project skills to
+                            shortlist you.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 4: Interview & Hire -->
+                <div class="step-card group relative bg-white border border-border rounded-3xl p-5 pt-7 flex flex-col justify-between shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300"
+                    style="z-index: 2;">
+
+                    <div
+                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-gold text-[#0d1b3d] shadow-[0_4px_12px_rgba(244,185,66,0.3)]">
+                        4
+                    </div>
+
+                    <div>
+                        <!-- Custom CSS Illustration -->
+                        <div
+                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
+                            <div class="absolute inset-0 opacity-20 pointer-events-none"
+                                style="background: radial-gradient(circle at center, #f4b942 0%, transparent 60%);">
+                            </div>
+
+                            <!-- Shield Approval verified state mockup -->
+                            <div
+                                class="relative w-14 h-16 bg-white border border-slate-200/80 rounded-md shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex items-center justify-center transition-transform duration-300 group-hover:scale-[1.04]">
+                                <!-- Shield Outline -->
+                                <div
+                                    class="w-9 h-11 border border-gold/30 bg-gold/5 rounded-t-lg rounded-b-md flex items-center justify-center">
+                                    <i class="fa-solid fa-shield text-gold text-lg"></i>
+                                </div>
+                                <!-- Checked verification badge -->
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-success text-white flex items-center justify-center shadow-[0_2px_6px_rgba(34,197,94,0.4)]">
+                                    <i class="fa-solid fa-check text-[10px]"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-navy mb-3">Interview &amp; Hire</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Receive direct interview invites from companies, land your paid internship, and unlock
+                            high-growth PPO pathways.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
          SECTION: INTERN BENEFITS (ADVANTAGES FOR STUDENTS & CANDIDATES)
          ========================================================================= -->
-    <section id="intern-benefits"
-        class="py-24 bg-surface-light border-t border-border relative overflow-hidden blueprint-grid">
+    <section id="intern-benefits" class="py-24 bg-white border-b border-slate-200/70 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
 
             <!-- Section Header -->
@@ -590,7 +1045,7 @@
 
                 <!-- Benefit 1: AI-Powered Profile & Resume Enhancement -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-7 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-blue-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
@@ -622,7 +1077,7 @@
 
                 <!-- Benefit 2: Standout 60-Second Video Introductions -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-7 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-rose-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
@@ -654,7 +1109,7 @@
 
                 <!-- Benefit 3: CV Studio & Shareable Online Portfolio -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-7 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
@@ -687,7 +1142,7 @@
 
                 <!-- Benefit 4: Strict Privacy & Anti-Spam Protection -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-7 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-purple-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
@@ -719,7 +1174,7 @@
 
                 <!-- Benefit 5: Direct Access to Verified Employers -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-7 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-amber-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
@@ -751,7 +1206,7 @@
 
                 <!-- Benefit 6: Affordable, Democratized Career Tools -->
                 <div
-                    class="group relative bg-white border border-border/80 rounded-2xl p-7 shadow-soft hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    class="group relative bg-white border border-slate-200/90 rounded-2xl p-7 shadow-[0_4px_20px_-4px_rgba(18,59,109,0.07),0_2px_6px_-1px_rgba(18,59,109,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(18,59,109,0.12)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 inset-x-0 h-1 bg-indigo-500"></div>
                     <div>
                         <div class="flex items-center justify-between mb-5">
@@ -812,724 +1267,244 @@
     </section>
 
     <!-- =========================================================================
-         SECTION: DARK PREMIUM METRICS (HIDDEN AS REQUESTED)
+         SECTION: STUDENT PLACEMENT TESTIMONIALS (STUDENT SUCCESS STORIES)
          ========================================================================= -->
-    <section id="stats" class="dark-stats-section relative overflow-hidden hidden" style="display: none;"
-        aria-hidden="true">
-
-        <!-- Background layers -->
-        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <!-- Blueprint grid -->
-            <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <pattern id="dk-dots" width="36" height="36" patternUnits="userSpaceOnUse">
-                        <circle cx="1" cy="1" r="1" fill="#4a7fd4" opacity="0.045" />
-                    </pattern>
-                    <pattern id="dk-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#3a6abf" stroke-width="0.4" opacity="0.04" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#dk-dots)" />
-                <rect width="100%" height="100%" fill="url(#dk-grid)" />
-            </svg>
-            <!-- Top ambient bloom -->
-            <div class="absolute -top-48 left-1/2 -translate-x-1/2 pointer-events-none"
-                style="width: 860px; height: 400px; background: radial-gradient(ellipse, rgba(29,67,144,0.50) 0%, transparent 68%); filter: blur(2px);">
-            </div>
-            <!-- Left navy orb -->
-            <div class="num-glow absolute pointer-events-none"
-                style="top: 20%; left: -160px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(18,50,125,0.35) 0%, transparent 70%); filter: blur(10px);">
-            </div>
-            <!-- Right gold orb -->
-            <div class="num-glow absolute pointer-events-none"
-                style="bottom: -40px; right: -112px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(212,160,23,0.18) 0%, transparent 68%); filter: blur(8px); animation-delay: 2s;">
-            </div>
-            <!-- Gold ribbons -->
-            <div class="gold-ribbon-dark absolute pointer-events-none"
-                style="top: -60px; left: 50%; margin-left: -700px; width: 1400px; height: 280px; background: linear-gradient(90deg, transparent, rgba(212,160,23,0.07) 25%, rgba(212,160,23,0.16) 50%, rgba(212,160,23,0.07) 75%, transparent); border-radius: 50%; transform: rotate(-16deg); filter: blur(3px);">
-            </div>
-            <div class="gold-ribbon-dark absolute pointer-events-none"
-                style="top: 30px; left: 50%; margin-left: -520px; width: 1040px; height: 160px; background: linear-gradient(90deg, transparent, rgba(212,160,23,0.04) 30%, rgba(212,160,23,0.10) 50%, rgba(212,160,23,0.04) 70%, transparent); border-radius: 50%; transform: rotate(-16deg); filter: blur(1px); animation-delay: 5s;">
-            </div>
+    <section id="student-stories" class="py-24 bg-[#F5F7FA] border-t border-slate-200/70 relative overflow-hidden">
+        <!-- Subtle ambient radial glow -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.8)_0%,transparent_70%)] pointer-events-none">
         </div>
 
-        <!-- Content wrapper -->
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
 
-            <!-- Eyebrow + Subtitle -->
-            <div class="text-center mb-10">
-                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase"
-                    style="background: rgba(212,160,23,0.10); color: #D4A017; border: 1px solid rgba(212,160,23,0.30); letter-spacing: 0.18em;">
-                    <span
-                        class="inline-block w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Platform Metrics
-                </span>
-                <p class="mt-3 text-white italic text-2xl"
-                    style="font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">
-                    Enterprise-grade performance, independently verified.
-                </p>
-            </div>
-
-            <!-- Glass Panel -->
-            <div class="dark-glass-panel relative overflow-hidden" style="border-radius: 24px;">
-
-                <!-- Gold top line -->
-                <div class="absolute top-0 inset-x-0 h-px"
-                    style="background: linear-gradient(90deg, transparent 5%, rgba(212,160,23,0.20) 25%, rgba(212,160,23,0.65) 50%, rgba(212,160,23,0.20) 75%, transparent 95%);">
-                </div>
-
-                <!-- Inner top ambient -->
-                <div class="absolute top-0 inset-x-0 pointer-events-none"
-                    style="height: 100px; background: linear-gradient(to bottom, rgba(255,255,255,0.04) 0%, transparent 100%);">
-                </div>
-
-                <!-- Stats grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-
-                    <!-- STAT 1: CV Parsing Accuracy -->
-                    <div
-                        class="dark-stat-item group relative flex flex-col items-center text-center cursor-default py-10 px-6">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(99,149,255,0.06) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-bullseye text-[18px]" style="color: #93b8ff;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(212,160,23,0.12) 0%, transparent 65%); filter: blur(8px);">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="98"
-                                data-suffix="%">0%</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            CV Parsing<br>Accuracy</p>
-                        <div class="dark-glow-sep absolute right-0 hidden lg:block"
-                            style="top: 32px; bottom: 32px; width: 1px; opacity: 0.7;"></div>
-                    </div>
-
-                    <!-- STAT 2: Active Candidates -->
-                    <div class="dark-stat-item group relative flex flex-col items-center text-center cursor-default border-t sm:border-t-0 sm:border-l py-10 px-6"
-                        style="border-color: rgba(255,255,255,0.06);">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(212,160,23,0.05) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-users text-[18px]" style="color: #f5c842;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(212,160,23,0.14) 0%, transparent 65%); filter: blur(8px); animation-delay: 1.2s;">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="5000"
-                                data-suffix="+" data-format="compact">0+</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            Active<br>Candidates</p>
-                        <div class="dark-glow-sep absolute right-0 hidden lg:block"
-                            style="top: 32px; bottom: 32px; width: 1px; opacity: 0.7;"></div>
-                    </div>
-
-                    <!-- STAT 3: Signup Credits -->
-                    <div class="dark-stat-item group relative flex flex-col items-center text-center cursor-default border-t lg:border-t-0 lg:border-l py-10 px-6"
-                        style="border-color: rgba(255,255,255,0.06);">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(52,211,153,0.05) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-gift text-[18px]" style="color: #6ee7b7;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(52,211,153,0.11) 0%, transparent 65%); filter: blur(8px); animation-delay: 2.1s;">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="5"
-                                data-suffix=" Free">0 Free</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            Signup<br>Credits</p>
-                        <div class="dark-glow-sep absolute right-0 hidden lg:block"
-                            style="top: 32px; bottom: 32px; width: 1px; opacity: 0.7;"></div>
-                    </div>
-
-                    <!-- STAT 4: PII Privacy Protected -->
-                    <div class="dark-stat-item group relative flex flex-col items-center text-center cursor-default border-t lg:border-t-0 lg:border-l py-10 px-6"
-                        style="border-color: rgba(255,255,255,0.06);">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                            style="background: radial-gradient(ellipse at 50% 20%, rgba(251,113,133,0.05) 0%, transparent 65%);">
-                        </div>
-                        <div class="dark-stat-icon flex items-center justify-center rounded-full relative z-10"
-                            style="width: 54px; height: 54px; margin-bottom: 18px;">
-                            <i class="fa-solid fa-shield-halved text-[18px]" style="color: #fda4af;"></i>
-                        </div>
-                        <div class="relative z-10 mb-3">
-                            <div class="absolute rounded-full pointer-events-none num-glow"
-                                style="inset: -12px; background: radial-gradient(circle, rgba(212,160,23,0.11) 0%, transparent 65%); filter: blur(8px); animation-delay: 3s;">
-                            </div>
-                            <span class="stat-number dark-stat-number font-display font-bold leading-none"
-                                style="font-size: clamp(38px, 5vw, 48px); letter-spacing: -0.025em;" data-target="100"
-                                data-suffix="%">0%</span>
-                        </div>
-                        <p class="relative z-10"
-                            style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); line-height: 1.7;">
-                            PII Privacy<br>Protected</p>
-                    </div>
-
-                </div>
-
-                <!-- Trust Strip -->
-                <div class="relative flex flex-wrap items-center justify-center gap-x-8 gap-y-2 px-8 py-4"
-                    style="border-top: 1px solid rgba(255,255,255,0.065); background: rgba(0,0,0,0.18);">
-                    <div class="absolute top-0 inset-x-0 h-px"
-                        style="background: linear-gradient(90deg, transparent, rgba(212,160,23,0.25) 35%, rgba(120,170,255,0.15) 65%, transparent);">
-                    </div>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> GDPR Compliant
-                    </span>
-                    <span class="hidden sm:block h-3 w-px" style="background: rgba(255,255,255,0.10);"></span>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> ISO 27001 Ready
-                    </span>
-                    <span class="hidden sm:block h-3 w-px" style="background: rgba(255,255,255,0.10);"></span>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> SOC 2 Aligned
-                    </span>
-                    <span class="hidden sm:block h-3 w-px" style="background: rgba(255,255,255,0.10);"></span>
-                    <span class="flex items-center gap-2"
-                        style="font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.30);">
-                        <i class="fa-solid fa-circle-check text-[10px]" style="color: #34d399;"></i> 256-bit Encryption
-                    </span>
-                </div>
-
-                <!-- Gold bottom line -->
-                <div class="absolute bottom-0 inset-x-0 h-px"
-                    style="background: linear-gradient(90deg, transparent 10%, rgba(212,160,23,0.12) 40%, rgba(212,160,23,0.28) 50%, rgba(212,160,23,0.12) 60%, transparent 90%);">
-                </div>
-
-            </div><!-- end glass panel -->
-
-        </div><!-- end content wrapper -->
-    </section>
-
-    <!-- =========================================================================
-         SECTION: INTERNSHIP LAUNCHPAD
-         ========================================================================= -->
-    <section id="intern-launchpad"
-        class="dual-platform-section-light relative overflow-hidden py-24 border-t border-slate-100">
-
-        <!-- Blueprint Grid and Glows background -->
-        <div class="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
-            <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <pattern id="lt-dots" width="36" height="36" patternUnits="userSpaceOnUse">
-                        <circle cx="1" cy="1" r="1" fill="#0d1b3d" opacity="0.055" />
-                    </pattern>
-                    <pattern id="lt-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#0d1b3d" stroke-width="0.4" opacity="0.045" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#lt-dots)" />
-                <rect width="100%" height="100%" fill="url(#lt-grid)" />
-            </svg>
-        </div>
-
-        <!-- Ambient glows -->
-        <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-87.5 h-87.5 rounded-full pointer-events-none opacity-[0.09] blur-[80px]"
-            style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
-        <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-87.5 h-87.5 rounded-full pointer-events-none opacity-[0.07] blur-[80px]"
-            style="background: radial-gradient(circle, #d4a017 0%, transparent 70%);"></div>
-
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
-            <!-- Header -->
-            <div class="text-center mb-16">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
                 <span
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
                     style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
                     <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Student Career Launchpad
+                    Student Success Stories
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    Built to Accelerate Your <span class="font-serif italic text-gold">Internship Journey</span>
+                    From Campus to Corporate: <span class="font-serif italic text-gold">Intern Voices</span>
                 </h2>
-                <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
-                    style="font-family: 'Cormorant Garamond', serif;">
-                    Everything you need to showcase verified engineering skills, skip application queues, and get hired
-                    by top tech teams.
+                <p class="mt-3 text-slate-500 text-base sm:text-lg leading-relaxed">
+                    Read how engineering students landed high-paying core internships and early career opportunities
+                    through FreshTalents.
                 </p>
             </div>
 
-            <!-- Panels Wrapper -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch relative">
+            <!-- Testimonial Cards Carousel Slider (Dots Only, No Arrows) -->
+            <div class="student-testimonials-slider">
 
-                <!-- Center glowing vertical divider (hidden on mobile) -->
-                <div class="hidden lg:block absolute left-1/2 top-12 bottom-12 w-px -translate-x-1/2 pointer-events-none"
-                    style="background: linear-gradient(to bottom, transparent, rgba(18,59,109,0.05) 20%, #d4a017bf 50%, #d4a017bf 50%, rgba(18,59,109,0.05) 80%, transparent 100%);">
-                </div>
-
-                <!-- LEFT PANEL: Smart Profile Building -->
-                <div class="group relative rounded-3xl p-8 lg:p-10 flex flex-col justify-between glass-card-hover-light overflow-hidden"
-                    style="background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.45) 100%); border: 1px solid rgba(59,130,246,0.18); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
-
-                    <!-- Decorative corner glow -->
-                    <div class="absolute top-0 right-0 w-32 h-32 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl"
-                        style="background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, transparent 70%);"></div>
-
-                    <div>
-                        <!-- Header Accent -->
-                        <div class="flex items-center justify-between mb-8">
-                            <span
-                                class="text-xs font-semibold uppercase tracking-wider text-navy bg-blue-500/8 px-3 py-1 rounded-full border border-blue-500/15">
-                                Step 1: Smart Profile
-                            </span>
-                            <div class="flex gap-2.5">
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-file-invoice text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-wand-magic-sparkles text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-500/8 text-navy border border-blue-500/15">
-                                    <i class="fa-solid fa-video text-xs"></i>
-                                </span>
+                <!-- Slide 1: Rahul Sharma -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_16px_-2px_rgba(18,59,109,0.06)] hover:shadow-card transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-bl-full pointer-events-none">
+                        </div>
+                        <div>
+                            <!-- Rating Stars -->
+                            <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "Most platforms have zero core engineering roles. On FreshTalents, I recorded my
+                                60-second
+                                video pitch showcasing my Formula Student suspension CAD project. Within 4 days, Tata
+                                Tech
+                                scheduled an interview and offered me ₹32K/mo!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/student-rahul.jpg" alt="Rahul Sharma"
+                                class="w-11 h-11 rounded-full object-cover ring-2 ring-slate-100">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Rahul Sharma</h4>
+                                <p class="text-xs text-slate-400 font-medium">Mechanical Intern @ Tata Tech</p>
+                                <span class="text-[10px] font-bold text-emerald-600">SVNIT Surat · ₹32,000/mo</span>
                             </div>
                         </div>
-
-                        <!-- Titles -->
-                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Build Profile &amp; Get
-                            Scored</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-8">
-                            Upload your resume to extract CPI, degree, skills, and projects automatically. Showcase your
-                            video pitch and unlock your AI readiness score.
-                        </p>
-
-                        <!-- Divider line -->
-                        <div class="h-px bg-linear-to-r from-blue-500/15 to-transparent mb-8"></div>
-
-                        <!-- Features list -->
-                        <ul class="space-y-4 mb-10">
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Automated Resume CPI &amp; Skill
-                                        Parsing</strong> via GPT-4o
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">AI Readiness Score (0–100)</strong> &amp;
-                                    summary rewrite
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">60-second Browser Video
-                                        Introductions</strong> to impress recruiters
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/8 text-navy border border-blue-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Student Contact Privacy</strong>
-                                    protected until interview requests
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- CTA -->
-                    <div>
-                        <a href="https://freshtalents.thewebtual.com/register"
-                            class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 text-white bg-navy hover:bg-navy-light text-center shadow-md">
-                            Create Intern Profile <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                        </a>
                     </div>
                 </div>
 
-                <!-- RIGHT PANEL: Getting Hired by Top Companies -->
-                <div class="group relative rounded-3xl p-8 lg:p-10 flex flex-col justify-between glass-card-hover-light overflow-hidden"
-                    style="background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.45) 100%); border: 1px solid rgba(212,160,23,0.18); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
-
-                    <!-- Decorative corner glow -->
-                    <div class="absolute top-0 right-0 w-32 h-32 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl"
-                        style="background: radial-gradient(circle, rgba(212,160,23,0.12) 0%, transparent 70%);"></div>
-
-                    <div>
-                        <!-- Header Accent -->
-                        <div class="flex items-center justify-between mb-8">
-                            <span
-                                class="text-xs font-semibold uppercase tracking-wider text-amber-700 bg-amber-500/8 px-3 py-1 rounded-full border border-amber-500/15">
-                                Step 2: Get Hired
-                            </span>
-                            <div class="flex gap-2.5">
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-magnifying-glass text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-shield-halved text-xs"></i>
-                                </span>
-                                <span
-                                    class="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-500/8 text-amber-700 border border-amber-500/15">
-                                    <i class="fa-solid fa-briefcase text-xs"></i>
-                                </span>
+                <!-- Slide 2: Sneha Patel -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-gold/30 shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-gold/10 rounded-bl-full pointer-events-none">
+                        </div>
+                        <div>
+                            <!-- Rating Stars -->
+                            <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "The verified skill assessment bypassed the typical 1000-applicant resume black hole.
+                                Hiring
+                                managers reached out directly with interview slots. I converted my 6-month internship
+                                into a
+                                full-time PPO offer before graduating!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/student-sneha.jpg" alt="Sneha Patel"
+                                class="w-11 h-11 rounded-full object-cover ring-2 ring-gold/40">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Sneha Patel</h4>
+                                <p class="text-xs text-slate-400 font-medium">Cloud &amp; DevOps @ Infosys</p>
+                                <span class="text-[10px] font-bold text-emerald-600">DA-IICT · ₹45,000/mo PPO</span>
                             </div>
                         </div>
-
-                        <!-- Titles -->
-                        <h3 class="text-2xl font-bold font-display text-slate-850 mb-3">Get Discovered &amp; Hired
-                        </h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-8">
-                            Top tech startups and enterprises actively browse verified candidate pools to shortlist and
-                            hire interns directly for stipend-backed roles.
-                        </p>
-
-                        <!-- Divider line -->
-                        <div class="h-px bg-linear-to-r from-amber-500/15 to-transparent mb-8"></div>
-
-                        <!-- Features list -->
-                        <ul class="space-y-4 mb-10">
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Direct Company Outreach</strong>
-                                    without third-party recruiter middlemen
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Guaranteed Monthly Stipends</strong> on
-                                    all verified partner internships
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">Direct PPO Pathways</strong> to convert
-                                    internships into full-time roles
-                                </span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span
-                                    class="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/8 text-amber-700 border border-amber-500/15 text-[10px] shrink-0">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <span class="text-sm text-slate-600">
-                                    <strong class="text-slate-800 font-medium">100% Free for Students</strong> with zero
-                                    fees or commissions ever
-                                </span>
-                            </li>
-                        </ul>
                     </div>
+                </div>
 
-                    <!-- CTA -->
-                    <div>
-                        <a href="https://freshtalents.thewebtual.com/register"
-                            class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 text-[#0d1b3d] bg-gold hover:bg-gold-hover text-center shadow-md">
-                            Apply for Internships <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                        </a>
+                <!-- Slide 3: Harsh Mehta -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_16px_-2px_rgba(18,59,109,0.06)] hover:shadow-card transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/5 rounded-bl-full pointer-events-none">
+                        </div>
+                        <div>
+                            <!-- Rating Stars -->
+                            <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "The transparent stipend guarantee gave me total confidence. I knew exactly what the
+                                role
+                                was paying and what projects I'd be working on. FreshTalents is an absolute game-changer
+                                for
+                                Indian engineering students."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/student-harsh.jpg" alt="Harsh Mehta"
+                                class="w-11 h-11 rounded-full object-cover ring-2 ring-slate-100">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Harsh Mehta</h4>
+                                <p class="text-xs text-slate-400 font-medium">EV Powertrain @ Ather Energy</p>
+                                <span class="text-[10px] font-bold text-emerald-600">LDCE Ahmedabad · ₹38,000/mo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Priya Desai -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_16px_-2px_rgba(18,59,109,0.06)] hover:shadow-card transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-orange-500/5 rounded-bl-full pointer-events-none">
+                        </div>
+                        <div>
+                            <!-- Rating Stars -->
+                            <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "Finding top structural civil internships on regular job boards was almost impossible.
+                                FreshTalents put my Revit 3D BIM models directly in front of L&amp;T Construction
+                                project managers. Bagged a pre-placement offer!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/student-priya.jpg" alt="Priya Desai"
+                                class="w-11 h-11 rounded-full object-cover ring-2 ring-slate-100">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Priya Desai</h4>
+                                <p class="text-xs text-slate-400 font-medium">Structural BIM @ L&amp;T Construction</p>
+                                <span class="text-[10px] font-bold text-emerald-600">Nirma University ·
+                                    ₹30,000/mo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Amit Verma -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_16px_-2px_rgba(18,59,109,0.06)] hover:shadow-card transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-teal-500/5 rounded-bl-full pointer-events-none">
+                        </div>
+                        <div>
+                            <!-- Rating Stars -->
+                            <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "The skill-verification test matched my ROS2 robotics simulation stack directly to
+                                Siemens' industrial automation needs. The interview focused 100% on real project work
+                                rather than theory!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/student-amit.jpg" alt="Amit Verma"
+                                class="w-11 h-11 rounded-full object-cover ring-2 ring-slate-100">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Amit Verma</h4>
+                                <p class="text-xs text-slate-400 font-medium">IoT &amp; Robotics @ Siemens India</p>
+                                <span class="text-[10px] font-bold text-emerald-600">BITS Pilani · ₹50,000/mo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Ananya Iyer -->
+                <div class="h-full">
+                    <div
+                        class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_16px_-2px_rgba(18,59,109,0.06)] hover:shadow-card transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-rose-500/5 rounded-bl-full pointer-events-none">
+                        </div>
+                        <div>
+                            <!-- Rating Stars -->
+                            <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                                "FreshTalents gave equal importance to core chemical engineering! The process simulation
+                                projects on my verified profile helped me secure an internship with Reliance Industries.
+                                Great support!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                            <img src="assets/img/student-ananya.jpg" alt="Ananya Iyer"
+                                class="w-11 h-11 rounded-full object-cover ring-2 ring-slate-100">
+                            <div>
+                                <h4 class="text-sm font-bold text-navy">Ananya Iyer</h4>
+                                <p class="text-xs text-slate-400 font-medium">Process Simulation @ Reliance</p>
+                                <span class="text-[10px] font-bold text-emerald-600">ICT Mumbai · ₹35,000/mo</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION: HOW FRESHTALENTS WORKS
-         ========================================================================= -->
-    <section id="how-it-works" class="how-it-works-section relative overflow-hidden py-24 border-t border-slate-100">
-
-        <!-- Blueprint dot grid and background lines -->
-        <div class="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
-            <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100%" height="100%" fill="url(#lt-dots)" />
-                <rect width="100%" height="100%" fill="url(#lt-grid)" />
-            </svg>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
-            <!-- Section Header (Premium Centered Editorial Style) -->
-            <div class="text-center mb-20 relative">
-
-                <!-- Floating Technical Crosshair / Geometric Accent -->
-                <div class="absolute -top-12 left-10 w-16 h-16 pointer-events-none opacity-[0.12] hidden md:block">
-                    <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
-                        stroke-width="1">
-                        <circle cx="50" cy="50" r="40" stroke-dasharray="3 3" />
-                        <line x1="50" y1="0" x2="50" y2="100" />
-                        <line x1="0" y1="50" x2="100" y2="50" />
-                        <rect x="45" y="45" width="10" height="10" stroke-width="0.75" />
-                    </svg>
-                </div>
-
-                <!-- Floating Tech Cross Accent 2 (Right side) -->
-                <div class="absolute top-10 right-10 w-8 h-8 pointer-events-none opacity-[0.08] hidden lg:block">
-                    <svg class="w-full h-full text-navy" viewBox="0 0 100 100" fill="none" stroke="currentColor"
-                        stroke-width="1.5">
-                        <line x1="50" y1="20" x2="50" y2="80" />
-                        <line x1="20" y1="50" x2="80" y2="50" />
-                    </svg>
-                </div>
-
-                <span
-                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] mb-4"
-                    style="background: rgba(212,160,23,0.08); color: #B3860F; border: 1px solid rgba(212,160,23,0.22);">
-                    <span class="w-1.5 h-1.5 rounded-full bg-gold shadow-[0_0_8px_rgba(212,160,23,0.8)]"></span>
-                    Simple Process
-                </span>
-                <h2 class="text-3xl sm:text-4xl font-semibold font-display text-navy tracking-tight">
-                    How <span class="font-serif italic text-gold">FreshTalents</span> Works
-                </h2>
-                <p class="mt-3 text-slate-500 text-[16px] italic max-w-xl mx-auto leading-relaxed"
-                    style="font-family: 'Cormorant Garamond', serif;">
-                    From resume upload to verified hiring—all in four simple steps.
-                </p>
-            </div>
-
-            <!-- Steps Timeline Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
-
-                <!-- Connector lines (Hidden on mobile/tablet) -->
-                <div class="hidden lg:block absolute inset-x-12 top-1/3 -translate-y-1/2 h-px pointer-events-none"
-                    style="z-index: 1;">
-                    <div class="w-full h-full"
-                        style="background-image: linear-gradient(to right, rgba(244,185,66,0.3) 33%, transparent 0%); background-size: 8px 1px; background-repeat: repeat-x;">
-                    </div>
-                </div>
-
-                <!-- STEP 1: Upload Resume -->
-                <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
-                    style="z-index: 2;">
-
-                    <!-- Circular badge overlap -->
-                    <div
-                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-navy-light text-white shadow-[0_4px_12px_rgba(27,76,138,0.35)]">
-                        1
-                    </div>
-
-                    <div>
-                        <!-- Custom CSS Illustration -->
-                        <div
-                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
-                            <!-- Background blue radial glow -->
-                            <div class="absolute inset-0 opacity-20 pointer-events-none"
-                                style="background: radial-gradient(circle at center, #1b4c8a 0%, transparent 60%);">
-                            </div>
-
-                            <!-- Resume Sheet visual mockup -->
-                            <div
-                                class="relative w-16 h-20 bg-white border border-slate-200/80 rounded-lg p-2.5 shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex flex-col justify-between transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Resume lines -->
-                                <div class="space-y-1">
-                                    <div class="w-8 h-1.5 bg-navy-light/20 rounded"></div>
-                                    <div class="w-11 h-1 bg-slate-200 rounded"></div>
-                                    <div class="w-10 h-1 bg-slate-100 rounded"></div>
-                                </div>
-                                <!-- Tech pills -->
-                                <div class="flex gap-1">
-                                    <div class="w-4 h-2 bg-slate-200 rounded-sm"></div>
-                                    <div class="w-4 h-2 bg-slate-200 rounded-sm"></div>
-                                </div>
-                                <!-- Floating Upload Arrow -->
-                                <div
-                                    class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-navy text-white flex items-center justify-center shadow-[0_2px_6px_rgba(18,59,109,0.4)]">
-                                    <i class="fa-solid fa-arrow-up text-[10px]"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card text content -->
-                        <h3 class="text-lg font-bold text-navy mb-3">Upload Resume</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Upload your PDF/DOCX resume. Smart parser extracts your CPI, degree, skills, and projects
-                            automatically.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- STEP 2: AI Build Resume -->
-                <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
-                    style="z-index: 2;">
-
-                    <div
-                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-gold text-[#0d1b3d] shadow-[0_4px_12px_rgba(244,185,66,0.3)]">
-                        2
-                    </div>
-
-                    <div>
-                        <!-- Custom CSS Illustration -->
-                        <div
-                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
-                            <div class="absolute inset-0 opacity-20 pointer-events-none"
-                                style="background: radial-gradient(circle at center, #f4b942 0%, transparent 60%);">
-                            </div>
-
-                            <!-- Gauge mockup -->
-                            <div
-                                class="relative w-18 h-18 bg-white border border-slate-200/80 rounded-full shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex items-center justify-center transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Outer Gauge arc -->
-                                <svg class="w-14 h-14 transform -rotate-90">
-                                    <circle cx="28" cy="28" r="24" stroke="#f1f5f9" stroke-width="3"
-                                        fill="transparent" />
-                                    <circle cx="28" cy="28" r="24" stroke="#f4b942" stroke-width="3" fill="transparent"
-                                        stroke-dasharray="150" stroke-dashoffset="35" />
-                                </svg>
-                                <!-- AI score label in center -->
-                                <div class="absolute flex flex-col items-center">
-                                    <span class="text-xs font-bold text-navy leading-none">96%</span>
-                                    <span
-                                        class="text-[7px] text-gold uppercase tracking-wider font-bold mt-0.5">Ready</span>
-                                </div>
-                                <!-- Spark overlay -->
-                                <div
-                                    class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-gold/10 border border-gold/25 text-gold flex items-center justify-center shadow-[0_0_8px_rgba(244,185,66,0.2)]">
-                                    <i class="fa-solid fa-wand-magic-sparkles text-[9px]"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="text-lg font-bold text-navy mb-3">AI Build Resume</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            AI structures and optimizes your profile with high-impact summaries, verified skills, and
-                            readiness scoring.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- STEP 3: Recruiters Find You -->
-                <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
-                    style="z-index: 2;">
-
-                    <div
-                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-navy-light text-white shadow-[0_4px_12px_rgba(27,76,138,0.35)]">
-                        3
-                    </div>
-
-                    <div>
-                        <!-- Custom CSS Illustration -->
-                        <div
-                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
-                            <div class="absolute inset-0 opacity-20 pointer-events-none"
-                                style="background: radial-gradient(circle at center, #1b4c8a 0%, transparent 60%);">
-                            </div>
-
-                            <!-- Search Dashboard Grid mockup -->
-                            <div
-                                class="relative w-20 h-14 bg-white border border-slate-200/80 rounded-md p-1.5 shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex flex-col justify-between transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Filter bar row -->
-                                <div
-                                    class="flex items-center gap-1 bg-slate-50 border border-slate-100 rounded-sm p-0.5">
-                                    <i class="fa-solid fa-magnifying-glass text-[7px] text-slate-400"></i>
-                                    <div class="w-10 h-1 bg-slate-200 rounded-sm"></div>
-                                </div>
-                                <!-- Floating pill tags -->
-                                <div class="flex flex-wrap gap-0.5">
-                                    <span
-                                        class="px-1 py-0.5 text-[6px] font-bold text-navy-light bg-navy-light/8 rounded-sm">CPI
-                                        &gt; 9.0</span>
-                                    <span
-                                        class="px-1 py-0.5 text-[6px] font-bold text-success bg-success/8 rounded-sm">CSE</span>
-                                </div>
-                                <!-- Safe Lock tag overlay -->
-                                <div
-                                    class="absolute -bottom-1.5 -right-1.5 w-5 h-5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 flex items-center justify-center shadow-[0_2px_5px_rgba(0,0,0,0.25)]">
-                                    <i class="fa-solid fa-lock text-[8px]"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="text-lg font-bold text-navy mb-3">Recruiters Find You</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Top engineering teams search verified talent pools by branch, CPI, and project skills to
-                            shortlist you.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- STEP 4: Interview & Hire -->
-                <div class="step-card group relative bg-white border border-border-dark/30 rounded-3xl p-5 pt-7 flex flex-col justify-between"
-                    style="z-index: 2;">
-
-                    <div
-                        class="step-badge absolute -top-5 left-8 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-gold text-[#0d1b3d] shadow-[0_4px_12px_rgba(244,185,66,0.3)]">
-                        4
-                    </div>
-
-                    <div>
-                        <!-- Custom CSS Illustration -->
-                        <div
-                            class="illustration-box rounded-2xl h-30 flex items-center justify-center relative overflow-hidden mb-6">
-                            <div class="absolute inset-0 opacity-20 pointer-events-none"
-                                style="background: radial-gradient(circle at center, #f4b942 0%, transparent 60%);">
-                            </div>
-
-                            <!-- Shield Approval verified state mockup -->
-                            <div
-                                class="relative w-14 h-16 bg-white border border-slate-200/80 rounded-md shadow-[0_8px_16px_-4px_rgba(18,59,109,0.06)] flex items-center justify-center transition-transform duration-300 group-hover:scale-[1.04]">
-                                <!-- Shield Outline -->
-                                <div
-                                    class="w-9 h-11 border border-gold/30 bg-gold/5 rounded-t-lg rounded-b-md flex items-center justify-center">
-                                    <i class="fa-solid fa-shield text-gold text-lg"></i>
-                                </div>
-                                <!-- Checked verification badge -->
-                                <div
-                                    class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-success text-white flex items-center justify-center shadow-[0_2px_6px_rgba(34,197,94,0.4)]">
-                                    <i class="fa-solid fa-check text-[10px]"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="text-lg font-bold text-navy mb-3">Interview &amp; Hire</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Receive direct interview invites from companies, land your paid internship, and unlock
-                            high-growth PPO pathways.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-
 
         </div>
     </section>
@@ -1537,15 +1512,10 @@
     <!-- =========================================================================
          SECTION: FINAL CALL-TO-ACTION (CTA)
          ========================================================================= -->
-    <section id="final-cta" class="final-cta-section relative overflow-hidden py-28 border-t border-slate-100">
+    <section id="final-cta"
+        class="final-cta-section relative overflow-hidden py-28 bg-white border-t border-slate-200/70">
 
-        <!-- Blueprint Grid background -->
-        <div class="absolute inset-0 pointer-events-none opacity-30" aria-hidden="true">
-            <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100%" height="100%" fill="url(#lt-dots)" />
-                <rect width="100%" height="100%" fill="url(#lt-grid)" />
-            </svg>
-        </div>
+
         <!-- Ambient glows -->
         <div class="absolute -top-12 left-1/4 w-100 h-100 rounded-full pointer-events-none opacity-[0.06] blur-[80px]"
             style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
@@ -1587,7 +1557,7 @@
 
                         <!-- Recruiter Dashboard Card (Bottom Right Layer) -->
                         <div
-                            class="absolute bottom-2 right-2 w-52.5 bg-white border border-border rounded-2xl p-4 shadow-[0_12px_24px_rgba(18,59,109,0.05)]">
+                            class="absolute bottom-2 right-2 w-52.5 bg-white border border-slate-200/90 rounded-2xl p-4 shadow-[0_12px_28px_-6px_rgba(18,59,109,0.08),0_4px_10px_-2px_rgba(18,59,109,0.04)]">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="w-2 h-2 rounded-full bg-success"></span>
                                 <span class="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Company
@@ -1605,7 +1575,7 @@
                             </div>
                         </div>
 
-                        <!-- Connecting AI Sparkle Line (Animated Path) -->
+                        <!-- Connecting AI Spark Line (Animated Path) -->
                         <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 380 280"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <!-- Dotted curved connector from Candidate to Recruiter -->
@@ -1631,7 +1601,7 @@
 
                         <!-- Candidate Profile Card (Top Left Layer) -->
                         <div
-                            class="absolute top-2 left-2 w-50 bg-white border border-border rounded-2xl p-4 shadow-[0_16px_32px_rgba(18,59,109,0.06)]">
+                            class="absolute top-2 left-2 w-50 bg-white border border-slate-200/90 rounded-2xl p-4 shadow-[0_16px_36px_-6px_rgba(18,59,109,0.10),0_4px_12px_-2px_rgba(18,59,109,0.04)]">
                             <div class="flex items-center gap-2.5 mb-3">
                                 <!-- Profile Pic placeholder -->
                                 <div
@@ -1683,8 +1653,8 @@
 
                         <!-- Supporting Text -->
                         <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-xl">
-                            Join 5,000+ engineering students landing premier paid internships at top tech startups and
-                            MNCs. 100% free for students.
+                            Join hundreds of engineering students landing premier paid internships at core engineering
+                            firms and tech startups. 100% free for students.
                         </p>
 
                         <!-- CTA Buttons -->
@@ -1779,11 +1749,14 @@
                                 class="text-gold font-medium hover:text-amber-300 transition-colors duration-200 inline-flex items-center gap-1.5">
                                 Recruiter Portal <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a></li>
-                        <li><a href="recruiter.html#disciplines" class="hover:text-gold transition-colors duration-200">Hire
+                        <li><a href="recruiter.html#disciplines"
+                                class="hover:text-gold transition-colors duration-200">Hire
                                 Interns</a></li>
-                        <li><a href="recruiter.html#employer-benefits" class="hover:text-gold transition-colors duration-200">Employer
+                        <li><a href="recruiter.html#employer-benefits"
+                                class="hover:text-gold transition-colors duration-200">Employer
                                 Features</a></li>
-                        <li><a href="https://freshtalents.thewebtual.com/register/company" class="hover:text-gold transition-colors duration-200">Post
+                        <li><a href="https://freshtalents.thewebtual.com/register/company"
+                                class="hover:text-gold transition-colors duration-200">Post
                                 Internship</a></li>
                     </ul>
                 </div>
@@ -1792,10 +1765,14 @@
                 <div class="col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">Company</h4>
                     <ul class="space-y-2.5 text-sm">
-                        <li><a href="index.html" class="hover:text-gold transition-colors duration-200">About Us</a></li>
-                        <li><a href="recruiter.html" class="hover:text-gold transition-colors duration-200">For Recruiters</a></li>
-                        <li><a href="#intern-benefits" class="hover:text-gold transition-colors duration-200">Verified Badge</a></li>
-                        <li><a href="https://freshtalents.thewebtual.com/login" class="hover:text-gold transition-colors duration-200">Log In</a></li>
+                        <li><a href="index.html" class="hover:text-gold transition-colors duration-200">About Us</a>
+                        </li>
+                        <li><a href="recruiter.html" class="hover:text-gold transition-colors duration-200">For
+                                Recruiters</a></li>
+                        <li><a href="#intern-benefits" class="hover:text-gold transition-colors duration-200">Verified
+                                Badge</a></li>
+                        <li><a href="https://freshtalents.thewebtual.com/login"
+                                class="hover:text-gold transition-colors duration-200">Log In</a></li>
                     </ul>
                 </div>
 
@@ -1817,11 +1794,6 @@
             <div
                 class="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
                 <p>&copy; 2026 FreshTalents. All rights reserved.</p>
-                <div class="flex items-center gap-4 text-slate-400 font-medium">
-                    <a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-gold text-xs"></i> Intern Portal</a>
-                    <span class="text-slate-700">|</span>
-                    <a href="recruiter.html" class="hover:text-gold transition-colors flex items-center gap-1.5"><i class="fa-solid fa-building text-gold text-xs"></i> Recruiter Portal</a>
-                </div>
                 <p class="flex items-center gap-1.5">
                     Designed with <i class="fa-solid fa-heart text-gold text-[9px] animate-pulse"></i> for engineering
                     excellence.
@@ -1833,6 +1805,7 @@
 
     <script>
         $(document).ready(function () {
+            // Hero Slick Slider
             $('.hero-slider').slick({
                 arrows: true,
                 dots: true,
@@ -1845,11 +1818,41 @@
                 prevArrow: '<button class="slick-prev custom-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
                 nextArrow: '<button class="slick-next custom-arrow"><i class="fa-solid fa-chevron-right"></i></button>'
             });
+
+            // Student Success Stories Slider (Only Dots, No Arrows)
+            $('.student-testimonials-slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4500,
+                speed: 600,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                pauseOnHover: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
         });
 
         // ── Count-Up Animation ──────────────────────────────────────────────────
         function animateCountUp(el) {
             const target = parseInt(el.dataset.target, 10);
+            const prefix = el.dataset.prefix || '';
             const suffix = el.dataset.suffix || '';
             const isCompact = el.dataset.format === 'compact';
             const duration = 1800;
@@ -1868,16 +1871,17 @@
                 let display = current;
                 if (isCompact && current >= 1000) {
                     display = (current / 1000).toFixed(current % 1000 === 0 ? 0 : 1) + 'K';
+                } else if (current >= 1000 && !isCompact) {
+                    display = current.toLocaleString('en-IN');
                 }
-                el.textContent = display + suffix;
+                el.textContent = prefix + display + suffix;
 
                 if (step >= steps) {
                     clearInterval(timer);
-                    // Final exact value
                     let final = isCompact && target >= 1000
                         ? (target / 1000).toFixed(target % 1000 === 0 ? 0 : 1) + 'K'
-                        : target;
-                    el.textContent = final + suffix;
+                        : (target >= 1000 && !isCompact ? target.toLocaleString('en-IN') : target);
+                    el.textContent = prefix + final + suffix;
                 }
             }, stepTime);
         }
